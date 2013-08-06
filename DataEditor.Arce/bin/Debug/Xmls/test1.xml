@@ -27,11 +27,11 @@
         </data>
       </data>
     </data>
-     <radios key = "k1" value = "type">
-       <radio key = "r1" value = "1" />
-       <radio key = "r2" value = "2" />
-     </radios>
     <data type = "tab" text = "卧槽">
+      <radios key = "k1" value = "type">
+        <radio key = "r1" value = "1" />
+        <radio key = "r2" value = "2" />
+      </radios>
       <data type = "tabs">
         <data type = "tab" text = "选项1">
           <data type = "radio" text = "选项1号机"></data>

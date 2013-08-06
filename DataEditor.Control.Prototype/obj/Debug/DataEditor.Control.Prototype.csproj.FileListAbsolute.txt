@@ -108,7 +108,6 @@ E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Cont
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoLeftListBox.resources
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioContainer.resources
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoTitleBox.resources
-E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioPage.resources
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csproj.GenerateResource.Cache
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb

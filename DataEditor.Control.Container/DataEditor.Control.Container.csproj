@@ -37,6 +37,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComplexContainerArgs.cs" />
     <Compile Include="ComplexContainerHelper.cs" />
     <Compile Include="ContainerHelper.cs" />
     <Compile Include="ContainerArgs.cs" />
