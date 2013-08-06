@@ -34,10 +34,14 @@
       </radios>
       <data type = "tabs">
         <data type = "tab" text = "选项1">
-          <data type = "radio" text = "选项1号机"></data>
+          <data type = "radio" text = "选项1号机">
+            <text>这是一个示例</text>
+          </data>
         </data>
         <data type = "tab" text = "选项2">
-          <data type = "radio" text = "选项2号机"></data>
+          <data type = "radio" text = "选项2号机">
+            <text>这是另一个示例</text>
+          </data>
         </data>
       </data>
     </data>

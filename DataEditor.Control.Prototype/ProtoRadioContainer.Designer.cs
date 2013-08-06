@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
+            base.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ProtoRadioComplex";
             this.Size = new System.Drawing.Size(617, 67);
             this.tableLayoutPanel1.ResumeLayout(false);

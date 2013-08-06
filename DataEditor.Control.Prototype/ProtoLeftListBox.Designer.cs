@@ -77,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
+            base.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ProtoLeftListBox";
             this.Size = new System.Drawing.Size(157, 481);
             this.tableLayoutPanel1.ResumeLayout(false);
