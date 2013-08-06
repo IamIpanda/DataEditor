@@ -37,10 +37,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComplexContainer.cs" />
+    <Compile Include="ComplexContainerHelper.cs" />
     <Compile Include="ContainerHelper.cs" />
     <Compile Include="ContainerArgs.cs" />
     <Compile Include="ListBoxContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadioComplexContainer.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SimpleBoxContainer.cs">

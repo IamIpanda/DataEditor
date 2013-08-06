@@ -6,7 +6,8 @@ using DataEditor.FuzzyData;
 
 namespace DataEditor.Control.Container
 {
-    public interface ComplexContainer : Control.ObjectContainer
-    { }
-    public class ComplexContainerHelper { }
+    public class ComplexContainerHelper
+    {
+
+    }
 }

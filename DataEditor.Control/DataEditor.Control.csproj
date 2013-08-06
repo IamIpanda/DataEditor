@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComplexContainer.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="ControlArgs.cs" />
     <Compile Include="ControlHelper.cs" />
