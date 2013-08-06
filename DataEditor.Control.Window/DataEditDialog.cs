@@ -62,7 +62,7 @@ namespace DataEditor.Control.Window
 
     }
     
-    public class DataEditorDialog : DataEditDialog, DataEditor.Control.Container.ComplexContainer
+    public class DataEditorDialog : DataEditDialog, DataEditor.Control.ComplexContainer
     {
         DataEditor.Control.Container.ContainerHelper Helper =
             new Container.ContainerHelper();

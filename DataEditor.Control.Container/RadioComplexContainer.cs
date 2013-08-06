@@ -10,6 +10,7 @@ namespace DataEditor.Control.Container
     {
         ComplexContainerHelper Helper = new ComplexContainerHelper();
         RadioComplexContainerArgs argument;
+        public Contract.TaintState taint;
         public string Flag { get { return "radio"; } }
         public Label Label { get; set; }
         [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
