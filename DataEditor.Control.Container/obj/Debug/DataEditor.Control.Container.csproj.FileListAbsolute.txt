@@ -1,0 +1,101 @@
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.ListBoxContainer.resources
+F:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csproj.GenerateResource.Cache
+F:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.dll
+F:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.pdb
+F:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.SimpleBoxContainerEx.resources
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.pdb
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.pdb
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.pdb
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.pdb
+E:\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.pdb
+E:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csprojResolveAssemblyReference.cache
+E:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.ListBoxContainer.resources
+E:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.SimpleBoxContainerEx.resources
+E:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csproj.GenerateResource.Cache
+E:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.dll
+E:\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.ListBoxContainer.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.SimpleBoxContainerEx.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.ListBoxContainer.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.SimpleBoxContainerEx.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csproj.GenerateResource.Cache
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Arce.Interpreter.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorBase.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Prototype.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditorKanon.Help.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csprojResolveAssemblyReference.cache
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.ListBoxContainer.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.SimpleBoxContainerEx.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csproj.GenerateResource.Cache
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.pdb

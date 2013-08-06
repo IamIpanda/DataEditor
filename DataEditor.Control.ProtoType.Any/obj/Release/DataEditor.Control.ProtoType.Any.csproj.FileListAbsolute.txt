@@ -1,0 +1,16 @@
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.Control.ProtoType.Any.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.Control.ProtoType.Any.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.FuzzyData.Extra.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.FuzzyData.Extra.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Release\DataEditor.FuzzyData.Serialization.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Release\DataEditor.Control.ProtoType.Any.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Release\DataEditor.Control.ProtoType.Any.AnyTypeEditor.resources
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Release\DataEditor.Control.ProtoType.Any.AnyTypeWindow.resources
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Release\DataEditor.Control.ProtoType.Any.csproj.GenerateResource.Cache
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Release\DataEditor.Control.ProtoType.Any.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Release\DataEditor.Control.ProtoType.Any.pdb

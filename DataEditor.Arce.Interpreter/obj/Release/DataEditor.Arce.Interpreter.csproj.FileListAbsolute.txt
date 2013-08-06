@@ -1,0 +1,13 @@
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditor.Arce.Interpreter.dll
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditor.Arce.Interpreter.pdb
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\obj\Release\DataEditor.Arce.Interpreter.dll
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\obj\Release\DataEditor.Arce.Interpreter.pdb
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditor.Control.dll
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditorKanon.Help.dll
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditor.Control.pdb
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditorKanon.Help.pdb
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Release\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Arce.Interpreter\obj\Release\DataEditor.Arce.Interpreter.csprojResolveAssemblyReference.cache

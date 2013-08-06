@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window name = "职业" actual = "classes">
+  <list />
+  <group actual = "LIST" name = "" color = "13557491">
+		<container name = "基本设置" color = "10535136">
+			<text name = "名称" actual = "text" />
+		</container>
+		<container name = "" color = "10535136">
+
+		</container>
+		<next />
+	</group>
+</window>

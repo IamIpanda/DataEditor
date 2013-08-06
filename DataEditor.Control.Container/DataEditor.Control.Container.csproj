@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB2E0C25-2E95-49F9-ACDE-F99236C6B34A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataEditor.Control.Container</RootNamespace>
+    <AssemblyName>DataEditor.Control.Container</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComplexContainer.cs" />
+    <Compile Include="ContainerHelper.cs" />
+    <Compile Include="ContainerArgs.cs" />
+    <Compile Include="ListBoxContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleBoxContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GroupBoxContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimpleBoxContainerEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleBoxContainerEx.Designer.cs">
+      <DependentUpon>SimpleBoxContainerEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPagesContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj">
+      <Project>{470035a8-2b65-4cbe-bee0-3faafe9fc787}</Project>
+      <Name>DataEditor.Arce.Interpreter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Contract\DataEditor.Contract.csproj">
+      <Project>{d7dfc2b5-bb85-4037-b052-c4f1e3c1bde0}</Project>
+      <Name>DataEditor.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Prototype\DataEditor.Control.Prototype.csproj">
+      <Project>{02449edb-b4b5-47e6-ad29-7cc1c8b0bf09}</Project>
+      <Name>DataEditor.Control.Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control\DataEditor.Control.csproj">
+      <Project>{ec27db05-72f8-4ad2-b8cd-735c25af79fb}</Project>
+      <Name>DataEditor.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData\DataEditor.FuzzyData.csproj">
+      <Project>{3516d3c7-f112-4763-9f2d-0b17991c12ff}</Project>
+      <Name>DataEditor.FuzzyData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Help\DataEditor.Help.csproj">
+      <Project>{847c638e-8d84-4348-a26e-82e1ab523ac9}</Project>
+      <Name>DataEditor.Help</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListBoxContainer.resx">
+      <DependentUpon>ListBoxContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleBoxContainerEx.resx">
+      <DependentUpon>SimpleBoxContainerEx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

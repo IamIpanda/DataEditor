@@ -1,0 +1,11 @@
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditor.Control.dll
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditor.Control.pdb
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditorKanon.Help.dll
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditorKanon.Help.pdb
+F:\Projects\DataEditor\DataEditor.Control\bin\Release\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Control\obj\Release\DataEditor.Control.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Control\obj\Release\DataEditor.Control.dll
+F:\Projects\DataEditor\DataEditor.Control\obj\Release\DataEditor.Control.pdb

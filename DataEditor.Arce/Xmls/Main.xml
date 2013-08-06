@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <root>
+	<location>Pr\\</location>
+	<data>Data\\</data>
+	<image>Graphics\\</image>
+	<xmls>
+    <xml>Xmls\\Items - VX.xml</xml>
+    <xml>Xmls\\Actors - VX.xml</xml>
+    <xml>Xmls\\System.xml</xml>
+  </xmls>
+ </root>

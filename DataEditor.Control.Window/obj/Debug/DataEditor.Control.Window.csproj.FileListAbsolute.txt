@@ -1,0 +1,136 @@
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.ImageChoser.resources
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.Properties.Resources.resources
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.RTPEditor.resources
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.SimpleRadioChoose.resources
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csproj.GenerateResource.Cache
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.DataEditDialog.resources
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.dll
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.pdb
+F:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.pdb
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csprojResolveAssemblyReference.cache
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.DataEditDialog.resources
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.ImageChoser.resources
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.Properties.Resources.resources
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.RTPEditor.resources
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.SimpleRadioChoose.resources
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csproj.GenerateResource.Cache
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.dll
+E:\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.DataEditDialog.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.ImageChoser.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.Properties.Resources.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.RTPEditor.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.SimpleRadioChoose.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.DataEditDialog.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.ImageChoser.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.Properties.Resources.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.RTPEditor.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.SimpleRadioChoose.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csproj.GenerateResource.Cache
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorBase.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditorKanon.Help.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csprojResolveAssemblyReference.cache
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.DataEditDialog.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.ImageChoser.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.Properties.Resources.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.RTPEditor.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.SimpleRadioChoose.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csproj.GenerateResource.Cache
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.pdb

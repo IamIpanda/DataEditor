@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window text = "防具">
+	<list />
+	<group actual = "LIST">
+		<order>0</order>
+		<data type = "text" text = "名称" actual = "name" />
+		<data type = "icon" text = "图标" label = "2" actual = "icon_index">
+			<cut>24,24</cut>
+			<file>System/Iconset</file>
+		</data>
+    <next />
+    <data type = "text" text = "说明" actual = "description" />
+		<next />
+		<data type = "choose" text = "类型" actual = "kind" texts = "0,盾,1,头部防具,2,身体防具,3,装饰品" />
+		<data type = "int" text = "售价" actual = "price" />
+		<data type = "int" text = "回避率" actual = "eva" />
+		<next />
+		<container text = "能力值变化">
+			<data type = "int" text = "攻击力" actual = "atk" />
+			<data type = "int" text = "防御力" actual = "def" />
+			<next />
+			<data type = "int" text = "精神力" actual = "spi" />
+			<data type = "int" text = "敏捷性" actual = "agi" />
+		</container>
+		<container text = "选项">
+      <order>1</order>
+			<data type = "check" text = "防止暴击" actual = "prevent_critical" label = "0"/>
+			<data type = "check" text = "消耗MP减半" actual = "half_mp_cost" label = "0" />
+			<data type = "check" text = "双倍经验" actual = "double_exp_gain"  label = "0"/>
+			<data type = "check" text = "自动恢复HP" actual = "auto_hp_recover" label = "0" />
+		</container>
+		<order>1</order>
+    <next />
+		<container>
+			<data type = "checklist" text = "半减属性" actual = "element_set" file = "System.elements" />
+			<data type = "checklist" text = "无效化的状态" actual = "state_set" file = "States" />
+		</container>
+		<container text = "备注">
+			<data type = "text" height = "250" text = "" label = "0" actual = "note" />
+		</container>
+	</group>
+</Window>

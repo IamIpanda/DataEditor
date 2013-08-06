@@ -1,0 +1,9 @@
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\bin\Release\DataEditor.Control.Wrapper.dll
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\bin\Release\DataEditor.Control.Wrapper.pdb
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\obj\Release\DataEditor.Control.Wrapper.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\obj\Release\DataEditor.Control.Wrapper.WrapImageDisplayer.resources
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\obj\Release\DataEditor.Control.Wrapper.csproj.GenerateResource.Cache
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\obj\Release\DataEditor.Control.Wrapper.dll
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\obj\Release\DataEditor.Control.Wrapper.pdb
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\bin\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Control.Wrapper\bin\Release\DataEditor.FuzzyData.pdb

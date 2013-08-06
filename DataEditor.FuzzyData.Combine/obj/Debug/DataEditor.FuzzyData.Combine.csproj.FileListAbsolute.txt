@@ -1,0 +1,5 @@
+F:\Projects\DataEditor\DataEditor.FuzzyData.Combine\bin\Debug\DataEditor.FuzzyData.Combine.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Combine\bin\Debug\DataEditor.FuzzyData.Combine.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Combine\obj\Debug\DataEditor.FuzzyData.Combine.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.FuzzyData.Combine\obj\Debug\DataEditor.FuzzyData.Combine.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Combine\obj\Debug\DataEditor.FuzzyData.Combine.pdb

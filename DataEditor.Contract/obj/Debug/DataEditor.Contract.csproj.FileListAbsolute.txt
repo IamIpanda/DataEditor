@@ -1,0 +1,32 @@
+E:\VS2010\Projects\DataEditorKanon\DataEditorBase\bin\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditorKanon\DataEditorBase\bin\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditorKanon\DataEditorBase\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditorKanon\DataEditorBase\obj\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditorKanon\DataEditorBase\obj\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Contract\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon\bin\Debug\Program\Base\DataEditorBase.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon\bin\Debug\Program\Base\DataEditorBase.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Contract\obj\Debug\ResolveAssemblyReference.cache
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.csprojResolveAssemblyReference.cache
+Y:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.dll
+Y:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.pdb
+Y:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.csprojResolveAssemblyReference.cache
+Y:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.dll
+Y:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.pdb
+E:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.dll
+E:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.pdb
+E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.dll
+E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.pdb

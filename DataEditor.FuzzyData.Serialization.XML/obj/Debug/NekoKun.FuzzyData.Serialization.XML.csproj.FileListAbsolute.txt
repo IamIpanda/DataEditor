@@ -1,0 +1,16 @@
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.Serialization.XML.dll
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.Serialization.XML.pdb
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.dll
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.pdb
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\obj\Debug\NekoKun.FuzzyData.Serialization.XML.dll
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\obj\Debug\NekoKun.FuzzyData.Serialization.XML.pdb
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\bin\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditorKanon\NekoKun.FuzzyData.Serialization.XML\bin\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.Serialization.XML.dll
+E:\VS2010\Projects\DataEditor\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.Serialization.XML.pdb
+E:\VS2010\Projects\DataEditor\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.dll
+E:\VS2010\Projects\DataEditor\NekoKun.FuzzyData.Serialization.XML\bin\Debug\NekoKun.FuzzyData.pdb
+E:\VS2010\Projects\DataEditor\NekoKun.FuzzyData.Serialization.XML\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\NekoKun.FuzzyData.Serialization.XML\obj\Debug\NekoKun.FuzzyData.Serialization.XML.dll
+E:\VS2010\Projects\DataEditor\NekoKun.FuzzyData.Serialization.XML\obj\Debug\NekoKun.FuzzyData.Serialization.XML.pdb

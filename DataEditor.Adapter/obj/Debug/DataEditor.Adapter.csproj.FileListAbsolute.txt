@@ -1,0 +1,30 @@
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.dll
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.pdb
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Extra.dll
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+F:\Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.dll
+F:\Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.pdb
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorKanon.Help.dll
+F:\Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.dll
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.pdb
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorBase.dll
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorKanon.Help.dll
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorBase.pdb
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+E:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.dll
+E:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.pdb

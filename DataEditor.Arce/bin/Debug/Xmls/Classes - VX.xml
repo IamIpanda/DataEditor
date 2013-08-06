@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window text = "职业">
+  <list />
+  <group actual = "LIST">
+    <order />
+    <container>
+      <order />
+      <data type = "text" text ="名称" actual = "name" />
+      <data type = "checklist" text = "可装备的武器" actual = "weapon_set" file = "weapons" height = "520" />  
+    </container>
+    <next />
+    <container>
+      <order />
+      <data type = "choose" text = "位置" actual = "position" texts = "0,前卫,1,中卫,2,后卫" />
+      <data type = "checklist" text = "可装备的防具" actual = "armor_set" file = "armors" height = "520" />
+    </container>
+    <next />
+    <container>
+      <data type = "marklist" text = "属性有效度" actual = "element_ranks" file = "system.elements" height = "300" width = "100">
+        <marks>
+          <mark color = "0">N</mark>
+          <mark color = "16711680">A</mark>
+          <mark color = "16743689">B</mark>
+          <mark color = "11250603">C</mark>
+          <mark color = "6211072">D</mark>
+          <mark color = "2748">E</mark>
+          <mark color = "8913032">F</mark>
+        </marks>
+      </data>
+      <data type = "marklist" text = "状态有效度" actual = "state_ranks" file = "states" height = "300" width ="100">
+        <marks>
+          <mark color = "0">N</mark>
+          <mark color = "16711680">A</mark>
+          <mark color = "16743689">B</mark>
+          <mark color = "11250603">C</mark>
+          <mark color = "6211072">D</mark>
+          <mark color = "2748">E</mark>
+          <mark color = "8913032">F</mark>
+        </marks>
+      </data>
+    </container>
+    <container text = "特技">
+      <data type = "listview" actual = "learnings" label = "0" >
+        <columns>
+          <column actual = "level" name = "等级" show = "!L {0:d3}" />
+          <column actual = "skill_id" name = "领悟的特技" show = "${0}$skills@name" />
+        </columns>
+        <dialog title = "编辑技能">
+          <order>1</order>
+          <data type = "int" text = "等级" actual = "level" />
+          <data type = "choose" text = "领悟特技" file = "skills" actual = "skill_id" />
+        </dialog>
+        <model name = "RPG::Skill:Learning" type = "Object">
+          <data name = "level" type = "int">1</data>
+          <data name= "skill_id" type = "int">1</data>
+        </model>
+      </data>
+      <next />
+      <data type = "check" actual = "skill_name_valid" text = "特定指令名" label = "0"/>
+      <data type = "text" label = "0" actual = "skill_name" />
+    </container>
+  </group>
+</window>

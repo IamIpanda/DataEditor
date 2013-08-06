@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<window>
+  <data type = "tabs">
+    <data type = "tab" text = "欸哟">
+      <data type = "list" text = "测试" show = "#{0:d3}#:#{0}#,,|id,|name">
+        <data  type = "int" text = "TEST" actual = "id"/>
+        <data type = "text" text = "我是傻逼" actual = "name"/>
+        <data type = "text" text = "楼上抢我话" actual = "description"/>
+        <data type = "choose" text = "有效范围" actual = "scope">
+          <choice id = "0" text = "无" />
+          <choice id = "1">敌方单体</choice>
+          <choice id = "2">敌方全体</choice>
+          <choice id = "3">敌方单体 连击</choice>
+          <choice id = "4">敌方单体 随机目标</choice>
+          <choice id = "5">敌方二体 随机目标</choice>
+          <choice id = "6">敌方三体 随机目标</choice>
+          <choice id = "7">我方单体</choice>
+          <choice id = "8">我方全体</choice>
+          <choice id = "9">我方单个濒死者</choice>
+          <choice id = "10">我方所有濒死者</choice>
+          <choice id = "11">使用者自身</choice>
+        </data>
+        <data type = "box" text = "呵呵呵">
+          <data type = "choose" text = "动画1号" actual= "animation_id">
+            <choice id = "|id" text = "#{0:d3}#:#{0}#,,|id,|name" file = "Tests/Data/Animations.rvdata"></choice>
+          </data>
+        </data>
+      </data>
+    </data>
+     <radios key = "k1" value = "type">
+       <radio key = "r1" value = "1" />
+       <radio key = "r2" value = "2" />
+     </radios>
+    <data type = "tab" text = "卧槽">
+      <data type = "tabs">
+        <data type = "tab" text = "选项1">
+          <data type = "radio" text = "选项1号机"></data>
+        </data>
+        <data type = "tab" text = "选项2">
+          <data type = "radio" text = "选项2号机"></data>
+        </data>
+      </data>
+    </data>
+  </data>
+</window>

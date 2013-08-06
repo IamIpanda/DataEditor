@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window text = "敌人">
+  <list />
+  <group actual = "LIST">
+    <container>
+      <order />
+      <data type = "text" text = "名称" actual = "name" />
+      <data type = "image" text = "战斗图" actual = "battler_name" height = "150">
+        <path>Battlers</path>
+      </data>
+      <next/>
+      <data type = "int" actual = "maxhp" text = "最大 HP" />
+      <data type = "int" actual = "atk" text = "攻击力" />
+      <data type = "int" actual = "spi" text = "精神力" />
+      <data type = "int" actual = "hit" text = "命中率" />
+      <data type = "int" actual = "exp" text = "经验" />
+      <next />
+      <data type = "int" actual = "maxmp" text = "最大 MP" />
+      <data type = "int" actual = "def" text = "防御力" />
+      <data type = "int" actual = "agi" text = "敏捷性" />
+      <data type = "int" actual = "eva" text = "回避率" />
+      <data type = "int" actual = "gold" text = "金钱" />
+    </container>
+    <data type = "complex" actual = "drop_item1" text = "掉落物品1">
+        <dialog>
+          <container type = "radios" actual = "kind">
+            <order>1</order>
+            <container type = "radio" text = "无" />
+            <container type = "radio" text = "物品" >
+              <data type = "choose" file = "item" actual = "item_id" />  
+            </container>
+            <container type = "radio" text = "武器" >
+              <data type = "choose" file = "weapon" actual = "weapon_id" />
+            </container>
+            <container type = "radio" text = "防具">
+              <data type = "choose" file = "armor" actual = "armor_id" />
+            </container>
+          </container>
+        </dialog>
+        <show>{kind|0,（无）|1,啪啪啪|2,啪啪啪|3,啪啪啪}</show>
+    </data>
+  </group>
+</window>

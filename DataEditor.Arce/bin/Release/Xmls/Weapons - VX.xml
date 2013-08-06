@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window text = "武器">
+	<list />
+	<group actual = "LIST">
+		<order>0</order>
+		<data type = "text" text = "名称" actual = "name" />
+		<data type = "icon" text = "图标" label = "2" actual = "icon_index">
+			<cut>24,24</cut>
+			<file>System/Iconset</file>
+		</data>
+		<next />
+		<data type = "text" text = "说明" actual = "description" />
+		<next />
+		<data type = "choose" text = "动画" actual = "animation_id" file = "Animations" texts = "0,（无）" />
+		<data type = "int" text = "售价" actual = "price" />
+		<data type = "int" text = "命中率" actual = "hit" />
+		<next />
+		<container text = "能力值变化">
+			<data type = "int" text = "攻击力" actual = "atk" />
+			<data type = "int" text = "防御力" actual = "def" />
+			<next />
+			<data type = "int" text = "精神力" actual = "spi" />
+			<data type = "int" text = "敏捷性" actual = "agi" />
+		</container>
+		<container text = "选项">
+      <order>1</order>
+			<data type = "check" label = "0" text = "双手使用" actual = "two_handed" />
+			<data type = "check" label = "0" text = "先发制人" actual = "fast_attack" />
+			<data type = "check" label = "0" text = "连续攻击" actual = "dual_attack" />
+			<data type = "check" label = "0" text = "频发暴击" actual = "critical_bonus" />
+		</container>
+		<order>1</order>
+		<next />
+		<container>
+			<data type = "checklist" text = "属性" actual = "element_set" file = "System.elements" />
+			<data type = "checklist" text = "状态变化" actual = "state_set" file = "States" />
+		</container>
+		<container text = "备注">
+			<data type = "text" height = "250" text = "" label = "0" actual = "note" />
+		</container>
+	</group>
+</window>

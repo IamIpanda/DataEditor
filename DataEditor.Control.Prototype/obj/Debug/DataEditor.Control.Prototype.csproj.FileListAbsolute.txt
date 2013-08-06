@@ -1,0 +1,138 @@
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon\bin\Debug\Program\Control\Prototpye\DataEditor.Control.Prototype.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon\bin\Debug\Program\Control\Prototpye\DataEditor.Control.Prototype.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\ResolveAssemblyReference.cache
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.dll
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.pdb
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
+F:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoFullListBox.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoImageDisplayer.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerMixEditor.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerText.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerDisplayer.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerEditor.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoLeftListBox.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoTitleBox.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csproj.GenerateResource.Cache
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIndexTextBox.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioContainer.resources
+F:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioPage.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.dll
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.pdb
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
+E:\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csprojResolveAssemblyReference.cache
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoFullListBox.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoImageDisplayer.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIndexTextBox.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerMixEditor.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerText.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerDisplayer.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerEditor.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoLeftListBox.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioContainer.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoTitleBox.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioPage.resources
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csproj.GenerateResource.Cache
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
+E:\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoFullListBox.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoImageDisplayer.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIndexTextBox.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerMixEditor.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerText.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerDisplayer.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerEditor.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoLeftListBox.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioContainer.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoTitleBox.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioPage.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoFullListBox.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoImageDisplayer.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIndexTextBox.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerMixEditor.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerText.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerDisplayer.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerEditor.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoLeftListBox.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioContainer.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoTitleBox.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioPage.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csproj.GenerateResource.Cache
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csprojResolveAssemblyReference.cache
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoFullListBox.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoImageDisplayer.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIndexTextBox.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerMixEditor.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerText.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerDisplayer.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoIntegerEditor.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoLeftListBox.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoTitleBox.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csproj.GenerateResource.Cache
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioComplex.resources

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window name = "系统" actual = "system">
+  <path>XP</path>
+	<group actual = "" name = "">
+		<order>0</order>
+    <linklist actual = "party_members" name = "初期同伴" width = "130">
+      <link link = "actors" name = "角色" actual = "" />
+      <dialog>
+        <linkchoose link = "actors" name = "角色" actual = "" NONE = ""/>
+      </dialog>
+    </linklist>
+		<stringlist actual = "elements" name = "属性" />
+		<next />
+		<group name = "用语" actual = "words" >
+			<text name = "货币单位" actual = "gold"/>
+			<text name = "HP" actual = "hp"/>
+			<text name = "SP" actual = "sp"/>
+      <text name = "力量" actual = "str"/>
+      <text name = "灵巧" actual = "dex"/>
+      <text name = "速度" actual = "agi"/>
+      <text name = "魔力" actual = "int"/>
+      <text name = "攻击力" actual = "atk"/>
+      <text name = "物理防御" actual = "pdef"/>
+      <text name = "魔法防御" actual = "mdef"/>
+      <next />
+      <text name = "武器" actual = "weapon"/>
+      <text name = "盾" actual = "armor1"/>
+      <text name = "头" actual = "armor2"/>
+      <text name = "身体" actual = "armor3"/>
+      <text name = "装饰品" actual = "armor4"/>
+      <text name = "攻击" actual = "attack"/>
+      <text name = "特技" actual = "skill"/>
+      <text name = "防御" actual = "guard"/>
+      <text name = "物品" actual = "item"/>
+      <text name = "装备" actual = "equip"/>
+		</group>
+	</group>
+</window>

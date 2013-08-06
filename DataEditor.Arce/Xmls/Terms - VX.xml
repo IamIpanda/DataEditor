@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window text = "用语">
+  <group>
+	<container text = "设置">
+		<order>1</order>
+		  <data type = "text" text = "等级" actual = "level" />
+		  <data type = "text" text = "等级(缩写)" actual = "level_a" />
+		  <data type = "text" text = "HP" actual = "hp" />
+		  <data type = "text" text = "HP(缩写)" actual = "hp_a" />
+		  <data type = "text" text = "MP" actual = "mp" />
+		  <data type = "text" text = "MP(缩写)" actual = "mp_a" />
+		  <data type = "text" text = "攻击力" actual = "atk" />
+		  <data type = "text" text = "防御力" actual = "def" />
+		  <data type = "text" text = "精神力" actual = "spi" />
+		  <data type = "text" text = "敏捷性" actual = "agi" />
+	  </container>
+	  <container text = "装备">
+		  <order>1</order>
+		  <data type = "text" text = "武器" actual = "weapon" />
+		  <data type = "text" text = "盾" actual = "armor1" />
+		  <data type = "text" text = "头部" actual = "armor2" />
+		  <data type = "text" text = "身体" actual = "armor3" />
+		  <data type = "text" text = "饰品" actual = "armor4" />
+		  <data type = "text" text = "胡来的左手" actual = "weapon1" />
+		  <data type = "text" text = "胡来的右手" actual = "weapon2" />
+	  </container>
+	  <container text = "指令">
+		  <order>1</order>
+		  <data type = "text" text = "攻击" actual = "attack" />
+		  <data type = "text" text = "特技" actual = "skill" />
+		  <data type = "text" text = "防御" actual = "guard" />
+		  <data type = "text" text = "物品" actual = "item" />
+		  <data type = "text" text = "装备" actual = "equip" />
+		  <data type = "text" text = "状态" actual = "status" />
+		  <data type = "text" text = "存档" actual = "save" />
+		  <data type = "text" text = "游戏结束" actual = "game_end" />
+		  <data type = "text" text = "战斗" actual = "fight" />
+		  <data type = "text" text = "逃跑" actual = "escape" />
+	  </container>
+	  <container text = "游戏开始/结束">
+		  <order>1</order>
+		  <data type = "text" text = "新的游戏" actual = "new_game" />
+		  <data type = "text" text = "读取进度" actual = "continue" />
+		  <data type = "text" text = "退出游戏" actual = "shutdown" />
+		  <data type = "text" text = "返回标题画面" actual = "to_title" />
+		  <data type = "text" text = "取消" actual = "cancel" />
+	  </container>
+	  <container text = "货币单位">
+		  <data type = "text" text = "G" actual = "gold" />
+	  </container>
+    <data type = "any" text = "术语" actual = "$" />
+  </group>
+</window>

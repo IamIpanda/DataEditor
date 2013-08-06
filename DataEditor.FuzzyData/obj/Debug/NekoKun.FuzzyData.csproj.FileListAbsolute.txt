@@ -1,0 +1,5 @@
+E:\Gits\NekoKun\NekoKun.FuzzyData\bin\Debug\NekoKun.FuzzyData.dll
+E:\Gits\NekoKun\NekoKun.FuzzyData\bin\Debug\NekoKun.FuzzyData.pdb
+E:\Gits\NekoKun\NekoKun.FuzzyData\obj\Debug\ResolveAssemblyReference.cache
+E:\Gits\NekoKun\NekoKun.FuzzyData\obj\Debug\NekoKun.FuzzyData.dll
+E:\Gits\NekoKun\NekoKun.FuzzyData\obj\Debug\NekoKun.FuzzyData.pdb

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window name = "职业" actual = "classes">
+  <LISTX />
+  <group actual = "LIST" name = "">
+    <order>0</order>
+    <text name = "名称" actual = "name" />
+    <linkedboollist name = "可装备的武器" actual = "weapon_set" link = "weapons" height ="440" />
+    <next />
+    <choose name = "位置" actual = "position">
+      <choice value = "0">前卫</choice>
+      <choice value = "1">中卫</choice>
+      <choice value = "2">后卫</choice>
+    </choose>
+    <linkedboollist name = "可装备的防具" actual = "armor_set" link = "armors" height ="440" />
+    <next />
+    <order>1</order>
+    <marklist name = "属性有效度" actual = "element_ranks" link = "system.elements" height = "300" width = "100">
+      <mark value = "1" color = "16711680">A</mark>
+      <mark value = "2" color = "16743689">B</mark>
+      <mark value = "3" color = "11250603">C</mark>
+      <mark value = "4" color = "6211072">D</mark>
+      <mark value = "5" color = "2748">E</mark>
+      <mark value = "6" color = "8913032">F</mark>
+    </marklist>
+    <marklist name = "状态有效度" actual = "state_ranks" link = "states" height = "300" width ="100">
+      <mark value = "1" color = "16711680">A</mark>
+      <mark value = "2" color = "16743689">B</mark>
+      <mark value = "3" color = "11250603">C</mark>
+      <mark value = "4" color = "6211072">D</mark>
+      <mark value = "5" color = "2748">E</mark>
+      <mark value = "6" color = "8913032">F</mark>
+    </marklist>
+    <next />
+    <space>250</space>
+    <linklist actual = "learnings" name = "特技" width = "200" height = "150">
+      <show show = "Lv.[s]" name = "等级"      actual = "level"    width = "50" />
+      <link link = "skills" name = "学会的特技" actual = "skill_id" />
+      <dialog>
+        <int name = "等级" actual = "level"/>
+        <linkchoose link = "skills" name = "学会的特技" actual = "skill_id" NONE = ""/>
+      </dialog>
+    </linklist>
+  </group>
+  
+</window>

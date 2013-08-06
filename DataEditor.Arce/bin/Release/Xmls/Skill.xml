@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window name = "技能" actual = "skills">
+  <path>XP\</path>
+  <LISTX />
+  <group actual = "LIST" name = "">
+    <order>1</order>
+    <text name = "名称" actual = "name" />
+    <pic name = "图标" actual = "icon_name">
+      <path>Icons</path>
+    </pic>
+    <next />
+    <text name = "说明" actual = "description" width = "240" />
+    <next />
+    <choose name = "效果范围" actual = "scope">
+      <choice value = "0">无</choice>
+      <choice value = "1">敌单体</choice>
+      <choice value = "2">敌全体</choice>
+      <choice value = "3">己方单体</choice>
+      <choice value = "4">己方全体</choice>
+      <choice value = "5">己方单体（HP 0）</choice>
+      <choice value = "6">己方全体（HP 0）</choice>
+      <choice value = "7">使用者</choice>
+    </choose>
+    <testchoose name = "可能使用时" actual = "occasion">
+      <Text id = "0">平时</Text>
+      <Text id = "1">战斗中</Text>
+      <Text id = "2">菜单中</Text>
+      <Text id = "3">不能使用</Text>
+    </testchoose>
+    <next />
+    <testchoose name = "使用方的动画" actual = "animation1_id">
+      <File>Animations</File>
+      <Text id = "0">（ 无 ）</Text>
+    </testchoose>
+    <linkchoose name = "对象方的动画" actual = "animation2_id" link = "Animations" />
+    <next />
+    <sound name = "菜单画面使用的SE" actual = "menu_se" />
+    <space>20</space>
+    <linkchoose name = "公共事件" actual = "common_event_id" link = "commonevents" />
+    <next />
+    <int name ="消耗SP" actual = "sp_cost" width ="60" />
+    <int name ="威力" actual = "power" width ="60" />
+    <int name ="攻击力 F" actual = "atk_f" width ="60" />
+    <int name ="回避 F" actual = "eva_f" width ="60" />
+    <next />
+    <int name ="力量 F" actual = "str_f" width ="60" />
+    <int name ="灵巧 F" actual = "dex_f" width ="60" />
+    <int name ="速度 F" actual = "agi_f" width ="60" />
+    <int name ="魔力 F" actual = "int_f" width ="60" />
+    <next />
+    <int name ="命中率" actual = "hit" width ="60" />
+    <int name ="物理防御 F" actual = "pdef_f" width ="60" />
+    <int name ="魔法防御 F" actual = "mdef_f" width ="60" />
+    <int name ="分散度" actual = "variance" width ="60" />
+    <order>0</order>
+    <next />
+    <order>1</order>
+    <linkedboollist name = "属性" actual = "element_set" height = "320" link = "system.elements"/>
+    <symbollist name = "状态" height = "320" link ="states" actual = "">
+      <symbol actual = "" symbol = "" />
+      <symbol actual = "plus_state_set" symbol = "+" color = "255" />
+      <symbol actual = "minus_state_set" symbol = "-" color = "16711680" />
+    </symbollist>
+  </group>
+</window>

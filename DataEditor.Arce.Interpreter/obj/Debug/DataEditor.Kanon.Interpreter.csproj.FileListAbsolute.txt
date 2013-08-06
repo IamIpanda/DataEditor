@@ -1,0 +1,7 @@
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon.Interpreter\bin\Debug\DataEditor.Kanon.Interpreter.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon.Interpreter\bin\Debug\DataEditor.Kanon.Interpreter.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon.Interpreter\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon.Interpreter\obj\Debug\DataEditor.Kanon.Interpreter.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon.Interpreter\obj\Debug\DataEditor.Kanon.Interpreter.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon\bin\Debug\Program\DataEditor.Kanon.Interpreter.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Kanon\bin\Debug\Program\DataEditor.Kanon.Interpreter.pdb

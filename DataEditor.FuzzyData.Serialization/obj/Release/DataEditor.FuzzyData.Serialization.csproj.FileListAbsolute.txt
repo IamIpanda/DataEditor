@@ -1,0 +1,4 @@
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization\bin\Release\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization\bin\Release\DataEditor.FuzzyData.Serialization.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Release\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Release\DataEditor.FuzzyData.Serialization.pdb

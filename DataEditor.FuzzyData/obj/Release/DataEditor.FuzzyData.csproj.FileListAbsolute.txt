@@ -1,0 +1,4 @@
+F:\Projects\DataEditor\DataEditor.FuzzyData\bin\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData\bin\Release\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData\obj\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData\obj\Release\DataEditor.FuzzyData.pdb

@@ -1,0 +1,65 @@
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeEditor.resources
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeWindow.resources
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.csproj.GenerateResource.Cache
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.dll
+F:\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeEditor.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeWindow.resources
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.dll
+E:\VS2010\Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.csprojResolveAssemblyReference.cache
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeEditor.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeWindow.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.csproj.GenerateResource.Cache
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.dll
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.Control.ProtoType.Any.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.dll
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditorBase.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeEditor.resources
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.AnyTypeWindow.resources
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.csproj.GenerateResource.Cache
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.dll
+E:\VS Projects\DataEditor\DataEditor.Control.ProtoType.Any\obj\Debug\DataEditor.Control.ProtoType.Any.pdb

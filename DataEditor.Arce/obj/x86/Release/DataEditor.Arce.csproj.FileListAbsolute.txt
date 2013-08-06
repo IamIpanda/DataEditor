@@ -1,0 +1,49 @@
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Arce.exe
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Arce.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Arce.Interpreter.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Prototype.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Wrapper.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Extra.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Serialization.XML.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditorKanon.Help.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Prototype.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Wrapper.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Extra.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Serialization.RubyMarshal.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Serialization.XML.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditorKanon.Help.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Arce.Interpreter.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.FuzzyData.Serialization.pdb
+F:\Projects\DataEditor\DataEditor.Arce\obj\x86\Release\DataEditor.Arce.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.Arce\obj\x86\Release\DataEditor.Arce.Form1.resources
+F:\Projects\DataEditor\DataEditor.Arce\obj\x86\Release\DataEditor.Arce.Properties.Resources.resources
+F:\Projects\DataEditor\DataEditor.Arce\obj\x86\Release\DataEditor.Arce.csproj.GenerateResource.Cache
+F:\Projects\DataEditor\DataEditor.Arce\obj\x86\Release\DataEditor.Arce.exe
+F:\Projects\DataEditor\DataEditor.Arce\obj\x86\Release\DataEditor.Arce.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Actors - VX.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Armors - VX.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Classes - VA.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Classes - VX.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Classes.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Enemy - VX.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Items - VX.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Main.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Skill.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\System.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Terms - VX.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\test1.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\Xmls\Weapons - VX.xml
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Container.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.ProtoType.Any.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Window.dll
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Container.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.ProtoType.Any.pdb
+F:\Projects\DataEditor\DataEditor.Arce\bin\Release\DataEditor.Control.Window.pdb

@@ -1,0 +1,13 @@
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.Serialization.RubyMarshal.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.Extra.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.Extra.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.Serialization.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Release\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Release\DataEditor.FuzzyData.Serialization.RubyMarshal.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Release\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Release\DataEditor.FuzzyData.Serialization.RubyMarshal.pdb

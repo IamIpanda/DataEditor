@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window text = "物品">
+  <list />
+  <group actual = "LIST">
+    <data type = "text" text = "名称" actual = "name" />
+    <data type = "icon" text = "图标" label = "2" actual = "icon_index">
+      <cut>24,24</cut>
+      <file>System/Iconset</file>
+    </data>
+    <next />
+    <data type = "text" text = "说明" actual = "description" />
+    <next />
+    <data type = "choose" text = "有效范围" actual = "scope">
+      <text id = "0">无</text>
+      <text id = "1">敌方单体</text>
+      <text id = "2">敌方全体</text>
+      <text id = "3">敌方单体 连击</text>
+      <text id = "4">敌方单体 随机目标</text>
+      <text id = "5">敌方二体 随机目标</text>
+      <text id = "6">敌方三体 随机目标</text>
+      <text id = "7">我方单体</text>
+      <text id = "8">我方全体</text>
+      <text id = "9">我方单个濒死者</text>
+      <text id = "10">我方所有濒死者</text>
+      <text id = "11">使用者自身</text>
+    </data>
+    <data type = "choose" text = "使用的场合" actual = "occasion" texts = "0,平时,1,战斗中,2,菜单中,3,不能使用" />
+    <next />
+    <data type = "int" text = "售价" actual = "price" />
+    <data type = "chooseb" text = "消耗" actual = "consumable" texts = "T,消耗,F,不消耗" />
+    <data type = "int" text = "速度补正值" actual = "speed" />
+    <next />
+    <data type = "choose" text = "动画" actual = "animation_id" file = "Animations" texts = "0,（无）" />
+    <data type = "choose" text = "公共事件" actual = "common_event_id" file = "CommonEvents" texts = "0,（无）" />
+    <next />
+    <container text = "恢复效果">
+      <data type = "int" text = "HP 回复率" actual = "hp_recovery_rate" />
+      <text>%+</text>
+      <data type = "int" text = "HP 回复值" actual = "hp_recovery" />
+      <text>p</text>
+      <next />
+      <data type = "int" text = "MP 回复率" actual = "mp_recovery_rate" />
+      <text>%+</text>
+      <data type = "int" text = "MP 回复值" actual = "mp_recovery" />
+      <text>p</text>
+    </container>
+    <container text = "成长效果">
+      <order />
+      <data type = "choose" text = "能力值" actual = "parameter_type" texts = "0,无,1,HP 上限,2,MP 上限,3,攻击力,4,防御力,5,精神力,6,敏捷性" />
+      <data type = "int" text = "增加值" actual = "parameter_points" condition = "parameter_type=0" />
+    </container>
+    <next />
+    <container text = "伤害效果">
+      <data type = "int" text = "基本伤害值" actual = "base_damage" />
+      <data type = "int" text = "分散度" actual = "variance" />
+      <next />
+      <data type = "int" text = "攻击关系度" actual = "atk_f"  />
+        <data type = "int" text = "敏捷关系度" actual = "spi_f"  />
+    </container>
+    <container text = "选项">
+      <order />
+      <data type = "check" text = "物理伤害" label = "0" actual = "physical_attack" />
+      <data type = "check" text = "MP 伤害"  label = "0" actual = "damage_to_mp" />
+      <data type = "check" text = "吸收伤害" label = "0"  actual = "absorb_damage" />
+      <data type = "check" text = "无视防御" label = "0"  actual = "ignore_defense" />
+    </container>
+    <order />
+    <next />
+    <order />
+    <space>100</space>
+    <order />
+    <container>
+      <data type = "checklist" text = "属性" actual = "element_set" file = "System.elements" />
+      <data type = "textlist2" text = "属性" actual = "www" file = "States">
+        <texts>
+          <symbol actual = "" symbol = "" />
+          <symbol actual = "plus_state_set" color = "255">+</symbol>
+          <symbol actual = "minus_state_set" color = "16711680">-</symbol>
+        </texts>
+      </data>
+    </container>
+    <container text = "备注">
+      <data type = "text" height = "250" text = "" label = "0" actual = "note" />
+    </container>
+  </group>
+</window>

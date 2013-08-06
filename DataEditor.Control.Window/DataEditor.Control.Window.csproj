@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70F1577D-6EA7-4D77-8FE8-9FE407EEF943}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataEditor.Control.Window</RootNamespace>
+    <AssemblyName>DataEditor.Control.Window</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataEditor.Control">
+      <HintPath>..\DataEditor.Control\bin\Debug\DataEditor.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEditDialog.Designer.cs">
+      <DependentUpon>DataEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageChoser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageChoser.Designer.cs">
+      <DependentUpon>ImageChoser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTPEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTPEditor.Designer.cs">
+      <DependentUpon>RTPEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleRadioChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleRadioChoose.Designer.cs">
+      <DependentUpon>SimpleRadioChoose.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataEditDialog.resx">
+      <DependentUpon>DataEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageChoser.resx">
+      <DependentUpon>ImageChoser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RTPEditor.resx">
+      <DependentUpon>RTPEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleRadioChoose.resx">
+      <DependentUpon>SimpleRadioChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj">
+      <Project>{470035a8-2b65-4cbe-bee0-3faafe9fc787}</Project>
+      <Name>DataEditor.Arce.Interpreter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Contract\DataEditor.Contract.csproj">
+      <Project>{d7dfc2b5-bb85-4037-b052-c4f1e3c1bde0}</Project>
+      <Name>DataEditor.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Container\DataEditor.Control.Container.csproj">
+      <Project>{cb2e0c25-2e95-49f9-acde-f99236c6b34a}</Project>
+      <Name>DataEditor.Control.Container</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Prototype\DataEditor.Control.Prototype.csproj">
+      <Project>{02449EDB-B4B5-47E6-AD29-7CC1C8B0BF09}</Project>
+      <Name>DataEditor.Control.Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Wrapper\DataEditor.Control.Wrapper.csproj">
+      <Project>{5f124c99-ca60-4ba5-bffb-db9f014758cc}</Project>
+      <Name>DataEditor.Control.Wrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData\DataEditor.FuzzyData.csproj">
+      <Project>{3516d3c7-f112-4763-9f2d-0b17991c12ff}</Project>
+      <Name>DataEditor.FuzzyData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Help\DataEditor.Help.csproj">
+      <Project>{847c638e-8d84-4348-a26e-82e1ab523ac9}</Project>
+      <Name>DataEditor.Help</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

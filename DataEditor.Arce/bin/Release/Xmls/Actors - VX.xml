@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window name = "角色">
+	<list/>
+	<group actual = "LIST">
+		<data type = "text" text = "名称" actual = "name" />
+    <next />
+		<data type = "choose" text = "职业" actual = "class_id" file = "Classes" />
+    <next />
+		<data type = "int" text = "初始等级" actual = "initial_level" />
+    <next />
+		<data type = "exp" text = "经验值曲线" actual = "exp_basis,exp_inflation" />
+    <next />
+		<data type = "image" text = "步行图" actual = "character_name,character_index">
+			<path>Characters</path>
+			<cut>4,2,3,4</cut>
+			<location>1,0</location>
+		</data>
+    <next />
+		<data type = "image" text = "脸图" actual = "face_name,face_index">
+			<path>Faces</path>
+			<cut>4,2</cut>
+		</data>
+    <order />
+    <next />
+    <order />
+    <space>100</space>
+    <order />
+		<data type = "acpara" text = "能力值成长曲线" actual = "parameters" line = "2" label = "0">
+      <parameter text = "最大 HP"  max = "9999" color = "13130330"/>
+      <parameter text = "最大 MP"  max = "9999" color = "11817160"/>
+      <parameter text = "攻击力" max = "300" color = "13151300" />
+      <parameter text = "防御力"  max = "300" color = "5949530"/>
+      <parameter text = "精神性" max = "500" color = "5921480" />
+      <parameter text = "敏捷性" max = "500" color = "2667720" />
+    </data>
+		<container>
+			<order>0</order>
+			<container text = "初期装备">
+				<order>1</order>
+				<data type = "choose" text = "武器" actual = "weapon_id" file = "weapons" texts = "0,（无）" label = "2" />
+				<data type = "choose" text = "护盾" actual = "armor1_id" file = "weapons" texts = "0,（无）" label = "2" />
+				<data type = "choose" text = "头部" actual = "armor2_id" file = "weapons" texts = "0,（无）" label = "2" />
+				<data type = "choose" text = "身体" actual = "armor3_id" file = "weapons" texts = "0,（无）" label = "2" />
+				<data type = "choose" text = "饰品" actual = "armor4_id" file = "weapons" texts = "0,（无）" label = "2" />
+			</container>
+			<container text = "选项">
+				<order>1</order>
+				<data type = "check" text = "二刀流" label = "0" actual = "two_swords_style" />
+				<data type = "check" text = "固定装备" label = "0" actual = "fix_equipment" />
+				<data type = "check" text = "自动战斗" label = "0" actual = "auto_battle" />
+				<data type = "check" text = "防御加倍" label = "0" actual = "super_guard" />
+				<data type = "check" text = "药物知识" label = "0" actual = "pharmacology" />
+				<data type = "check" text = "频发暴击" label = "0" actual = "critical_bonus" />
+			</container>
+		</container>
+	</group>
+</window>

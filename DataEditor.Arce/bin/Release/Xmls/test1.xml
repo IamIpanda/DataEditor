@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<window>
+  <data type = "tabs">
+    <data type = "tab" text = "欸哟">
+      <data type = "list" text = "测试" show = "#{0:d3}#:#{0}#,,|id,|name">
+        <data  type = "int" text = "TEST" actual = "id"/>
+        <data type = "text" text = "我是傻逼" actual = "name"/>
+        <data type = "text" text = "楼上抢我话" actual = "description"/>
+      </data>
+    </data>
+    <data type = "tab" text = "卧槽">
+      <data type = "group" text = "示范">
+      </data>
+    </data>
+  </data>
+</window>

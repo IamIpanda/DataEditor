@@ -1,0 +1,4 @@
+F:\Projects\DataEditor\DataEditor.Contract\bin\Release\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Contract\bin\Release\DataEditorBase.pdb
+F:\Projects\DataEditor\DataEditor.Contract\obj\Release\DataEditorBase.dll
+F:\Projects\DataEditor\DataEditor.Contract\obj\Release\DataEditorBase.pdb

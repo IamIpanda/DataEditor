@@ -1,0 +1,43 @@
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\ResolveAssemblyReference.cache
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\ResolveAssemblyReference.cache
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.dll
+E:\DropBox\Dropbox\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.pdb
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.csprojResolveAssemblyReference.cache
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.dll
+F:\Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.dll
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.pdb
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.pdb
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.dll
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.dll
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.pdb
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.csprojResolveAssemblyReference.cache
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.dll
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Extra\obj\Debug\DataEditor.FuzzyData.Extra.pdb

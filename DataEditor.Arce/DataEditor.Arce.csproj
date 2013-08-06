@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09686059-3B81-4BDC-A502-1B7E4C2574D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataEditor.Arce</RootNamespace>
+    <AssemblyName>DataEditor.Arce</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataEditor.Contract\DataEditor.Contract.csproj">
+      <Project>{D7DFC2B5-BB85-4037-B052-C4F1E3C1BDE0}</Project>
+      <Name>DataEditor.Contract</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Container\DataEditor.Control.Container.csproj">
+      <Project>{cb2e0c25-2e95-49f9-acde-f99236c6b34a}</Project>
+      <Name>DataEditor.Control.Container</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.ProtoType.Any\DataEditor.Control.ProtoType.Any.csproj">
+      <Project>{0F504FC2-5F6E-41F2-B31D-BC533BD0C5D6}</Project>
+      <Name>DataEditor.Control.ProtoType.Any</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Prototype\DataEditor.Control.Prototype.csproj">
+      <Project>{02449EDB-B4B5-47E6-AD29-7CC1C8B0BF09}</Project>
+      <Name>DataEditor.Control.Prototype</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Window\DataEditor.Control.Window.csproj">
+      <Project>{70f1577d-6ea7-4d77-8fe8-9fe407eef943}</Project>
+      <Name>DataEditor.Control.Window</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Wrapper\DataEditor.Control.Wrapper.csproj">
+      <Project>{5F124C99-CA60-4BA5-BFFB-DB9F014758CC}</Project>
+      <Name>DataEditor.Control.Wrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control\DataEditor.Control.csproj">
+      <Project>{EC27DB05-72F8-4AD2-B8CD-735C25AF79FB}</Project>
+      <Name>DataEditor.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData.Extra\DataEditor.FuzzyData.Extra.csproj">
+      <Project>{3332A025-6E2B-4D9F-8A46-9F2350B39750}</Project>
+      <Name>DataEditor.FuzzyData.Extra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData.Serialization.RubyMarshal\DataEditor.FuzzyData.Serialization.RubyMarshal.csproj">
+      <Project>{A9C0DC50-CEC6-401B-92E3-65787C9BEDC9}</Project>
+      <Name>DataEditor.FuzzyData.Serialization.RubyMarshal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData.Serialization.XML\DataEditor.FuzzyData.Serialization.XML.csproj">
+      <Project>{6E02E489-2B6E-4165-8968-B85C16C36336}</Project>
+      <Name>DataEditor.FuzzyData.Serialization.XML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData.Serialization\DataEditor.FuzzyData.Serialization.csproj">
+      <Project>{51801ebf-64ab-4ad1-b509-bc9b1674d65a}</Project>
+      <Name>DataEditor.FuzzyData.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData\DataEditor.FuzzyData.csproj">
+      <Project>{3516D3C7-F112-4763-9F2D-0B17991C12FF}</Project>
+      <Name>DataEditor.FuzzyData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Help\DataEditor.Help.csproj">
+      <Project>{847C638E-8D84-4348-A26E-82E1AB523AC9}</Project>
+      <Name>DataEditor.Help</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj">
+      <Project>{470035A8-2B65-4CBE-BEE0-3FAAFE9FC787}</Project>
+      <Name>DataEditor.Arce.Interpreter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Xmls\Actors - VX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Armors - VX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Classes - VA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Classes - VX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Classes.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Enemy - VX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Items - VX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Main.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Skill.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\System.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\Terms - VX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xmls\test1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Xmls\Weapons - VX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
