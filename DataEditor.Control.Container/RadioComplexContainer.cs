@@ -41,8 +41,8 @@ namespace DataEditor.Control.Container
         {
             Builder builder = new Builder();
             System.Drawing.Size size = builder.Build(Node, this.Controls);
-            this.SetClientSizeCore(size.Width, size.Height);
-            SimpleBoxArgs gba = new SimpleBoxArgs();
+            this.SetClientSizeCore(size.Width + this.RadioWidth, size.Height + 6);
+            RadioComplexContainerArgs gba = new RadioComplexContainerArgs();
             gba.Load(Node);
             return gba;
         }
@@ -53,7 +53,10 @@ namespace DataEditor.Control.Container
                     (control as ObjectEditor).Parent = Helper.ChildValue;
             Tainted = Help.TaintRecord.Single[Value];
         }
-        public void Push() { }
+        public void Push()
+        {
+            
+        }
         public void Putt()
         {
             Help.TaintHelper.OnPutt(Label, taint);
@@ -64,6 +67,10 @@ namespace DataEditor.Control.Container
             ControlHelper.Reset(this, argument);
             if (argument.BackColor != default(System.Drawing.Color))
                 this.BackColor = argument.BackColor;
+            if (argument.RadioWidth > 0)
+                this.RadioWidth = argument.RadioWidth;
+            if (argument.Key != "")
+                Prototype.RadioGroup.AddRadios(argument.Key, this.Radio);
             Helper.ChildSymbol = argument.Actual;
             this.Text = argument.Text;
         }
@@ -71,7 +78,27 @@ namespace DataEditor.Control.Container
 
     class RadioComplexContainerArgs : ComplexContainerArgs
     {
-        public RadioComplexContainerArgs() : base() { }
-        public RadioComplexContainerArgs(System.Xml.XmlNode node) : base(node) { }
+        public int RadioWidth { get; set; }
+        public string Key { get; set; }
+        public RadioComplexContainerArgs() : base() { this.Label = 0; RadioWidth = 100; Key = ""; }
+        public RadioComplexContainerArgs(System.Xml.XmlNode node) : base(node) { this.Label = 0; RadioWidth = 100; Key = ""; }
+        protected override void OnScan(string Name, string InnerText)
+        {
+            if (Name == "RADIOWIDTH")
+                RadioWidth = GetInt(InnerText);
+            else if (Name == "KEY")
+                Key = InnerText;
+            base.OnScan(Name, InnerText);
+        }
+    }
+}
+namespace DataEditor.Control.ProtoType
+{
+    public partial class RadioGroup
+    {
+        public void Load_Information(System.Xml.XmlNode Node)
+        {
+ 
+        }
     }
 }

@@ -39,9 +39,19 @@ namespace DataEditor.Control.Prototype
 
         public RadioButton Radio { get { return radioButton1; } }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            panel1.Enabled = radioButton1.Checked;
+        }
+
+        protected int RadioWidth
+        {
+            get { return (int)tableLayoutPanel1.ColumnStyles[0].Width; }
+            set { tableLayoutPanel1.ColumnStyles[0].Width = value; }
+        }
         public new System.Windows.Forms.Control.ControlCollection Controls { get { return panel1.Controls; } }
     }
-    public class RadioGroup
+    public partial class RadioGroup
     {
         string Key;
         Dictionary<string, RadioButton> radios = new Dictionary<string, RadioButton>();

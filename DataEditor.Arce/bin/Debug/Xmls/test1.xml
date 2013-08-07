@@ -34,13 +34,13 @@
       </radios>
       <data type = "tabs">
         <data type = "tab" text = "选项1">
-          <data type = "radio" text = "选项1号机">
-            <text>这是一个示例</text>
+          <data type = "radio" text = "HP上限" real = "parameter_type">
+            <data type = "int" text = "上升的HP上限" actual = "parameter_points" />
           </data>
         </data>
         <data type = "tab" text = "选项2">
-          <data type = "radio" text = "选项2号机">
-            <text>这是另一个示例</text>
+          <data type = "radio" text = "MP上限" real = "parameter_type">
+            <data type = "int" text = "上升的MP上限" actual = "parameter_points" />
           </data>
         </data>
       </data>

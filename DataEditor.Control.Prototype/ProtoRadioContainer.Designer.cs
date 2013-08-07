@@ -58,6 +58,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(500, 61);
             this.panel1.TabIndex = 1;
+            this.panel1.Enabled = false;
             // 
             // panel2
             // 
@@ -80,6 +81,7 @@
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.SizeChanged += new System.EventHandler(this.radioButton1_SizeChanged);
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // ProtoRadioComplex
             // 

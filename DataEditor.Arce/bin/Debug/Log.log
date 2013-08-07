@@ -167,3 +167,211 @@
 [2013/8/6 22:38:11] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
 [2013/8/6 22:38:11] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
 [2013/8/6 22:38:11] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 9:58:00
+==================================================================
+[2013/8/7 9:58:00] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 9:58:00] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 9:58:00] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 9:58:00] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 9:58:00] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 9:58:00] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 9:58:00] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 9:58:00] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 9:58:00] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 9:58:00] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 9:58:01] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 9:58:01] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 9:58:01] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 19:52:58
+==================================================================
+[2013/8/7 19:52:58] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:52:58] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:52:58] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 19:52:58] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 19:52:58] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 19:52:58] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 19:52:58] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 19:52:58] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 19:52:58] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 19:52:58] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:52:58] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 19:52:59] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 19:52:59] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 19:53:47
+==================================================================
+[2013/8/7 19:53:47] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:53:47] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:53:47] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 19:53:47] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 19:53:47] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 19:53:47] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 19:53:47] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 19:53:47] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 19:53:47] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 19:53:47] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:53:47] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 19:53:47] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 19:53:47] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 19:55:19
+==================================================================
+[2013/8/7 19:55:19] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:55:19] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:55:19] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 19:55:19] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 19:55:19] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 19:55:19] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 19:55:19] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 19:55:19] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 19:55:19] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 19:55:19] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 19:55:19] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 19:55:19] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 19:55:19] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:22:58
+==================================================================
+[2013/8/7 20:22:58] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:22:58] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:22:58] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:22:58] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:22:58] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:22:58] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:22:58] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:22:58] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:22:58] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:22:58] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:22:58] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:22:58] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:22:58] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:25:16
+==================================================================
+[2013/8/7 20:25:16] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:25:16] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:25:17] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:25:17] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:25:17] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:25:17] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:25:17] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:25:17] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:25:17] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:25:17] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:25:17] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:25:17] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:25:17] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:29:04
+==================================================================
+[2013/8/7 20:29:04] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:29:04] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:29:04] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:29:04] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:29:04] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:29:04] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:29:04] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:29:04] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:29:04] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:29:04] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:29:04] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:29:04] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:29:04] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:31:50
+==================================================================
+[2013/8/7 20:31:50] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:31:50] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:31:50] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:31:50] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:31:50] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:31:50] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:31:50] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:31:50] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:31:50] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:31:50] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:31:50] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:31:50] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:31:50] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:34:50
+==================================================================
+[2013/8/7 20:34:50] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:34:50] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:34:50] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:34:50] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:34:50] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:34:50] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:34:50] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:34:50] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:34:50] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:34:50] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:34:50] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:34:50] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:34:50] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:35:11
+==================================================================
+[2013/8/7 20:35:11] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:35:11] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:35:11] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:35:11] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:35:11] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:35:11] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:35:11] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:35:11] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:35:11] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:35:11] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:35:11] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:35:11] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:35:11] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:36:12
+==================================================================
+[2013/8/7 20:36:12] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:36:12] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:36:12] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:36:12] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:36:12] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:36:12] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:36:12] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:36:12] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:36:12] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:36:12] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:36:12] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:36:12] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:36:12] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:36:50
+==================================================================
+[2013/8/7 20:36:50] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:36:50] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:36:50] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:36:50] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:36:50] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:36:50] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:36:50] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:36:50] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:36:50] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:36:50] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:36:50] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:36:50] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:36:50] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+==================================================================
+ Initialized On 2013/8/7 20:59:39
+==================================================================
+[2013/8/7 20:59:39] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:59:39] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:59:39] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/7 20:59:39] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/7 20:59:39] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/7 20:59:39] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/7 20:59:39] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/7 20:59:39] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/7 20:59:39] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/7 20:59:39] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/7 20:59:39] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/7 20:59:39] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/7 20:59:39] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
