@@ -51,38 +51,4 @@ namespace DataEditor.Control.Prototype
         }
         public new System.Windows.Forms.Control.ControlCollection Controls { get { return panel1.Controls; } }
     }
-    public partial class RadioGroup
-    {
-        string Key;
-        Dictionary<string, RadioButton> radios = new Dictionary<string, RadioButton>();
-        void CheckedChanged(object sender, EventArgs e)
-        {
-            RadioButton r = sender as RadioButton;
-            if (r == null || r.Checked == false) return;
-            foreach (RadioButton rb in radios.Values)
-                if (rb != null && rb != r) rb.Checked = false;
-        }
-        public void AddKey(string key)
-        {
-            radios.Add(key, null);
-        }
-        public void AddRadio(string key, RadioButton radio)
-        {
-            if (radios.ContainsKey(key))
-                radios[key] = radio;
-            else Help.Log.log("没有被匹配的Key：" + key);
-        }
-        public bool this[string key]
-        {
-            get { return radios.ContainsKey(key); }
-        }
-        protected RadioGroup(string Key) { this.Key = Key; }
-        protected static List<RadioGroup> Groups = new List<RadioGroup>();
-        public static RadioGroup Create(string Key) { RadioGroup g = new RadioGroup(Key); Groups.Add(g); return g; }
-        public static void AddRadios(string key,RadioButton radio)
-        {
-            foreach (RadioGroup group in Groups)
-                if (group[key]) group.AddRadio(key, radio);
-        }
-    }
 }

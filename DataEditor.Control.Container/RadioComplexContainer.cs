@@ -10,9 +10,21 @@ namespace DataEditor.Control.Container
     {
         ComplexContainerHelper Helper = new ComplexContainerHelper();
         RadioComplexContainerArgs argument;
+        FuzzyData.FuzzySymbol key;
+        FuzzyData.FuzzyFixnum value;
+        int SelfValue;
+
         public Contract.TaintState taint;
         public string Flag { get { return "radio"; } }
         public Label Label { get; set; }
+
+        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+        [System.ComponentModel.Browsable(false)]
+        public FuzzyData.FuzzyObject ContainerValue
+        {
+            get { return Helper.ChildValue; }
+            set { Helper.ChildValue = value; Pull(); }
+        }
         [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
         [System.ComponentModel.Browsable(false)]
         public FuzzyData.FuzzyObject Value
@@ -25,7 +37,12 @@ namespace DataEditor.Control.Container
         public new FuzzyData.FuzzyObject Parent
         {
             get { return Helper.ParentValue; }
-            set { Helper.ParentValue = value; Pull(); }
+            set {
+                Helper.ParentValue = value;
+                FuzzyData.FuzzyFixnum num = ControlHelper.TypeCheck<FuzzyData.FuzzyFixnum>.Get(value, key);
+                if (num != null) Value = num;
+                Pull();
+            }
         }
         public Contract.TaintState Tainted
         {
@@ -55,7 +72,9 @@ namespace DataEditor.Control.Container
         }
         public void Push()
         {
-            
+            if (base.Radio.Checked)
+                if (value != null)
+                    value.Value = SelfValue;
         }
         public void Putt()
         {
@@ -69,36 +88,73 @@ namespace DataEditor.Control.Container
                 this.BackColor = argument.BackColor;
             if (argument.RadioWidth > 0)
                 this.RadioWidth = argument.RadioWidth;
-            if (argument.Key != "")
-                Prototype.RadioGroup.AddRadios(argument.Key, this.Radio);
-            Helper.ChildSymbol = argument.Actual;
+            RadioGroup.AddRadio(argument.Group, this.Radio);    
+            this.SelfValue = argument.Value;
+            this.key = argument.Real;
             this.Text = argument.Text;
+            Helper.ChildSymbol = argument.Actual;
         }
     }
 
-    class RadioComplexContainerArgs : ComplexContainerArgs
+    public class RadioComplexContainerArgs : ComplexContainerArgs
     {
         public int RadioWidth { get; set; }
-        public string Key { get; set; }
-        public RadioComplexContainerArgs() : base() { this.Label = 0; RadioWidth = 100; Key = ""; }
-        public RadioComplexContainerArgs(System.Xml.XmlNode node) : base(node) { this.Label = 0; RadioWidth = 100; Key = ""; }
+        public string Group { get; set; }
+        public int Value { get; set; }
+        public RadioComplexContainerArgs() : base() 
+        {
+            this.Label = 0;
+            this.RadioWidth = 100;
+            this.Group = "";
+            this.Value = -10;
+        }
+        public RadioComplexContainerArgs(System.Xml.XmlNode node) : base(node) 
+        {
+            this.Label = 0;
+            this.RadioWidth = 100;
+            this.Group = "";
+            this.Value = -10;
+        }
         protected override void OnScan(string Name, string InnerText)
         {
             if (Name == "RADIOWIDTH")
                 RadioWidth = GetInt(InnerText);
-            else if (Name == "KEY")
-                Key = InnerText;
+            else if (Name == "GROUP")
+                Group = InnerText;
+            else if (Name == "VALUE")
+                Value = GetInt(InnerText);
             base.OnScan(Name, InnerText);
         }
     }
-}
-namespace DataEditor.Control.ProtoType
-{
     public partial class RadioGroup
     {
-        public void Load_Information(System.Xml.XmlNode Node)
+        string Key;
+        List<RadioButton> radios = new List<RadioButton>();
+        void CheckedChanged(object sender, EventArgs e)
         {
- 
+            RadioButton r = sender as RadioButton;
+            if (r == null || r.Checked == false) return;
+            foreach (RadioButton rb in radios)
+                if (rb != null && rb != r) rb.Checked = false;
         }
+        public static void AddRadio(string key, RadioButton radio)
+        {
+            if (!(groups.ContainsKey(key)))
+            {
+                groups.Add(key, new RadioGroup(key));
+                Help.Log.log("添加了下述的 RadioGroup：" + key);
+            }
+            groups[key].AddRadio(radio);
+        }
+        public void AddRadio(RadioButton radio)
+        {
+            if (!(radios.Contains(radio)))
+            {
+                radios.Add(radio);
+                radio.CheckedChanged += this.CheckedChanged;
+            }
+        }
+        protected RadioGroup(string Key) { this.Key = Key; }
+        protected static Dictionary<string, RadioGroup> groups = new Dictionary<string, RadioGroup>();
     }
 }

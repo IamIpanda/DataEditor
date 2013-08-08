@@ -12,3 +12,8 @@ E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Serialization\bin\Debug\DataE
 E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Debug\ResolveAssemblyReference.cache
 E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Debug\DataEditor.FuzzyData.Serialization.dll
 E:\VS2010\Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Debug\DataEditor.FuzzyData.Serialization.pdb
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Debug\DataEditor.FuzzyData.Serialization.csprojResolveAssemblyReference.cache
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization\obj\Debug\DataEditor.FuzzyData.Serialization.pdb
