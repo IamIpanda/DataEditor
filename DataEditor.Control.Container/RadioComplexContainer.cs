@@ -29,8 +29,8 @@ namespace DataEditor.Control.Container
         [System.ComponentModel.Browsable(false)]
         public FuzzyData.FuzzyObject Value
         {
-            get { return Helper.ChildValue; }
-            set { Helper.ChildValue = value; Pull(); }
+            get { return value; }
+            set { this.value = value as FuzzyData.FuzzyFixnum; Pull(); }
         }
         [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
         [System.ComponentModel.Browsable(false)]
@@ -68,6 +68,8 @@ namespace DataEditor.Control.Container
             foreach (System.Windows.Forms.Control control in this.Controls)
                 if (control is ObjectEditor)
                     (control as ObjectEditor).Parent = Helper.ChildValue;
+            if (value.Value == SelfValue)
+                this.Radio.Checked = true;
             Tainted = Help.TaintRecord.Single[Value];
         }
         public void Push()

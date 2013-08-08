@@ -8,18 +8,19 @@ namespace DataEditor.Control.Wrapper
     public class WrapTextBox : DataEditor.Control.Prototype.ProtoAutoSizeTextBox, ObjectEditor,
         Contract.TaintableSingleEditor,Contract.FocusDependent,Contract.TaintableTrigger
     {
-        NumInputArgs argument;
+        TextBoxArgs argument;
         FuzzyData.FuzzyString value;
         FuzzyData.FuzzySymbol key;
         Contract.TaintState taint;
-        public ControlArgs Load_Information(System.Xml.XmlNode Node) { return new TextBoxArgs(Node); }
+        public ControlArgs Load_Information(System.Xml.XmlNode Node) { 
+            return new TextBoxArgs(Node); }
         public string Flag { get { return "text"; } }
         public Label Label { get; set; }
         public event EventHandler Taint;
         public ControlArgs Arguments
         {
             get { return argument; }
-            set { argument = value as NumInputArgs; Reset(); }
+            set { argument = value as TextBoxArgs; Reset(); }
         }
         public FuzzyData.FuzzyObject Value
         {
@@ -66,11 +67,13 @@ namespace DataEditor.Control.Wrapper
 
         public void OnEnter(object sender, EventArgs e)
         {
+            this.BackColor = System.Drawing.Color.SpringGreen;
             this.ForeColor = System.Drawing.Color.Red;
         }
 
         public void OnLeave(object sender, EventArgs e)
         {
+            this.BackColor = System.Drawing.Color.White;
             this.ForeColor = System.Drawing.Color.Black;
         }
 
