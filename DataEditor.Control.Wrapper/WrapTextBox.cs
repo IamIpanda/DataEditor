@@ -67,8 +67,8 @@ namespace DataEditor.Control.Wrapper
 
         public void OnEnter(object sender, EventArgs e)
         {
-            this.BackColor = System.Drawing.Color.SpringGreen;
-            this.ForeColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.Color.FromArgb(239, 228, 176);
+            this.ForeColor = System.Drawing.Color.FromArgb(119, 100, 9);
         }
 
         public void OnLeave(object sender, EventArgs e)

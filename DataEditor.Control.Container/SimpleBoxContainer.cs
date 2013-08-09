@@ -70,6 +70,7 @@ namespace DataEditor.Control.Container
     }
     public class SimpleBoxArgs : ContainerArgs 
     {
-
+        public SimpleBoxArgs() : base() { }
+        public SimpleBoxArgs(System.Xml.XmlNode node) : base(node) { }
     }
 }

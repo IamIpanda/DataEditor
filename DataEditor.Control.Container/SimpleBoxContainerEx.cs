@@ -64,6 +64,12 @@ namespace DataEditor.Control.Container
             }
         }
 
+        public override string Text
+        {
+            get { return lbName.Text; }
+            set { lbName.Text = value; }
+        }
+
         private void simpleContainer1_BackColorChanged(object sender, EventArgs e)
         {
             this.BackColor = simpleContainer1.BackColor;

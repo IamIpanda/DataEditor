@@ -18,7 +18,7 @@ namespace DataEditor.Control.Window
         private void button1_Click(object sender, EventArgs e)
         {
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
-            FuzzyData.FuzzyObject temp = origin & value;
+            origin &= value;
             this.Close();
         }
 
@@ -62,7 +62,7 @@ namespace DataEditor.Control.Window
 
     }
     
-    public class DataEditorDialog : DataEditDialog, DataEditor.Control.ComplexContainer
+    public class DataEditorDialog : DataEditDialog, DataEditor.Control.ObjectContainer
     {
         DataEditor.Control.Container.ContainerHelper Helper =
             new Container.ContainerHelper();
@@ -112,8 +112,9 @@ namespace DataEditor.Control.Window
             this.Text = argument.Text;
         }
     }
-    public class EditorWindowArgs : DataEditor.Control.Container.ContainerArgs
+    public class EditorWindowArgs : DataEditor.Control.Container.SimpleBoxArgs
     {
-        
+        public EditorWindowArgs() : base() { }
+        public EditorWindowArgs(System.Xml.XmlNode node) : base(node) { }
     }
 }
