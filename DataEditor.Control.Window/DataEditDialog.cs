@@ -54,7 +54,7 @@ namespace DataEditor.Control.Window
             simpleContainer1.Parent = value;
         }
 
-        public void Load_Information(System.Xml.XmlNode Node)
+        public virtual void Load_Information(System.Xml.XmlNode Node)
         {
             ControlArgs arg = simpleContainer1.Load_Information(Node);
             simpleContainer1.Arguments = arg;  
@@ -72,7 +72,7 @@ namespace DataEditor.Control.Window
         public FuzzyData.FuzzyObject Value
         {
             get { return Helper.ChildValue; }
-            set { Helper.ChildValue = value; Pull(); }
+            set { Helper.ChildValue = value.Clone() as FuzzyData.FuzzyObject; this.origin = value; ; Pull(); }
         }
         public new FuzzyData.FuzzyObject Parent
         {
@@ -84,7 +84,7 @@ namespace DataEditor.Control.Window
             get { return argument; }
             set { argument = value as EditorWindowArgs; Reset(); }
         }
-        public new ControlArgs Load_Information(System.Xml.XmlNode Node)
+        public override ControlArgs Load_Information(System.Xml.XmlNode Node)
         {
             DataEditor.Arce.Interpreter.Builder builder = new Arce.Interpreter.Builder();
             System.Drawing.Size size = builder.Build(Node, simpleContainer1.Controls, 2, 13);
@@ -116,5 +116,14 @@ namespace DataEditor.Control.Window
     {
         public EditorWindowArgs() : base() { }
         public EditorWindowArgs(System.Xml.XmlNode node) : base(node) { }
+        public EditorWindowArgs(Container.SimpleBoxArgs arg)
+        {
+            this.Actual = arg.Actual;
+            this.BackColor = arg.BackColor;
+            this.Height = arg.Height;
+            this.Label = 0;
+            this.Text = arg.Text;
+            this.Width = arg.Width;
+        }
     }
 }
