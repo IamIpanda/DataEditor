@@ -133,5 +133,11 @@ namespace DataEditor.Control.Container
             this.Text = argument.Text;
         }
     }
-    public class TabPageArgs : ContainerArgs { }
+    public class TabPageArgs : ContainerArgs 
+    {
+        string File;
+        public TabPageArgs() : base() { File = ""; }
+        public TabPageArgs(System.Xml.XmlNode node) : base(node) { }
+
+    }
 }

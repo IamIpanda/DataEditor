@@ -62,11 +62,11 @@
             this.simpleContainer1.Label = null;
             this.simpleContainer1.Location = new System.Drawing.Point(3, 3);
             this.simpleContainer1.Name = "simpleContainer1";
-            this.simpleContainer1.Parent = null;
+//            this.simpleContainer1.Parent = null;
             this.simpleContainer1.Size = new System.Drawing.Size(463, 311);
             this.simpleContainer1.TabIndex = 0;
             this.simpleContainer1.Text = "simpleContainer1";
-            this.simpleContainer1.Value = null;
+//            this.simpleContainer1.Value = null;
             // 
             // button1
             // 

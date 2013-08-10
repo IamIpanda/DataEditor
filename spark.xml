@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data type = "rows" actual = "skills">
+	<column actual = "level" text = "等级">L #{0:d3}#,#</column>
+	<column actual = "skill_id" text = "领悟的特技">#{0:d3}#:#{0}#,skills|#|id,Skills|#|name</column>
+	<dialog>
+		<data text = "等级" actual = "level"></data>
+	</dialog>
+	<new>
+		
+	</new>
+</data>
