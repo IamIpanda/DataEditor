@@ -35,5 +35,17 @@
         <data type = "int" text = "上升的MP上限" actual = "parameter_points" />
       </data>
     </data>
+    <data type = "tab" text = "呵呵">
+      <data type = "rows" actual = "skills">
+        <column actual = "level" text = "等级">L #{0:d3}#,#</column>
+        <column actual = "skill_id" text = "领悟的特技">#{0:d3}#:#{0}#,skills|#|id,Skills|#|name</column>
+        <dialog>
+          <data type = "int" text = "等级" actual = "level" />
+          <data type = "choose" text = "领悟特技" actual = "skill_id" />
+        </dialog>
+        <new>
+        </new>
+      </data>
+    </data>
   </data>
 </window>
