@@ -36,7 +36,9 @@ namespace DataEditor.Arce
             FuzzyArray fa = ob as FuzzyArray;
             FuzzyArray fb = op as FuzzyArray;
             FuzzyObject t = fa[2] as FuzzyObject;
-            FuzzyObject s;
+            FuzzyObject s = fb[3] as FuzzyObject;
+            FuzzyData.Serialization.XML.XML.Options.IgnoreSymbolEncoding = true;
+            DataEditor.FuzzyData.Serialization.XML.XML.Dump(new System.IO.FileStream("x.xml", System.IO.FileMode.Create), s);
             foreach (System.Windows.Forms.Control control in this.Controls)
             {
                 if (control is TabControl)

@@ -98,7 +98,7 @@ namespace DataEditor.Help
                         { }// Listen To It
                     }
                     else if (key == "##")
-                        if (++now >= max) throw new ArgumentException("字符串匹配中超界"); else ;
+                        if (++now >= max) throw new ArgumentException("字符串匹配中超界");
                     else
                         list.Add(key);
                 return new ContentFactor(root, list.ToArray(), format);

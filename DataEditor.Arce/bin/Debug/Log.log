@@ -840,3 +840,122 @@
 [2013/8/10 20:03:28] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
 [2013/8/10 20:03:28] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
 [2013/8/10 20:03:28] 添加了下述的 RadioGroup：para
+==================================================================
+ Initialized On 2013/8/11 22:32:46
+==================================================================
+[2013/8/11 22:32:46] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/11 22:32:46] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/11 22:32:46] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/11 22:32:47] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/11 22:32:47] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/11 22:32:47] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/11 22:32:47] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/11 22:32:47] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/11 22:32:47] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/11 22:32:47] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/11 22:32:47] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/11 22:32:47] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/11 22:32:47] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+[2013/8/11 22:32:49] 添加了下述的 RadioGroup：para
+==================================================================
+ Initialized On 2013/8/11 22:35:42
+==================================================================
+[2013/8/11 22:35:42] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/11 22:35:42] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/11 22:35:43] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/11 22:35:43] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/11 22:35:43] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/11 22:35:43] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/11 22:35:43] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/11 22:35:43] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/11 22:35:43] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/11 22:35:43] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/11 22:35:43] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/11 22:35:43] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/11 22:35:43] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+[2013/8/11 22:35:44] 添加了下述的 RadioGroup：para
+==================================================================
+ Initialized On 2013/8/14 13:37:18
+==================================================================
+[2013/8/14 13:37:18] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:37:18] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:37:19] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/14 13:37:19] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/14 13:37:19] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/14 13:37:19] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/14 13:37:19] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/14 13:37:19] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/14 13:37:19] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/14 13:37:19] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:37:19] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/14 13:37:19] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/14 13:37:19] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+[2013/8/14 13:37:20] 添加了下述的 RadioGroup：para
+==================================================================
+ Initialized On 2013/8/14 13:38:03
+==================================================================
+[2013/8/14 13:38:03] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:38:03] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:38:03] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/14 13:38:03] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/14 13:38:03] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/14 13:38:03] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/14 13:38:03] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/14 13:38:03] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/14 13:38:03] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/14 13:38:03] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:38:03] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/14 13:38:03] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/14 13:38:03] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+[2013/8/14 13:38:03] 添加了下述的 RadioGroup：para
+==================================================================
+ Initialized On 2013/8/14 13:47:34
+==================================================================
+[2013/8/14 13:47:34] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:47:34] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:47:34] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/14 13:47:34] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/14 13:47:34] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/14 13:47:34] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/14 13:47:34] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/14 13:47:34] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/14 13:47:34] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/14 13:47:34] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:47:34] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/14 13:47:34] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/14 13:47:34] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+[2013/8/14 13:47:35] 添加了下述的 RadioGroup：para
+==================================================================
+ Initialized On 2013/8/14 13:48:10
+==================================================================
+[2013/8/14 13:48:10] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:48:10] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:48:10] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/14 13:48:10] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/14 13:48:10] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/14 13:48:10] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/14 13:48:10] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/14 13:48:10] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/14 13:48:10] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/14 13:48:10] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 13:48:10] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/14 13:48:10] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/14 13:48:10] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+[2013/8/14 13:48:10] 添加了下述的 RadioGroup：para
+==================================================================
+ Initialized On 2013/8/14 22:56:15
+==================================================================
+[2013/8/14 22:56:15] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 22:56:15] 正在导入库：DataEditor.Control.Container, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 22:56:15] 导入了类型：[list]DataEditor.Control.Container.ListBoxContainer
+[2013/8/14 22:56:16] 导入了类型：[radio]DataEditor.Control.Container.RadioComplexContainer
+[2013/8/14 22:56:16] 导入了类型：[simple]DataEditor.Control.Container.SimpleContainer
+[2013/8/14 22:56:16] 导入了类型：[group]DataEditor.Control.Container.GroupBoxContainer
+[2013/8/14 22:56:16] 导入了类型：[box]DataEditor.Control.Container.SimpleBoxContainerEx
+[2013/8/14 22:56:16] 导入了类型：[tabs]DataEditor.Control.Container.TabPagesContainer
+[2013/8/14 22:56:16] 导入了类型：[tab]DataEditor.Control.Container.TabPageContainer
+[2013/8/14 22:56:16] 正在导入库：DataEditor.Control.Wrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2013/8/14 22:56:16] 导入了类型：[choose]DataEditor.Control.Wrapper.WrapChooseBox
+[2013/8/14 22:56:16] 导入了类型：[int]DataEditor.Control.Wrapper.WrapNumInput
+[2013/8/14 22:56:16] 导入了类型：[text]DataEditor.Control.Wrapper.WrapTextBox
+[2013/8/14 22:56:18] 添加了下述的 RadioGroup：para

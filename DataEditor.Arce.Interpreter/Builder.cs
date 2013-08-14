@@ -189,6 +189,10 @@ namespace DataEditor.Arce.Interpreter
             { RunSpace(Node.InnerText); return true; }
             else if (Node.Name.ToUpper() == "FILE")
             { RunFile(Node.InnerText); return true; }
+            else if ( Node.Name.ToUpper() == "CONVERTS" )
+            { RunConvert(Node); return true; }
+            else if ( Node.Name.ToUpper() == "CONVERTF" )
+            { RunConvertFromFile(Node.InnerText); return true; }
             return false;
         }
         protected virtual void RunOrder(string InnerText)
@@ -243,6 +247,14 @@ namespace DataEditor.Arce.Interpreter
             }
             XmlNode MainNode = document.FirstChild.NextSibling;
             // TODO Get enough Information.
+        }
+        protected virtual void RunConvert (XmlNode Node)
+        {
+            Help.NounConverter.Load(Node);   
+        }
+        protected virtual void RunConvertFromFile (string InnerText)
+        {
+            Help.NounConverter.Load(InnerText);
         }
     }
 }

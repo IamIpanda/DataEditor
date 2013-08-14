@@ -134,4 +134,4 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Cont
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csproj.GenerateResource.Cache
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
-Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioComplex.resources
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioContainer.resources

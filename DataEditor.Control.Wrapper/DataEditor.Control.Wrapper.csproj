@@ -45,6 +45,9 @@
     <Compile Include="WrapImageDisplayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WrapListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WrapNumInput.cs">
       <SubType>Component</SubType>
     </Compile>

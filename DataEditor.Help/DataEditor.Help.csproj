@@ -46,9 +46,11 @@
     <Compile Include="InitalEditor.cs" />
     <Compile Include="LinkTable.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="NounConverter.cs" />
     <Compile Include="PathHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectManager.cs" />
+    <Compile Include="Resource.cs" />
     <Compile Include="RTPManager.cs" />
     <Compile Include="SerializationManager.cs" />
     <Compile Include="SimpleCollection.cs" />

@@ -176,6 +176,24 @@
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>COPY ..\..\..\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.dll Program\Base\DataEditor.Adapter.dll
+DataEditor.Arce.Interpreter
+DataEditor.Contract
+DataEditor.Control
+DataEditor.Control.Container
+DataEditor.Control.Prototype
+DataEditor.Control.Prototype.Any
+DataEditor.Control.Window
+DataEditor.Control.Wrapper
+DataEditor.Control.FuzzyData
+DataEditor.Control.FuzzyData.Combine
+DataEditor.Control.FuzzyData.Extra
+DataEditor.Control.FuzzyData.Serialization
+DataEditor.Control.FuzzyData.Serialization.RubyMarshal
+DataEditor.Control.FuzzyData.Serialization.XML
+DataEditor.Help</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

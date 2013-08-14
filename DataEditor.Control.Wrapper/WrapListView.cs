@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace DataEditor.Control.Wrapper
 {
-    public class WrapListView
+    public class WrapListView : Prototype.ProtoListView
     {
 
     }
@@ -35,14 +35,16 @@ namespace DataEditor.Control.Wrapper
         public override void Load (System.Xml.XmlNode Node)
         {
             base.Load(Node);
-            string Name, InnerText;
+            string Name;
             foreach ( XmlNode child in Node.ChildNodes )
             {
                 Name = child.Name.ToUpper();
                 if ( Name == "ROW" )
                     Rows.Add(new WrapListViewRowArgs(child));
                 else if ( Name == "NEW" )
-                { }
+                {
+
+                }
                 else if ( Name == "DIALOG" )
                     Dialog = child;
                 else
