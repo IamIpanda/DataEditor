@@ -44,7 +44,7 @@ namespace DataEditor.Help
             FormatTemp.Add(collection.Count == 0 ? "" : "{" + collection[0].Value + "}");
             return KeyChar.ToString();
         }
-        public string ToString()
+        public override string ToString()
         {
             if (factors == null) return "Uninitialized";
             StringBuilder sb = new StringBuilder();

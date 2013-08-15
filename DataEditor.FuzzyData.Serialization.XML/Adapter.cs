@@ -15,6 +15,12 @@ namespace DataEditor.FuzzyData.Serialization.XML
         {
             return XML.Load(stream);
         }
+        class XMLReadStealer : XMLReader { public XMLReadStealer () { } }
+        public object Load (System.Xml.XmlNode Node)
+        {
+            XMLReader reader = new XMLReadStealer();
+            return reader.Load(Node);
+        }
         public string Flag
         {
             get { return "[x]"; }

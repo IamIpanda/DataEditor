@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataEditor.Help</RootNamespace>
-    <AssemblyName>DataEditorKanon.Help</AssemblyName>
+    <AssemblyName>DataEditor.Help</AssemblyName>
     <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

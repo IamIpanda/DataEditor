@@ -43,6 +43,8 @@ namespace DataEditor.FuzzyData.Serialization.XML
             this.x_node = x_document; 
         }
 
+        protected XMLReader () { }
+
         public object Load()
         {
             x_node = x_document.FirstChild.NextSibling;

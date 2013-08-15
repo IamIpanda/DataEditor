@@ -25,18 +25,20 @@ namespace DataEditor.Arce.Interpreter
         {
             Log.log("正在导入库：" + ass.FullName);
             Type basetype = typeof(DataEditor.Control.ObjectEditor);
-            foreach (Type t in ass.GetExportedTypes())
             {
-                // Log.log("正在扫描类型：" + t.ToString());
-                if (t.IsClass)
-                    foreach (Type Inter in t.GetInterfaces())
-                        if (Inter == basetype)
-                        {
-                            object o = ass.CreateInstance(t.FullName);
-                            string key = (o as DataEditor.Control.ObjectEditor).Flag;
-                            if (!Types.ContainsKey(key))
-                            { Types.Add(key, t); Log.log("导入了类型：[" + key + "]" + t.ToString()); }
-                        }
+                foreach ( Type t in ass.GetExportedTypes() )
+                {
+                    Log.log("正在扫描类型：" + t.ToString());
+                    if ( t.IsClass )
+                        foreach ( Type Inter in t.GetInterfaces() )
+                            if ( Inter == basetype )
+                            {
+                                object o = ass.CreateInstance(t.FullName);
+                                string key = (o as DataEditor.Control.ObjectEditor).Flag;
+                                if ( !Types.ContainsKey(key) )
+                                { Types.Add(key, t); Log.log("导入了类型：[" + key + "]" + t.ToString()); }
+                            }
+                }
             }
         }
         protected Collector() { }

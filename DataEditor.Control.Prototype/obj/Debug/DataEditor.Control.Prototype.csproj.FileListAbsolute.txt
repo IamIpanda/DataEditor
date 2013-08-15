@@ -90,12 +90,8 @@ E:\VS2010\Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\GenerateRes
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.dll
-E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
-E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
-E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.pdb
-E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csprojResolveAssemblyReference.cache
 E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoFullListBox.resources
@@ -114,12 +110,8 @@ E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Cont
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.Prototype.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.dll
-Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.dll
-Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.dll
-Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorBase.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.pdb
-Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditorKanon.Help.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.FuzzyData.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.csprojResolveAssemblyReference.cache
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoFullListBox.resources
@@ -135,3 +127,11 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Cont
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Prototype.ProtoRadioContainer.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Contract.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Contract.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Help.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Help.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Contract.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Help.dll
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Contract.pdb
+Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Help.pdb

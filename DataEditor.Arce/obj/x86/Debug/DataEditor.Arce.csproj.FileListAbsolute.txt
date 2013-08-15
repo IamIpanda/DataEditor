@@ -208,9 +208,6 @@ E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Extra.d
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.dll
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.XML.dll
-E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorBase.dll
-E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorKanon.Help.dll
-E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorBase.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Control.Container.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Control.ProtoType.Any.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Control.Prototype.pdb
@@ -222,7 +219,6 @@ E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Seriali
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.XML.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.pdb
-E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorKanon.Help.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Arce.Interpreter.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.csprojResolveAssemblyReference.cache
 E:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.Form1.resources
@@ -257,9 +253,6 @@ Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Extra.d
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.dll
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.XML.dll
-Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorBase.dll
-Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorKanon.Help.dll
-Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorBase.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Control.Container.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Control.ProtoType.Any.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Control.Prototype.pdb
@@ -271,9 +264,16 @@ Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Seriali
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.XML.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.FuzzyData.pdb
-Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditorKanon.Help.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Arce.Interpreter.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.csprojResolveAssemblyReference.cache
 Y:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.Form1.resources
 Y:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.Properties.Resources.resources
 Y:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.csproj.GenerateResource.Cache
+E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Contract.dll
+E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Contract.pdb
+E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Help.dll
+E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Help.pdb
+Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Contract.dll
+Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Help.dll
+Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Contract.pdb
+Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Help.pdb

@@ -177,22 +177,21 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>COPY ..\..\..\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.dll Program\Base\DataEditor.Adapter.dll
-DataEditor.Arce.Interpreter
-DataEditor.Contract
-DataEditor.Control
-DataEditor.Control.Container
-DataEditor.Control.Prototype
-DataEditor.Control.Prototype.Any
-DataEditor.Control.Window
-DataEditor.Control.Wrapper
-DataEditor.Control.FuzzyData
-DataEditor.Control.FuzzyData.Combine
-DataEditor.Control.FuzzyData.Extra
-DataEditor.Control.FuzzyData.Serialization
-DataEditor.Control.FuzzyData.Serialization.RubyMarshal
-DataEditor.Control.FuzzyData.Serialization.XML
-DataEditor.Help</PostBuildEvent>
+    <PostBuildEvent>COPY ..\..\..\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.dll                          Program\Base\DataEditor.Adapter.dll
+COPY ..\..\..\DataEditor.Arce.Interpreter\bin\Debug\DataEditor.Arce.Interpreter.dll        Program\DataEditor.Arce.Interpreter.dll
+COPY ..\..\..\DataEditor.Contract\bin\Debug\DataEditor.Contract.dll                        Program\Base\DataEditor.Contract.dll
+COPY ..\..\..\DataEditor.Control\bin\Debug\DataEditor.Control.dll                          Program\Control\DataEditor.Control.dll
+COPY ..\..\..\DataEditor.Control.Container\bin\Debug\DataEditor.Control.Container.dll  Program\Control\DataEditor.Control.Container.dll
+COPY ..\..\..\DataEditor.Control.Prototype\bin\Debug\DataEditor.Control.ProtoType.dll Program\Control\Prototype\DataEditor.Control.ProtoType.dll
+COPY ..\..\..\DataEditor.Control.Prototype.Any\bin\Debug\DataEditor.Control.ProtoType.Any.dll Program\Control\Prototype\DataEditor.Control.ProtoType.Any.dll
+COPY ..\..\..\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Window.dll            Program\Control\DataEditor.Window.dll
+COPY ..\..\..\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Wrapper.dll          Program\Control\Wrapper\DataEditor.Control.Wrapper.dll
+COPY ..\..\..\DataEditor.FuzzyData\bin\Debug\DataEditor.FuzzyData.dll                      Program\Base\DataEditor.FuzzyData.dll
+COPY ..\..\..\DataEditor.FuzzyData.Extra\bin\Debug\DataEditor.FuzzyData.Extra.dll          Program\Base\DataEditor.FuzzyData.Extra.dll
+COPY ..\..\..\DataEditor.FuzzyData.Serialization\bin\Debug\DataEditor.FuzzyData.Serialization.dll Program\Serialization\DataEditor.FuzzyData.Serialization.dll
+COPY ..\..\..\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.dll Program\Serialization\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
+COPY ..\..\..\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.Serialization.XML.dll Program\Serialization\DataEditor.FuzzyData.Serialization.XML.dll 
+COPY ..\..\..\DataEditor.Help\bin\Debug\DataEditor.Help.dll                               Program\Base\DataEditor.Help.dll</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

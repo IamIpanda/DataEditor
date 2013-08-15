@@ -25,11 +25,20 @@ namespace DataEditor.Help
         static void LoadDll(Assembly Ass)
         {
             foreach (Type serialization in Ass.GetExportedTypes())
-                if (Fit(serialization))
+                if ( Fit(serialization) )
+                {
                     serializations.Add(Ass.CreateInstance(serialization.ToString()) as Serialization);
+                    Log.log("已获得序列化器：" + serialization.FullName);
+                }
             foreach (Serialization serialization in serializations)
                 if (serialization is Iconic)
-                    flags.Add((serialization as Iconic).Flag, serialization);
+                {
+                    string key = (serialization as Iconic).Flag;
+                    if ( flags.ContainsKey(key) )
+                        Log.log("由于 " + key + " 已存在，下列序列化器被忽略： " + serialization.GetType().ToString());
+                    else
+                        flags.Add(key, serialization);
+                }
             foreach (Serialization serialization in serializations)
                 if (serialization.GetType().Name == "RubyMarshalAdapter" || serialization.GetType().Name == "RubyMarshal")
                     Default = serialization;
@@ -80,6 +89,14 @@ namespace DataEditor.Help
             {
                 throw new ArgumentException("An Error Occured when Serializing File" + fullname, ex);
             }
+        }
+        static public Contract.Serialization TryGetSerialization (string key)
+        {
+            return null;
+            Contract.Serialization ser = null;
+            flags.TryGetValue(key, out ser);
+            if ( ser == null ) Log.log("序列化器申请被拒绝：" + key);
+            return ser;
         }
     }
 }

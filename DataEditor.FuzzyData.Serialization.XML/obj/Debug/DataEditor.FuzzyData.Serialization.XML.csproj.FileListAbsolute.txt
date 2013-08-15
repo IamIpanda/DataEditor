@@ -40,8 +40,6 @@ Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataE
 Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.Serialization.XML.pdb
 Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.dll
 Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.Serialization.dll
-Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditorBase.dll
-Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditorBase.pdb
 Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
 Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.pdb
 Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\obj\Debug\DataEditor.FuzzyData.Serialization.XML.csprojResolveAssemblyReference.cache
@@ -51,10 +49,12 @@ E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataE
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.Serialization.XML.pdb
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.dll
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.Serialization.dll
-E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditorBase.dll
-E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditorBase.pdb
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.FuzzyData.pdb
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\obj\Debug\DataEditor.FuzzyData.Serialization.XML.csprojResolveAssemblyReference.cache
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\obj\Debug\DataEditor.FuzzyData.Serialization.XML.dll
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\obj\Debug\DataEditor.FuzzyData.Serialization.XML.pdb
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.Contract.dll
+E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.Contract.pdb
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.Contract.dll
+Y:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.XML\bin\Debug\DataEditor.Contract.pdb

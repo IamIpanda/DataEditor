@@ -6,7 +6,7 @@ namespace DataEditor.Help
 {
     static public class Log
     {
-        public const long MaxLogSize = 5000000;
+        public const long MaxLogSize = 100000;
         public const string Name = "Log";
         public const string Pattern = ".log";
         static System.IO.TextWriter Text;
@@ -31,6 +31,10 @@ namespace DataEditor.Help
         static public void log(string info)
         {
             Text.WriteLine("[" + DateTime.Now.ToString()+ "] " + info);
+            Flush();
+        }
+        static public void Flush ()
+        {
             Text.Flush();
         }
     }

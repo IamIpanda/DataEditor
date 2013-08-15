@@ -27,6 +27,13 @@ namespace DataEditor.Help
             = new Dictionary<Contract.TaintState, System.Drawing.Color>();
         static TaintOptions()
         {
+            DefaultColors.Add(Contract.TaintState.Added, System.Drawing.Color.GreenYellow);
+            DefaultColors.Add(Contract.TaintState.ChildTainted,System.Drawing.Color.Orange);
+            DefaultColors.Add(Contract.TaintState.FullReplaced,System.Drawing.Color.DarkRed);
+            DefaultColors.Add(Contract.TaintState.Saved,System.Drawing.Color.Green);
+            DefaultColors.Add(Contract.TaintState.Tainted,System.Drawing.Color.Red);
+            DefaultColors.Add(Contract.TaintState.UnTainted, System.Drawing.Color.Black);
+            Save();
             Load();
         }
         static void Load()

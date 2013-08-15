@@ -28,7 +28,13 @@ namespace DataEditor.Arce
             Interpreter.Builder builder = new Interpreter.Builder();
             System.Xml.XmlDocument document = new XmlDocument();
             document.Load("Xmls/test1.xml");
-            builder.Build(document.FirstChild.NextSibling, this.Controls);
+            try
+            {
+                builder.Build(document.FirstChild.NextSibling, this.Controls);
+            }
+            catch ( Exception exc )
+            { 
+            }
             System.IO.FileStream file = new System.IO.FileStream("Tests/Data/Items.rvdata", System.IO.FileMode.Open);
             System.IO.FileStream filx = new System.IO.FileStream("Tests/Data/CLasses.rvdata", System.IO.FileMode.Open);
             FuzzyObject ob = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(file) as FuzzyObject;

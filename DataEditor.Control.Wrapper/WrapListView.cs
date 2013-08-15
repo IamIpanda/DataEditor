@@ -43,7 +43,17 @@ namespace DataEditor.Control.Wrapper
                     Rows.Add(new WrapListViewRowArgs(child));
                 else if ( Name == "NEW" )
                 {
-
+                    Contract.Serialization xml = Help.SerializationManager.TryGetSerialization("[x]");
+                    if ( xml == null ) continue;
+                    try
+                    {
+                        Type type = xml.GetType();
+                        System.Reflection.MethodInfo method = type.GetMethod("Load");
+                        object ob = method.Invoke(xml, new object[] { child.FirstChild });
+                        New = ob as FuzzyData.FuzzyObject;
+                    }
+                    catch ( Exception ex )
+                    { Help.Log.log("ListView：载入 New 节点失败：" + ex.Message); }
                 }
                 else if ( Name == "DIALOG" )
                     Dialog = child;
