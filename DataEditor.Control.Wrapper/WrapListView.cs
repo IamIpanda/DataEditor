@@ -2,14 +2,77 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Xml;
+using System.Windows.Forms;
 
 namespace DataEditor.Control.Wrapper
 {
-    public class WrapListView : Prototype.ProtoListView
+    public class WrapListView : Prototype.ProtoListView, Control.ObjectEditor
     {
-
+        ListViewArgs argument;
+        Adapter.AdvanceViewArray value;
+        FuzzyData.FuzzySymbol key;
+        Contract.TaintState taint;
+        public ControlArgs Load_Information (System.Xml.XmlNode Node)
+        {
+            return new ListViewArgs(Node);
+        }
+        public string Flag { get { return "rows"; } }
+        public Label Label { get; set; }
+        public event EventHandler Taint;
+        public ControlArgs Arguments
+        {
+            get { return argument; }
+            set { argument = value as ListViewArgs; Reset(); }
+        }
+        public FuzzyData.FuzzyObject Value
+        {
+            get { return value; }
+            set { this.value = value as FuzzyData.FuzzyString; Pull(); }
+        }
+        public Contract.TaintState Tainted
+        {
+            get { return taint; }
+            set { taint = value; Putt(); }
+        }
+        public new FuzzyData.FuzzyObject Parent
+        {
+            set
+            {
+                //FuzzyData.FuzzyString num = ControlHelper.TypeCheck<FuzzyData.FuzzyString>.Get(value, key);
+                //if ( num != null ) Value = num;
+                Pull();
+            }
+        }
+        public void Push ()
+        {
+            if ( value != null )
+                value.Text = this.Text;
+        }
+        public void Reset ()
+        {
+            if ( argument == null ) return;
+            DataEditor.Control.ControlHelper.Reset(this, argument);
+            this.key = argument.Actual;
+        }
+        public void Pull ()
+        {
+            if ( value != null )
+            {
+                this.Text = value.Text;
+                Tainted = Help.TaintRecord.Single[value];
+            }
+        }
+        public void Putt ()
+        {
+            Help.TaintHelper.OnPutt(Label, taint);
+        }
+        public WrapListView ()
+        {
+            base.HeaderStyle = ColumnHeaderStyle.Nonclickable;
+            base.View = System.Windows.Forms.View.Details;
+        }
     }
-    public class WrapListViewArgs : ControlArgs
+    public class ListViewArgs : ControlArgs
     {
         /// <summary>
         /// 描述列标的信息
@@ -25,13 +88,13 @@ namespace DataEditor.Control.Wrapper
         /// 没有这个结构的场合，不能进行修改操作。
         /// </summary>
         public XmlNode Dialog { get; set; }
-        public WrapListViewArgs () : base() 
+        public ListViewArgs () : base() 
         {
             Rows = new List<WrapListViewRowArgs>();
             New = FuzzyData.FuzzyNil.Instance;
             Dialog = null;
         }
-        public WrapListViewArgs (XmlNode Node) : base(Node) { }
+        public ListViewArgs (XmlNode Node) : base(Node) { }
         public override void Load (System.Xml.XmlNode Node)
         {
             base.Load(Node);
@@ -48,7 +111,7 @@ namespace DataEditor.Control.Wrapper
                     try
                     {
                         Type type = xml.GetType();
-                        System.Reflection.MethodInfo method = type.GetMethod("Load");
+                        System.Reflection.MethodInfo method = type.GetMethod("Load", new Type[] { typeof(XmlNode) });
                         object ob = method.Invoke(xml, new object[] { child.FirstChild });
                         New = ob as FuzzyData.FuzzyObject;
                     }

@@ -43,7 +43,11 @@ namespace DataEditor.FuzzyData.Serialization.XML
             this.x_node = x_document; 
         }
 
-        protected XMLReader () { }
+        protected XMLReader () 
+        {
+            this.x_objects = new Dictionary<int, object>();
+            this.x_symbols = new Dictionary<int, FuzzySymbol>();
+        }
 
         public object Load()
         {
@@ -264,7 +268,7 @@ namespace DataEditor.FuzzyData.Serialization.XML
                     v = GetObject();
                     break;
                 default:
-                    throw new InvalidDataException(string.Format("dump format error(0x{0:X2})", type));
+                    throw new InvalidDataException(string.Format("dump format error({0:X2})", type));
             }
             x_objects.Add(x_objects.Count, v);
             

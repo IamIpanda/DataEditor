@@ -46,9 +46,14 @@
           </data>
         </dialog>
         <new>
-          <Object Name="RPG::Class::Learning">
-            <Data Name="@skill_id"><Fixnum>37</Fixnum></Data>
-            <Data Name="@level"><Fixnum>30</Fixnum></Data>
+          <Object>
+            <Name>
+              <Symbol>RPG::Class::Learning</Symbol>
+            </Name>
+            <Symbol>@skill_id</Symbol>
+            <Fixnum>75</Fixnum>
+            <Symbol>@level</Symbol>
+            <Fixnum>5</Fixnum>
           </Object>
         </new>
       </data>

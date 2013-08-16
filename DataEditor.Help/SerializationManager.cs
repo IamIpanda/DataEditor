@@ -92,7 +92,6 @@ namespace DataEditor.Help
         }
         static public Contract.Serialization TryGetSerialization (string key)
         {
-            return null;
             Contract.Serialization ser = null;
             flags.TryGetValue(key, out ser);
             if ( ser == null ) Log.log("序列化器申请被拒绝：" + key);
