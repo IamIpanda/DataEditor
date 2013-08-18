@@ -46,7 +46,6 @@ namespace DataEditor.Control.Container
         public void Push() { }
         public void Reset()
         {
-            System.Windows.Forms.MessageBox.Show(this.ClientRectangle.ToString());
             if (argument == null) return;
             ControlHelper.Reset(this, argument);
             if (argument.BackColor != default(System.Drawing.Color))

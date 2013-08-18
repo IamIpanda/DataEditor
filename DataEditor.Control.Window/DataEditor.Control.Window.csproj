@@ -59,16 +59,16 @@
     <Compile Include="SimpleRadioChoose.Designer.cs">
       <DependentUpon>SimpleRadioChoose.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window\DataEditDialog.cs">
+    <Compile Include="DataEditDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window\DataEditDialog.Designer.cs">
+    <Compile Include="DataEditDialog.Designer.cs">
       <DependentUpon>DataEditDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window\ImageChoser.cs">
+    <Compile Include="ImageChoser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Window\ImageChoser.Designer.cs">
+    <Compile Include="ImageChoser.Designer.cs">
       <DependentUpon>ImageChoser.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -86,10 +86,10 @@
     <EmbeddedResource Include="SimpleRadioChoose.resx">
       <DependentUpon>SimpleRadioChoose.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window\DataEditDialog.resx">
+    <EmbeddedResource Include="DataEditDialog.resx">
       <DependentUpon>DataEditDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Window\ImageChoser.resx">
+    <EmbeddedResource Include="ImageChoser.resx">
       <DependentUpon>ImageChoser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

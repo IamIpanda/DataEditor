@@ -79,7 +79,6 @@ namespace DataEditor.Control.Wrapper
             if ( value != null )
             {
                 ShowText();
-
                 // Charge TAINT;
             }
         }
@@ -100,8 +99,7 @@ namespace DataEditor.Control.Wrapper
             FuzzyData.FuzzyObject editing = value.Data[SelectedIndices[0]];
             Control.Window.DataEditorDialog dialog = new Window.DataEditorDialog();
             dialog.Arguments = dialog.Load_Information(Window);
-            dialog.Value = editing;
-            dialog.Reset();
+            dialog.Parent = editing;
             if ( dialog.ShowDialog() == DialogResult.OK )
             {
  

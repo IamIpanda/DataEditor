@@ -40,10 +40,10 @@
           <height>400</height>
           <column actual = "level" text = "等级">L #{0:d3}#,#</column>
           <column actual = "skill_id" text = "领悟的特技">#{0:d3}#:#{0}#,skill|#|id,skill|#|name</column>
-          <dialog>
+          <dialog text = "编辑特技">
             <data type = "int" text = "等级" actual = "level" />
             <data type = "choose" text = "领悟特技" actual = "skill_id" >
-              <choice id = "|id" text = "#{0:d3}#:#{0}#,,|id,|name" file = "Tests/Data/Skills.rvdata" />
+              <choice id = "|id" text = "#{0:d3}#:#{0}#,,|id,|name" file = "skill" />
             </data>
           </dialog>
           <new>
@@ -52,9 +52,9 @@
                 <Symbol>RPG::Class::Learning</Symbol>
               </Name>
               <Symbol>@skill_id</Symbol>
-              <Fixnum>75</Fixnum>
+              <Fixnum>1</Fixnum>
               <Symbol>@level</Symbol>
-              <Fixnum>5</Fixnum>
+              <Fixnum>1</Fixnum>
             </Object>
           </new>
         </data>

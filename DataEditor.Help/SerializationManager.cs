@@ -83,6 +83,7 @@ namespace DataEditor.Help
             try
             {
                 object ob = serialization.Load(stream);
+                stream.Close();
                 return ob;
             }
             catch(Exception ex)
