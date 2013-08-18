@@ -46,7 +46,7 @@ namespace DataEditor.Help
         }
         public override string ToString()
         {
-            if (factors == null) return "Uninitialized";
+            if (factors == null) return "";
             StringBuilder sb = new StringBuilder();
             foreach (Factor f in factors) sb.Append(f.GetString());
             return sb.ToString();
@@ -82,10 +82,12 @@ namespace DataEditor.Help
                 int max = para.Length, now = 0;
                 // 计算根值 TODO
                 object root;
-                if (keys[0] == "")
+                if ( keys[0] == "" )
                     root = para[0];
+                else if ( keys[0] == "#" )
+                    root = para[now++];
                 else
-                    root = FileArrayManager.Create(keys[0]).Data;
+                    root = FileManager.Create(keys[0]).Data;
                 keys[0] = null;
                 // 结算路径 
                 List<object> list = new List<object>();
@@ -97,8 +99,10 @@ namespace DataEditor.Help
                         if (para[now] is FuzzyData.FuzzyObject)
                         { }// Listen To It
                     }
-                    else if (key == "##")
-                        if (++now >= max) throw new ArgumentException("字符串匹配中超界");
+                    else if ( key == "##" )
+                    {
+                        if ( ++now >= max ) throw new ArgumentException("字符串匹配中超界");
+                    }
                     else
                         list.Add(key);
                 return new ContentFactor(root, list.ToArray(), format);

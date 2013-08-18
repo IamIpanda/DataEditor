@@ -7,17 +7,19 @@ namespace DataEditor.Help
 {
     public partial class FileManager
     {
+        public virtual object Data { get { return data; } }
         protected object data;
         static protected Dictionary<string, FileManager> files = new Dictionary<string, FileManager>();
         protected FileManager(string expression)
         {
             data = PathHelper.LoadFile(expression);
+            files.Add(expression, this);
         }
         static public FileManager Create(string path)
         {
-            if (!files.ContainsKey(path))
-                files.Add(path, new FileManager(path));
-            return files[path];
+            if ( files.ContainsKey(path) )
+                return files[path];
+            return new FileManager(path);
         }
     }
 
@@ -30,7 +32,7 @@ namespace DataEditor.Help
                 FileChanged(this, e);
         }
     }
-
+    /*
     public class FileArrayManager : FileManager
     {
         protected new FuzzyArray data;
@@ -75,7 +77,29 @@ namespace DataEditor.Help
             return files[path] as FileArrayManager;
         }
     }
-
+    */
+    public class FileArrayManager:FileManager 
+    {
+        public bool Exists { get; set; }
+        Adapter.AdvanceArray array;
+        public Adapter.AdvanceArray Value { get { return array; } }
+        protected FileArrayManager (string path) : base(path) 
+        {
+            Exists = false;
+            FuzzyArray arr = data as FuzzyArray;
+            if ( arr == null ) return;
+            array = new Adapter.AdvanceArray(arr);
+            Exists = array.Exists;
+        }
+        static public new FileArrayManager Create (string expression)
+        {
+            FileManager file = null;
+            files.TryGetValue(expression, out file);
+            if ( file == null ) return new FileArrayManager(expression);
+            if ( !(file is FileArrayManager) ) { files.Remove(expression); return new FileArrayManager(expression); }
+            return file as FileArrayManager;
+        }
+    }
     public class FileChangeEventArgs : EventArgs
     {
         internal List<int> changeTable;

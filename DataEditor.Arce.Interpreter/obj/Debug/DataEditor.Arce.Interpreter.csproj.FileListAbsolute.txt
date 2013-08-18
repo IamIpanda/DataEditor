@@ -70,3 +70,5 @@ Y:\VS Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Debug\DataEditor.Contr
 Y:\VS Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Debug\DataEditor.Help.dll
 Y:\VS Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Debug\DataEditor.Contract.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Debug\DataEditor.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Debug\DataEditor.Adapter.dll
+E:\VS Projects\DataEditor\DataEditor.Arce.Interpreter\bin\Debug\DataEditor.Adapter.pdb

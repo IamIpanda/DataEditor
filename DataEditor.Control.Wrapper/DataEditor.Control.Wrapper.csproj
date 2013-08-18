@@ -42,9 +42,6 @@
     <Compile Include="WrapChooseBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="WrapImageDisplayer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="WrapListView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -70,6 +67,10 @@
       <Name>DataEditor.Control.Prototype</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Window\DataEditor.Control.Window.csproj">
+      <Project>{70f1577d-6ea7-4d77-8fe8-9fe407eef943}</Project>
+      <Name>DataEditor.Control.Window</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataEditor.Control\DataEditor.Control.csproj">
       <Project>{EC27DB05-72F8-4AD2-B8CD-735C25AF79FB}</Project>
       <Name>DataEditor.Control</Name>
@@ -84,11 +85,6 @@
       <Name>DataEditor.Help</Name>
       <Private>False</Private>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="WrapImageDisplayer.resx">
-      <DependentUpon>WrapImageDisplayer.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2374,7 +2374,7 @@ namespace DataEditor.FuzzyData
                     ValueChanged(this, new FuzzyValueChangedEventArgs<FuzzyBignum>(value));
             }
         }
-        public object Clone()
+        public override object Clone()
         {
             return new FuzzyBignumAdapter(new FuzzyBignum(value));
         }

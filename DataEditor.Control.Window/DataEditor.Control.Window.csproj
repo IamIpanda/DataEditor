@@ -46,18 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataEditDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataEditDialog.Designer.cs">
-      <DependentUpon>DataEditDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ImageChoser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ImageChoser.Designer.cs">
-      <DependentUpon>ImageChoser.cs</DependentUpon>
-    </Compile>
     <Compile Include="RTPEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,12 +59,18 @@
     <Compile Include="SimpleRadioChoose.Designer.cs">
       <DependentUpon>SimpleRadioChoose.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DataEditDialog.resx">
+    <Compile Include="Window\DataEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\DataEditDialog.Designer.cs">
       <DependentUpon>DataEditDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ImageChoser.resx">
+    </Compile>
+    <Compile Include="Window\ImageChoser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\ImageChoser.Designer.cs">
       <DependentUpon>ImageChoser.cs</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SimpleRadioChoose.resx">
       <DependentUpon>SimpleRadioChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\DataEditDialog.resx">
+      <DependentUpon>DataEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\ImageChoser.resx">
+      <DependentUpon>ImageChoser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,10 +118,6 @@
     <ProjectReference Include="..\DataEditor.Control.Prototype\DataEditor.Control.Prototype.csproj">
       <Project>{02449EDB-B4B5-47E6-AD29-7CC1C8B0BF09}</Project>
       <Name>DataEditor.Control.Prototype</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataEditor.Control.Wrapper\DataEditor.Control.Wrapper.csproj">
-      <Project>{5f124c99-ca60-4ba5-bffb-db9f014758cc}</Project>
-      <Name>DataEditor.Control.Wrapper</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataEditor.FuzzyData\DataEditor.FuzzyData.csproj">
       <Project>{3516d3c7-f112-4763-9f2d-0b17991c12ff}</Project>

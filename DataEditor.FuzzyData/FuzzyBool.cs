@@ -56,7 +56,7 @@ namespace DataEditor.FuzzyData
                 return b;
             }
         }
-        public object Clone()
+        public override object Clone()
         {
             return value ? True : False;
         }

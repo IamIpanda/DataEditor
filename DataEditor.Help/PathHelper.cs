@@ -40,7 +40,7 @@ namespace DataEditor.Help
         {
             string[] names = expression.Split(new string[] { "|" },
                StringSplitOptions.RemoveEmptyEntries);
-            object root = SerializationManager.LoadFile(names[0]);
+            object root = SerializationManager.LoadFile(Help.NounConverter.Get(names[0]));
             return LoadRoot(names, root);
         }
         /// <summary>
@@ -103,25 +103,26 @@ namespace DataEditor.Help
         static public object LoadByArray(object Root, object[] Path)
         {
             object temp = Root;
-            foreach (object key in Path)
+            foreach ( object key in Path )
             {
-                if (temp == null) return null;
-                if (temp is FuzzyData.FuzzyObject)
-                    if (key is String)
-                        temp = LoadChild(temp as FuzzyData.FuzzyObject, key as String);
-                    else if (key is FuzzyData.FuzzyString)
-                        temp = LoadChild(temp as FuzzyData.FuzzyObject, key as FuzzyData.FuzzyString);
-                    else
-                        throw new ArgumentException("无法匹配的参数： [" + temp.GetType().ToString() + "] On " + temp.ToString());
-                else if (temp is FuzzyData.FuzzyArray)
-                    if (key is int)
+                if ( temp == null ) return null;
+                if ( temp is FuzzyData.FuzzyArray )
+                    if ( key is int )
                         temp = LoadArray(temp as FuzzyData.FuzzyArray, Convert.ToInt32(temp));
-                    else if (key is FuzzyData.FuzzyFixnum)
+                    else if ( key is FuzzyData.FuzzyFixnum )
                         temp = LoadArray(temp as FuzzyData.FuzzyArray, key as FuzzyData.FuzzyFixnum);
-                    else if (key is string)
+                    else if ( key is string )
                         temp = LoadArray(temp as FuzzyData.FuzzyArray, key as string);
                     else
                         throw new ArgumentException("无法匹配的参数： [" + temp.GetType().ToString() + "] On " + temp.ToString());
+                else if ( temp is FuzzyData.FuzzyObject )
+                    if ( key is String )
+                        temp = LoadChild(temp as FuzzyData.FuzzyObject, key as String);
+                    else if ( key is FuzzyData.FuzzyString )
+                        temp = LoadChild(temp as FuzzyData.FuzzyObject, key as FuzzyData.FuzzyString);
+                    else
+                        throw new ArgumentException("无法匹配的参数： [" + temp.GetType().ToString() + "] On " + temp.ToString());
+
             }
             return temp;
         }

@@ -135,3 +135,6 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Cont
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Help.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Contract.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Adapter.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\bin\Debug\DataEditor.Adapter.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Prototype\obj\Debug\DataEditor.Control.Wrapper.WrapImageDisplayer.resources

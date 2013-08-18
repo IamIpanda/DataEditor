@@ -38,8 +38,6 @@ E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Contro
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.FuzzyData.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.FuzzyData.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.csprojResolveAssemblyReference.cache
-E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.WrapImageDisplayer.resources
-E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.csproj.GenerateResource.Cache
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Wrapper.dll
@@ -51,3 +49,11 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Contro
 Y:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.csproj.GenerateResource.Cache
 Y:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Control.Wrapper.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Adapter.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Adapter.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Window.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Container.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Arce.Interpreter.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Window.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Container.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Arce.Interpreter.pdb

@@ -86,12 +86,10 @@ E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.In
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.dll
-E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Arce.Interpreter.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Container.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Prototype.pdb
-E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.Wrapper.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.FuzzyData.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Control.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.csprojResolveAssemblyReference.cache
@@ -134,3 +132,5 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Contrac
 Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Help.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Contract.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Adapter.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Adapter.pdb

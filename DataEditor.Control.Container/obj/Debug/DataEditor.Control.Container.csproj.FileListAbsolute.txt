@@ -99,3 +99,5 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Cont
 Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Help.dll
 Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Contract.pdb
 Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Help.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Adapter.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Adapter.pdb

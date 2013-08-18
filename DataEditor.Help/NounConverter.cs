@@ -50,7 +50,7 @@ namespace DataEditor.Help
         {
             string ans = null;
             Cons.TryGetValue(Key, out ans);
-            return ans;
+            return ans ?? Key;
         }
     }
 }

@@ -116,7 +116,8 @@ namespace DataEditor.Control.Wrapper
                     {
                         // TODO : Finish this.
                         Help.FileArrayManager file = Help.FileArrayManager.Create(File);
-                        foreach (FuzzyData.FuzzyObject obj in file.Value)
+                        if ( file.Exists == false ) return;
+                        foreach (FuzzyData.FuzzyObject obj in file.Value.Data)
                         {
                             object id = Help.PathHelper.LoadChild(obj, ID);
                             int OwnID = -1;

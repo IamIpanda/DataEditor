@@ -111,6 +111,9 @@
     <Compile Include="ProtoRadioContainer.Designer.cs">
       <DependentUpon>ProtoRadioContainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="WrapImageDisplayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataEditor.Contract\DataEditor.Contract.csproj">
@@ -120,6 +123,10 @@
     <ProjectReference Include="..\DataEditor.Control\DataEditor.Control.csproj">
       <Project>{ec27db05-72f8-4ad2-b8cd-735c25af79fb}</Project>
       <Name>DataEditor.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEditor.FuzzyData\DataEditor.FuzzyData.csproj">
+      <Project>{3516d3c7-f112-4763-9f2d-0b17991c12ff}</Project>
+      <Name>DataEditor.FuzzyData</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataEditor.Help\DataEditor.Help.csproj">
       <Project>{847C638E-8D84-4348-A26E-82E1AB523AC9}</Project>
@@ -156,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProtoRadioContainer.resx">
       <DependentUpon>ProtoRadioContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapImageDisplayer.resx">
+      <DependentUpon>WrapImageDisplayer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

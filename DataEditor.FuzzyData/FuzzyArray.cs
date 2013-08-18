@@ -161,7 +161,7 @@ namespace DataEditor.FuzzyData
         /// 注意！这一拷贝是一个尽可能完全的拷贝。
         /// </summary>
         /// <returns>此结构体的深层拷贝</returns>
-        public object Clone()
+        public override  object Clone()
         {
             FuzzyArray fa = new FuzzyArray();
             foreach (object ob in fa)

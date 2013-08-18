@@ -25,7 +25,7 @@ namespace DataEditor.Control
                 OnScan(attr.Name.ToUpper(), attr.InnerText);
             foreach (XmlNode node in Node.ChildNodes)
                 if (node.NodeType == XmlNodeType.Text)
-                    OnScan("TEXT", node.Value);
+                    OnScan("INNERTEXT", node.Value);
                 else
                     OnScan(node.Name.ToUpper(), GetValue(node));
         }

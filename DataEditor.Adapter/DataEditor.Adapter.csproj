@@ -35,9 +35,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdvanceArray.cs" />
+    <Compile Include="[A]AdvanceArray.cs" />
     <Compile Include="AdvanceCommand.cs" />
     <Compile Include="AdvancePicture.cs" />
+    <Compile Include="AdvanceArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,10 +53,6 @@
     <ProjectReference Include="..\DataEditor.FuzzyData\DataEditor.FuzzyData.csproj">
       <Project>{3516d3c7-f112-4763-9f2d-0b17991c12ff}</Project>
       <Name>DataEditor.FuzzyData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataEditor.Help\DataEditor.Help.csproj">
-      <Project>{847c638e-8d84-4348-a26e-82e1ab523ac9}</Project>
-      <Name>DataEditor.Help</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -189,11 +189,11 @@ namespace DataEditor.Arce.Interpreter
             { RunSpace(Node.InnerText); return true; }
             else if (Node.Name.ToUpper() == "FILE")
             { RunFile(Node.InnerText); return true; }
-                /*
+                
             else if ( Node.Name.ToUpper() == "CONVERTS" )
             { RunConvert(Node); return true; }
             else if ( Node.Name.ToUpper() == "CONVERTF" )
-            { RunConvertFromFile(Node.InnerText); return true; }*/
+            { RunConvertFromFile(Node.InnerText); return true; }
             return false;
         }
         protected virtual void RunOrder(string InnerText)

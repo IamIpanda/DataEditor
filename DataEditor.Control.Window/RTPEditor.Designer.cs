@@ -76,6 +76,7 @@
             this.RtpImageDisplayer.Name = "RtpImageDisplayer";
             this.RtpImageDisplayer.Scale = false;
             this.RtpImageDisplayer.SrcRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.RtpImageDisplayer.UseRectangleFocus = true;
             // 
             // RtpInnerList
             // 

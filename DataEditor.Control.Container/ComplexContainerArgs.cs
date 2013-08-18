@@ -14,11 +14,11 @@ namespace DataEditor.Control.Container
     public class ComplexContainerArgs : ContainerArgs
     {
         public FuzzyData.FuzzySymbol Real { get; set; }
-        public ComplexContainerArgs() : base() 
+        public ComplexContainerArgs() : base()
         {
             this.Real = null;
         }
-        public ComplexContainerArgs(System.Xml.XmlNode node) : base(node) { }
+        public ComplexContainerArgs (System.Xml.XmlNode node) : this() { Load(node); }
         protected override void OnScan(string Name, string InnerText)
         {
             base.OnScan(Name, InnerText);

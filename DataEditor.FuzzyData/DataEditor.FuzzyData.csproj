@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefaultList.cs" />
     <Compile Include="FuzzyArray.cs" />
     <Compile Include="FuzzyBignum.cs" />
     <Compile Include="FuzzyClass.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="FuzzyStruct.cs" />
     <Compile Include="FuzzySymbol.cs" />
     <Compile Include="FuzzyValueChangedEventArgs.cs" />
+    <Compile Include="LinkTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FuzzyBool.cs" />
   </ItemGroup>
