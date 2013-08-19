@@ -10,7 +10,7 @@ namespace DataEditor.Control.Container
     {
         // 契约：必须重写 Push
         // 契约：必须重写 Pull
-        protected new virtual TValue value;
+        protected new TValue value;
         protected new virtual TValue ConvertToValue (FuzzyData.FuzzyObject origin) { return origin as TValue; }
         public override FuzzyData.FuzzyObject Parent
         {
