@@ -41,15 +41,13 @@ namespace DataEditor.Arce
             FuzzyObject op = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(filx) as FuzzyObject;
             FuzzyArray fa = ob as FuzzyArray;
             FuzzyArray fb = op as FuzzyArray;
-            FuzzyObject t = fa[2] as FuzzyObject;
-            FuzzyObject s = fb[3] as FuzzyObject;
             foreach ( System.Windows.Forms.Control control in this.Controls )
             {
-                if ( control is TabControl )
+                if ( control is TabControl)
                 {
                     TabControl tc = control as TabControl;
-                    (tc.TabPages[0] as DataEditor.Control.ObjectEditor).Parent = fa;
-                    (tc.TabPages[1] as DataEditor.Control.ObjectEditor).Parent = fb;
+                    (tc.TabPages[0].Tag as DataEditor.Control.ObjectEditor).Parent = fa;
+                    (tc.TabPages[1].Tag as DataEditor.Control.ObjectEditor).Parent = fb;
                 }
             }
         }

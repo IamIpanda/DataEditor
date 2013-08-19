@@ -23,16 +23,23 @@ namespace DataEditor.Control.Container
             this.Name = "ListBoxContainer";
             this.ResumeLayout(false);
         }
+        public new System.Windows.Forms.Control.ControlCollection Controls
+        {
+            get { return base.Controls;  }
+        }
     }
     public class ListBoxContainer : WrapBaseContainer<ListBoxArgs>
     {
         string model;
         Help.LinkTable<int, int> Link = new Help.LinkTable<int, int>();
         List<Help.TextManager> TextManager = new List<Help.TextManager>();
+
         public override string Flag { get { return "list"; } }
         public override void Bind ()
         {
-            Binding = new _ListBoxContainer();
+            var lb = new _ListBoxContainer();
+            lb.SelectedIndexChanged += OnSelectedIndexChanged;
+            Binding = lb;
         }
         public override void Reset ()
         {
@@ -47,21 +54,23 @@ namespace DataEditor.Control.Container
         {
             get
             {
-                ListBox lb = Binding as ListBox;
-                FuzzyArray arr = value as FuzzyArray;
+                _ListBoxContainer origin = Binding as _ListBoxContainer;
+                if (origin == null) return null;
+                Prototype.ProtoLeftListBox lb = origin.ListBox;
+                FuzzyArray arr = base.Value as FuzzyArray;
                 if ( lb == null || arr == null ) return null;
                 if ( lb.SelectedIndex == -1 ) return null;
-                if ( value == null ) return null;
                 else return arr[Link.Reverse[lb.SelectedIndex]] as FuzzyObject;
             }
             set { throw new NotImplementedException(); }
         }
         public override void Pull ()
         {
-            if ( value == null || model == null || Binding == null ) return;
-            FuzzyArray arr = value as FuzzyArray;
-            ListBox lb = Binding as ListBox;
-            if ( lb == null || arr == null ) return;
+            if ( base.Value == null || model == null || Binding == null ) return;
+            FuzzyArray arr = base.Value as FuzzyArray;
+            _ListBoxContainer origin = Binding as _ListBoxContainer;
+            if ( arr == null || arr == null ) return;
+            Prototype.ProtoLeftListBox lb = origin.ListBox;
             Link.Clear();
             TextManager.Clear();
             lb.Items.Clear();
@@ -76,7 +85,17 @@ namespace DataEditor.Control.Container
                 lb.Items.Add(text);
                 Link.Add(i, j++);
             }
+            base.Pull();
         }
+
+        private void OnSelectedIndexChanged (object sender, EventArgs e)
+        {
+            base.Pull();
+        }
+        protected override System.Windows.Forms.Control.ControlCollection Controls
+        { get { return (Binding as _ListBoxContainer).Controls; } }
+        protected override int ExtraHeight { get { return 6; } }
+        protected override int ExtraWidth { get { return 6; } }
     }
     public class ListBoxArgs : ContainerArgs
     {

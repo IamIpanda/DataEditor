@@ -13,8 +13,8 @@ namespace DataEditor.Control.Wrapper
         }
         public override void Pull ()
         {
-            TextBox tb = Binding as TextBox;
-            if ( tb != null ) tb.Text = value.Text;
+                TextBox tb = Binding as TextBox;
+                if ( tb != null && value != null ) tb.Text = value.Text;   
         }
         public override void Push ()
         {

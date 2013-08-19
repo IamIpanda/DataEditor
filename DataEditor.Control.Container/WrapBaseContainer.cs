@@ -9,7 +9,7 @@ namespace DataEditor.Control.Container
         where TArg : ContainerArgs,new()
     {
         protected ContainerHelper Helper = new ContainerHelper();
-
+        
         public override FuzzyData.FuzzyObject Value
         {
             get { return Helper.ChildValue; }
@@ -17,7 +17,6 @@ namespace DataEditor.Control.Container
         }
         public new FuzzyData.FuzzyObject Parent
         {
-            //get { return Helper.ParentValue; }
             set { Helper.ParentValue = value; Pull(); }
         }
         public override ControlArgs Load_Information (System.Xml.XmlNode Node)
@@ -25,8 +24,8 @@ namespace DataEditor.Control.Container
             if ( Binding != null )
             {
                 Builder builder = new Builder();
-                System.Drawing.Size size = builder.Build(Node, Binding.Controls);
-                Binding.ClientSize = size;
+                System.Drawing.Size size = builder.Build(Node, Controls, ExtraWidth, ExtraHeight);
+                SetSize(size);
             }
             TArg gba = new TArg();
             gba.Load(Node);
@@ -35,11 +34,12 @@ namespace DataEditor.Control.Container
         public override void Pull ()
         {
             if ( Binding != null )
-                foreach ( System.Windows.Forms.Control control in Binding.Controls )
-                    if ( control is ObjectEditor )
-                        (control as ObjectEditor).Parent = Helper.ChildValue;
+                foreach ( System.Windows.Forms.Control control in Controls )
+                    if ( control.Tag != null && control.Tag is ObjectEditor)
+                            (control.Tag as ObjectEditor).Parent = Value;
         }
         public override void Push () { /* 已弃用 */ }
+        
         public override void Reset ()
         {
             base.Reset();
@@ -50,5 +50,11 @@ namespace DataEditor.Control.Container
             Helper.ChildSymbol = argument.Actual;
             Binding.Text = argument.Text;
         }
+
+        protected virtual int ExtraWidth { get { return 2; } }
+        protected virtual int ExtraHeight { get { return 2; } }
+        protected virtual void SetSize (System.Drawing.Size size) { Binding.ClientSize = size; }
+        protected virtual System.Windows.Forms.Control.ControlCollection Controls
+        { get { return Binding != null ? Binding.Controls : null; } }
     }
 }

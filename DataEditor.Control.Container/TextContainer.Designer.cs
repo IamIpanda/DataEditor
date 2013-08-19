@@ -51,13 +51,13 @@
             this.lbText.Text = "TEXT";
             this.lbText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // LabeledContainer
+            // _TextContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            base.Controls.Add(this.lbText);
-            base.Controls.Add(this.panel1);
-            this.Name = "LabeledContainer";
+            this.Controls.Add(this.lbText);
+            this.Controls.Add(this.panel1);
+            this.Name = "_TextContainer";
             this.Size = new System.Drawing.Size(429, 375);
             this.ResumeLayout(false);
 

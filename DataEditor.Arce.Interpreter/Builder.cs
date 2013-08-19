@@ -72,6 +72,8 @@ namespace DataEditor.Arce.Interpreter
                     // 将事件绑定给控件
                     control.Enter += DataEditor.Control.ControlHelper.OnEnter;
                     control.Leave += DataEditor.Control.ControlHelper.OnLeave;
+                    // 留下追踪信息
+                    control.Tag = editor;
                     // 生成和计算 Label 的影响
                     int extra_w = 0, extra_h = 0;
                     Label label = GetLabel(now_x, now_y, argument.Text);
@@ -112,8 +114,8 @@ namespace DataEditor.Arce.Interpreter
         /// <returns></returns>
         protected override int AddControl(System.Windows.Forms.Control Control, System.Windows.Forms.Control.ControlCollection Collection)
         {
-            Collection.Add(Control);
-            return 1;
+                Collection.Add(Control);
+                return 1;
         }
         /// <summary>
         /// 将 Label 上传到父控件
@@ -123,7 +125,13 @@ namespace DataEditor.Arce.Interpreter
         /// <returns></returns>
         protected virtual int AddLabel(Label Label, System.Windows.Forms.Control.ControlCollection Collection)
         {
-            Collection.Add(Label);
+            try
+            {
+                Collection.Add(Label);
+            }
+            catch (Exception ex)
+            {
+            }
             return 1;
         }
         /// <summary>

@@ -48,7 +48,7 @@ namespace DataEditor.Control
             {
                 FuzzyData.FuzzyObject origin = ControlHelper.TypeCheck<FuzzyData.FuzzyObject>.Get(value, key);
                 TValue ans = ConvertToValue(origin);
-                if ( ans != null ) value = ans;
+                if ( ans != null ) this.value = ans;
                 Pull();
             }
         }
