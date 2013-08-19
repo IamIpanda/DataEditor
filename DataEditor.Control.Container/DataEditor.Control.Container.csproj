@@ -41,26 +41,21 @@
     <Compile Include="ComplexContainerHelper.cs" />
     <Compile Include="ContainerHelper.cs" />
     <Compile Include="ContainerArgs.cs" />
+    <Compile Include="TextContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextContainer.Designer.cs">
+      <DependentUpon>TextContainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListBoxContainer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RadioComplexContainer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="RadioComplexContainer.cs" />
     <Compile Include="SimpleBoxContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GroupBoxContainer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="SimpleBoxContainerEx.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SimpleBoxContainerEx.Designer.cs">
-      <DependentUpon>SimpleBoxContainerEx.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TabPagesContainer.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="GroupBoxContainer.cs" />
+    <Compile Include="TabPagesContainer.cs" />
+    <Compile Include="WrapBaseComlexContainer.cs" />
     <Compile Include="WrapBaseContainer.cs" />
     <None Include="[A]GroupBoxContainer.cs">
       <SubType>Component</SubType>
@@ -111,11 +106,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TextContainer.resx">
+      <DependentUpon>TextContainer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListBoxContainer.resx">
       <DependentUpon>ListBoxContainer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SimpleBoxContainerEx.resx">
-      <DependentUpon>SimpleBoxContainerEx.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="[A]ListBoxContainer.resx">
       <DependentUpon>[A]ListBoxContainer.cs</DependentUpon>

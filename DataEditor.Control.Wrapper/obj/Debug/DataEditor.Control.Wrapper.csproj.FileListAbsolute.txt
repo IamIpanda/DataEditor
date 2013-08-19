@@ -52,8 +52,4 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Wrapper\obj\Debug\DataEditor.Contro
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Adapter.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Adapter.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Window.dll
-E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Container.dll
-E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Arce.Interpreter.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Window.pdb
-E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Container.pdb
-E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Arce.Interpreter.pdb

@@ -6,6 +6,7 @@ using DataEditor.Arce.Interpreter;
 
 namespace DataEditor.Control.Container
 {
+    /*
     public class RadioComplexContainer : Prototype.ProtoRadioContainer, Control.ComplexContainer
     {
         ComplexContainerHelper Helper = new ComplexContainerHelper();
@@ -159,4 +160,5 @@ namespace DataEditor.Control.Container
         protected RadioGroup(string Key) { this.Key = Key; }
         protected static Dictionary<string, RadioGroup> groups = new Dictionary<string, RadioGroup>();
     }
+     */
 }

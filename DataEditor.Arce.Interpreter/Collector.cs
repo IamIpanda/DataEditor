@@ -28,8 +28,8 @@ namespace DataEditor.Arce.Interpreter
             {
                 foreach ( Type t in ass.GetExportedTypes() )
                 {
-                    //Log.log("正在扫描类型：" + t.ToString());
-                    if ( t.IsClass )
+                    // Log.log("正在扫描类型：" + t.ToString());
+                    if ( t.IsClass && !t.IsAbstract)
                         foreach ( Type Inter in t.GetInterfaces() )
                             if ( Inter == basetype )
                             {

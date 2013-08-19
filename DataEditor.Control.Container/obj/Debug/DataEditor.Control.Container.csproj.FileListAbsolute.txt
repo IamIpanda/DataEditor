@@ -70,8 +70,6 @@ E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Cont
 E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Control.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.FuzzyData.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csprojResolveAssemblyReference.cache
-E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.ListBoxContainer.resources
-E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.SimpleBoxContainerEx.resources
 E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.csproj.GenerateResource.Cache
 E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container.pdb
@@ -101,3 +99,5 @@ Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Cont
 Y:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Help.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Adapter.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Container\bin\Debug\DataEditor.Adapter.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container._TextContainer.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Container\obj\Debug\DataEditor.Control.Container._ListBoxContainer.resources

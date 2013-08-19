@@ -29,7 +29,7 @@ namespace DataEditor.Arce
             System.Xml.XmlDocument document = new XmlDocument();
             document.Load("Xmls/test1.xml");
             try
-            {
+            {   
                 builder.Build(document.FirstChild.NextSibling, this.Controls);
             }
             catch ( Exception exc )

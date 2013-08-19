@@ -8,6 +8,7 @@ namespace DataEditor.Control.Container
 {
     public class SimpleContainer : WrapBaseContainer<SimpleBoxArgs>
     {
+        public override string Flag { get { return "simple"; } }
         public override void Bind ()
         {
             Binding = new System.Windows.Forms.Control();

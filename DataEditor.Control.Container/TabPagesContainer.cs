@@ -50,7 +50,7 @@ namespace DataEditor.Control.Container
     }
     public class TabPageArgs : ContainerArgs 
     {
-        public TabPageArgs() : base() { }
-        public TabPageArgs(System.Xml.XmlNode node) : base(node) { }
+        public TabPageArgs () : base() { this.Label = 0; }
+        public TabPageArgs (System.Xml.XmlNode node) : this() { Load(node); this.Label = 0; }
     }
 }

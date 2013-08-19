@@ -15,15 +15,10 @@ namespace DataEditor.Control.Container
             get { return Helper.ChildValue; }
             set { Helper.ChildValue = value; Pull(); }
         }
-        public override FuzzyData.FuzzyObject Parent
+        public new FuzzyData.FuzzyObject Parent
         {
-            get { return Helper.ParentValue; }
+            //get { return Helper.ParentValue; }
             set { Helper.ParentValue = value; Pull(); }
-        }
-        public override TArg Arguments
-        {
-            get { return argument; }
-            set { argument = value as TArg; Reset(); }
         }
         public override ControlArgs Load_Information (System.Xml.XmlNode Node)
         {
@@ -37,7 +32,7 @@ namespace DataEditor.Control.Container
             gba.Load(Node);
             return gba;
         }
-        public void Pull ()
+        public override void Pull ()
         {
             if ( Binding != null )
                 foreach ( System.Windows.Forms.Control control in Binding.Controls )
