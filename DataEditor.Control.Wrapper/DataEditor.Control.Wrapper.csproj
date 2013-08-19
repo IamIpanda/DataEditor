@@ -39,18 +39,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WrapTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="WrapNumInput.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="WrapListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="WrapChooseBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="WrapTextBox.cs" />
+    <Compile Include="WrapNumInput.cs" />
+    <Compile Include="WrapListView.cs" />
+    <Compile Include="WrapChooseBox.cs" />
     <None Include="[A]WrapChooseBox.cs">
       <SubType>Component</SubType>
     </None>

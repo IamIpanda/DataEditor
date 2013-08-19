@@ -42,7 +42,7 @@ namespace DataEditor.Control
             get { return value; }
             set { this.value = ConvertToValue(value); Pull(); }
         }
-        public new virtual FuzzyData.FuzzyObject Parent
+        public virtual FuzzyData.FuzzyObject Parent
         {
             set
             {

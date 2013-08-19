@@ -5,58 +5,29 @@ using System.Windows.Forms;
 
 namespace DataEditor.Control.Wrapper
 {
-    public class WrapChooseBox : Prototype.ProtoComboBox, DataEditor.Control.ObjectEditor,Contract.TaintableSingleEditor
+    public class WrapChooseBox : Control.WrapBaseEditor<FuzzyData.FuzzyFixnum,ChooseBoxArgs>
     {
-        ChooseBoxArgs argument;
-        FuzzyData.FuzzyFixnum value;
-        FuzzyData.FuzzySymbol key;
-        Contract.TaintState taint;
+        Prototype.ProtoComboBox actual;
         Help.LinkTable<int, int> Link = new Help.LinkTable<int,int>();
-        public ControlArgs Load_Information(System.Xml.XmlNode Node) { return new ChooseBoxArgs(Node); }
-        public string Flag { get { return "choose"; } }
-        public Label Label { get; set; }
-        public ControlArgs Arguments
+        public override string Flag { get { return "choose"; } }
+        public override void Bind ()
         {
-            get { return argument; }
-            set { argument = value as ChooseBoxArgs; Reset(); }
+            var combo = new Prototype.ProtoComboBox();
+            combo.DropDownStyle = ComboBoxStyle.DropDownList;
+            Binding = combo;
+            actual = combo;
         }
-        public FuzzyData.FuzzyObject Value
+        public override void Push()
         {
-            get { return value; }
-            set { this.value = value as FuzzyData.FuzzyFixnum; Pull(); }
+            if (value != null && actual != null)
+                value.Value = Link.Reverse[actual.SelectedIndex];
         }
-        public Contract.TaintState Tainted
+        public override void Reset()
         {
-            get { return taint; }
-            set { taint = value; Putt(); }
-        }
-        public new FuzzyData.FuzzyObject Parent
-        {
-            set
-            {
-                FuzzyData.FuzzyFixnum num = ControlHelper.TypeCheck<FuzzyData.FuzzyFixnum>.Get(value, key);
-                if (num != null) Value = num;
-                else if (Label != null) this.Enabled = false;
-                Pull();
-            }
-        }
-        public WrapChooseBox()
-        {
-            this.DropDownStyle = ComboBoxStyle.DropDownList;
-        }
-        public void Push()
-        {
-            if (value != null)
-                value.Value = Link.Reverse[this.SelectedIndex];
-        }
-        public void Reset()
-        {
-            if (argument == null) return;
-            this.Enabled = true;
-            DataEditor.Control.ControlHelper.Reset(this, argument);
-            this.key = argument.Actual;
+            base.Reset();
+            if ( argument == null ) return;
             Link.Clear();
-            Items.Clear();
+            actual.Items.Clear();
             // id for i,index for j
             int i = -1, j = 0;
             foreach (var manager in argument.List)
@@ -64,20 +35,13 @@ namespace DataEditor.Control.Wrapper
                 i++;
                 if (manager == null) continue;
                 Link.Add(i, j++);
-                Items.Add(manager);
+                actual.Items.Add(manager);
             }
         }
-        public void Pull()
+        public override void Pull()
         {
-            if (value != null)
-            {
-                this.SelectedIndex = Link.Verse[(int)value.Value];
-                Tainted = Help.TaintRecord.Single[value];
-            }
-        }
-        public void Putt()
-        {
-            Help.TaintHelper.OnPutt(Label, taint);
+            if (value != null && actual != null)
+                actual.SelectedIndex = Link.Verse[(int)value.Value];
         }
     }
     public class ChooseBoxArgs : ControlArgs
