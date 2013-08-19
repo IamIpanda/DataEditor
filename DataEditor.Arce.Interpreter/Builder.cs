@@ -65,19 +65,13 @@ namespace DataEditor.Arce.Interpreter
                     DataEditor.Control.ControlArgs argument = editor.Load_Information(ChildNode);
                     editor.Arguments = argument;
                     // 转换成控件形式
-                    System.Windows.Forms.Control control = editor as System.Windows.Forms.Control;
+                    System.Windows.Forms.Control control = editor.Binding;
                     // 若转换失败，依然将节点送往一个空方法
                     if (control == null)
                     { FailedBuildingNodes(ChildNode); continue; }
                     // 将事件绑定给控件
-                    if (editor is Contract.FocusDependent)
-                        control.Enter += (editor as Contract.FocusDependent).OnEnter;
-                    else control.Enter += DataEditor.Control.ControlHelper.OnEnter;
-                    if (editor is Contract.FocusDependent)
-                        control.Leave += (editor as Contract.FocusDependent).OnLeave;
-                    if (editor is Contract.TaintableTrigger)
-                        (control as Contract.TaintableTrigger).Taint += Control.ControlHelper.OnTaint;
-                    else control.Leave += DataEditor.Control.ControlHelper.OnLeave;
+                    control.Enter += DataEditor.Control.ControlHelper.OnEnter;
+                    control.Leave += DataEditor.Control.ControlHelper.OnLeave;
                     // 生成和计算 Label 的影响
                     int extra_w = 0, extra_h = 0;
                     Label label = GetLabel(now_x, now_y, argument.Text);

@@ -9,7 +9,7 @@ namespace DataEditor.Control
         public static void Reset(ObjectEditor editor, ControlArgs arg)
         {
             System.Windows.Forms.Control control =
-                editor as System.Windows.Forms.Control;
+                editor.Binding;
             if (control == null) return;
             if (arg.Width != -1)
                 control.Width = arg.Width;
@@ -18,8 +18,6 @@ namespace DataEditor.Control
         }
         public static void OnLeave(object sender, EventArgs e)
         {
-            Control.ObjectEditor oe = sender as Control.ObjectEditor;
-            if ( oe != null ) oe.Push();
             // 什么都不做
         }
         public static void OnEnter(object sender, EventArgs e)

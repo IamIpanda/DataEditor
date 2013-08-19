@@ -37,5 +37,9 @@ namespace DataEditor.Control
         /// 和此控件绑定的 Label
         /// </summary>
         System.Windows.Forms.Label Label { get; set; }
+        /// <summary>
+        /// 绑定的实体控件
+        /// </summary>
+        System.Windows.Forms.Control Binding { get; set; }
     }
 }

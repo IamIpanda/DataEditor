@@ -39,18 +39,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WrapChooseBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="WrapListView.cs">
+    <Compile Include="WrapTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="WrapNumInput.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="WrapTextBox.cs">
+    <Compile Include="WrapListView.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="WrapChooseBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="[A]WrapChooseBox.cs">
+      <SubType>Component</SubType>
+    </None>
+    <None Include="[A]WrapListView.cs">
+      <SubType>Component</SubType>
+    </None>
+    <None Include="[A]WrapNumInput.cs">
+      <SubType>Component</SubType>
+    </None>
+    <None Include="[A]WrapTextBox.cs">
+      <SubType>Component</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataEditor.Adapter\DataEditor.Adapter.csproj">
