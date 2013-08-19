@@ -14,15 +14,14 @@ namespace DataEditor.Control.Container
         {
             InitializeComponent();
         }
-        public new ControlCollection SControls
+        public new ControlCollection Controls
         {
             get { return panel1.Controls; }
         }
         public override string Text
         {
             get { return lbText.Text; }
-            set {
-                lbText.Text = value; }
+            set { lbText.Text = value; }
         }
         public int DeltaHeight { get { return Height - panel1.Height; } }
     }
@@ -34,7 +33,7 @@ namespace DataEditor.Control.Container
             Binding = new _TextContainer();    
         }
         protected override System.Windows.Forms.Control.ControlCollection Controls
-        { get { return (Binding as _TextContainer).SControls; } }
+        { get { return (Binding as _TextContainer).Controls; } }
         protected override void SetSize (Size size)
         {
             int height = size.Height + (Binding as _TextContainer).DeltaHeight;
@@ -43,7 +42,7 @@ namespace DataEditor.Control.Container
     }
     public class TextContainerArgs : ContainerArgs
     {
-        public TextContainerArgs () { }
+        public TextContainerArgs () { this.Label = 0; }
         public TextContainerArgs (System.Xml.XmlNode node) : this() { Load(node); }
     }
 }

@@ -47,9 +47,7 @@
     <Compile Include="TextContainer.Designer.cs">
       <DependentUpon>TextContainer.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListBoxContainer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ListBoxContainer.cs" />
     <Compile Include="RadioComplexContainer.cs" />
     <Compile Include="SimpleBoxContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,9 +106,6 @@
   <ItemGroup>
     <EmbeddedResource Include="TextContainer.resx">
       <DependentUpon>TextContainer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListBoxContainer.resx">
-      <DependentUpon>ListBoxContainer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="[A]ListBoxContainer.resx">
       <DependentUpon>[A]ListBoxContainer.cs</DependentUpon>

@@ -6,28 +6,6 @@ using System.Windows.Forms;
 
 namespace DataEditor.Control.Container
 {
-    public class _ListBoxContainer : Prototype.ProtoFullListBox
-    {   
-        public _ListBoxContainer()
-        {
-            InitializeComponent();
-        }
-
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // ListBoxContainer
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.Name = "ListBoxContainer";
-            this.ResumeLayout(false);
-        }
-        public new System.Windows.Forms.Control.ControlCollection Controls
-        {
-            get { return base.Controls;  }
-        }
-    }
     public class ListBoxContainer : WrapBaseContainer<ListBoxArgs>
     {
         string model;
@@ -37,7 +15,7 @@ namespace DataEditor.Control.Container
         public override string Flag { get { return "list"; } }
         public override void Bind ()
         {
-            var lb = new _ListBoxContainer();
+            var lb = new Prototype.ProtoFullListBox();
             lb.SelectedIndexChanged += OnSelectedIndexChanged;
             Binding = lb;
         }
@@ -48,13 +26,13 @@ namespace DataEditor.Control.Container
             this.model = argument.Show;
 
             Binding.Dock = (DockStyle)argument.Dock;
-            Binding.Text = argument.Text;
+            (Binding as Prototype.ProtoFullListBox).Text = argument.Text;
         }
         public override FuzzyObject Value
         {
             get
             {
-                _ListBoxContainer origin = Binding as _ListBoxContainer;
+                Prototype.ProtoFullListBox origin = Binding as Prototype.ProtoFullListBox;
                 if (origin == null) return null;
                 Prototype.ProtoLeftListBox lb = origin.ListBox;
                 FuzzyArray arr = base.Value as FuzzyArray;
@@ -68,7 +46,7 @@ namespace DataEditor.Control.Container
         {
             if ( base.Value == null || model == null || Binding == null ) return;
             FuzzyArray arr = base.Value as FuzzyArray;
-            _ListBoxContainer origin = Binding as _ListBoxContainer;
+            Prototype.ProtoFullListBox origin = Binding as Prototype.ProtoFullListBox;
             if ( arr == null || arr == null ) return;
             Prototype.ProtoLeftListBox lb = origin.ListBox;
             Link.Clear();
@@ -93,7 +71,7 @@ namespace DataEditor.Control.Container
             base.Pull();
         }
         protected override System.Windows.Forms.Control.ControlCollection Controls
-        { get { return (Binding as _ListBoxContainer).Controls; } }
+        { get { return (Binding as Prototype.ProtoFullListBox).Controls; } }
         protected override int ExtraHeight { get { return 6; } }
         protected override int ExtraWidth { get { return 6; } }
     }

@@ -15,7 +15,7 @@ namespace DataEditor.Control.Container
             get { return Helper.ChildValue; }
             set { Helper.ChildValue = value; Pull(); }
         }
-        public new FuzzyData.FuzzyObject Parent
+        public override FuzzyData.FuzzyObject Parent
         {
             set { Helper.ParentValue = value; Pull(); }
         }

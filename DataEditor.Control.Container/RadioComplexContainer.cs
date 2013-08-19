@@ -6,96 +6,38 @@ using DataEditor.Arce.Interpreter;
 
 namespace DataEditor.Control.Container
 {
-    /*
-    public class RadioComplexContainer : Prototype.ProtoRadioContainer, Control.ComplexContainer
+    
+    public class RadioComplexContainer :WrapBaseComplexContainer<FuzzyData.FuzzyFixnum,RadioComplexContainerArgs>
     {
-        ComplexContainerHelper Helper = new ComplexContainerHelper();
-        RadioComplexContainerArgs argument;
-        FuzzyData.FuzzySymbol key;
-        FuzzyData.FuzzyFixnum value;
-        int SelfValue;
-
-        public Contract.TaintState taint;
-        public string Flag { get { return "radio"; } }
-        public Label Label { get; set; }
-
-        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
-        [System.ComponentModel.Browsable(false)]
-        public FuzzyData.FuzzyObject ContainerValue
+        int SelfValue = -10, RadioWidth = 0;
+        Prototype.ProtoRadioContainer prc;
+        public override string Flag { get { return "radio"; } }
+        public override void Bind () { prc = new Prototype.ProtoRadioContainer(); Binding = prc; }
+        protected override void SetSize (System.Drawing.Size size)
         {
-            get { return Helper.ChildValue; }
-            set { Helper.ChildValue = value; Pull(); }
+            int width = size.Width + RadioWidth;
+            base.SetSize(new System.Drawing.Size(width,size.Height));
         }
-        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
-        [System.ComponentModel.Browsable(false)]
-        public FuzzyData.FuzzyObject Value
+        public override void Pull()
         {
-            get { return value; }
-            set { this.value = value as FuzzyData.FuzzyFixnum; Pull(); }
-        }
-        [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
-        [System.ComponentModel.Browsable(false)]
-        public new FuzzyData.FuzzyObject Parent
-        {
-            get { return Helper.ParentValue; }
-            set {
-                Helper.ParentValue = value;
-                FuzzyData.FuzzyFixnum num = ControlHelper.TypeCheck<FuzzyData.FuzzyFixnum>.Get(value, key);
-                if (num != null) Value = num;
-                Pull();
-            }
-        }
-        public Contract.TaintState Tainted
-        {
-            get { return taint; }
-            set { taint = value; Putt(); }
-        }
-        public ControlArgs Arguments
-        {
-            get { return argument; }
-            set { argument = value as RadioComplexContainerArgs; Reset(); }
-        }
-        public ControlArgs Load_Information(System.Xml.XmlNode Node)
-        {
-            Builder builder = new Builder();
-            System.Drawing.Size size = builder.Build(Node, this.Controls);
-            this.SetClientSizeCore(size.Width + this.RadioWidth, size.Height + 6);
-            RadioComplexContainerArgs gba = new RadioComplexContainerArgs();
-            gba.Load(Node);
-            return gba;
-        }
-        public void Pull()
-        {
-            foreach (System.Windows.Forms.Control control in this.Controls)
-                if (control is ObjectEditor)
-                    (control as ObjectEditor).Parent = Helper.ChildValue;
+            base.Pull();
             if (value.Value == SelfValue)
-                this.Radio.Checked = true;
-            Tainted = Help.TaintRecord.Single[Value];
+                prc.Radio.Checked = true;
         }
-        public void Push()
+        public override void Push()
         {
-            if (base.Radio.Checked)
+            base.Push();
+            if (prc.Radio.Checked)
                 if (value != null)
                     value.Value = SelfValue;
         }
-        public void Putt()
+        public override void Reset()
         {
-            Help.TaintHelper.OnPutt(Label, taint);
-        }
-        public void Reset()
-        {
-            if (argument == null) return;
-            ControlHelper.Reset(this, argument);
-            if (argument.BackColor != default(System.Drawing.Color))
-                this.BackColor = argument.BackColor;
-            if (argument.RadioWidth > 0)
-                this.RadioWidth = argument.RadioWidth;
-            RadioGroup.AddRadio(argument.Group, this.Radio);    
+            base.Reset();
+            if ( argument == null || prc == null ) return;
             this.SelfValue = argument.Value;
-            this.key = argument.Real;
-            this.Text = argument.Text;
-            Helper.ChildSymbol = argument.Actual;
+            this.RadioWidth = argument.RadioWidth;
+            RadioGroup.AddRadio(argument.Group, prc.Radio);
         }
     }
 
@@ -160,5 +102,5 @@ namespace DataEditor.Control.Container
         protected RadioGroup(string Key) { this.Key = Key; }
         protected static Dictionary<string, RadioGroup> groups = new Dictionary<string, RadioGroup>();
     }
-     */
+     
 }
