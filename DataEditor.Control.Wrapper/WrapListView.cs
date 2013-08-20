@@ -48,21 +48,23 @@ namespace DataEditor.Control.Wrapper
                 ShowText();
             }
         }
-        public void Putt ()
+        public override Adapter.AdvanceArray ConvertToValue (FuzzyData.FuzzyObject origin)
         {
+            FuzzyData.FuzzyArray arr = origin as FuzzyData.FuzzyArray;
+            if ( arr == null ) return null;
+            Adapter.AdvanceArray array = new Adapter.AdvanceArray(arr);
+            return array.Exists ? array : null;
         }
-
         void WrapListView_DoubleClick (object sender, EventArgs e)
         {
             if ( value == null ) return;
             if ( plv.SelectedIndices.Count == 0 ) return;
             if ( Window == null ) return;
             FuzzyData.FuzzyObject editing = value.Data[plv.SelectedIndices[0]];
-            Control.Window.DataEditorDialog dialog = new Window.DataEditorDialog();
-         
+            DataEditor.Control.Window.DataEditorDialog dialog = new Control.Window.DataEditorDialog();
             dialog.Arguments = dialog.Load_Information(Window);
             dialog.Parent = editing;
-            if ( dialog.Binding.ShowDialog() == DialogResult.OK )
+            if ( (dialog.Binding as System.Windows.Forms.Form).ShowDialog() == DialogResult.OK )
             {
 
             }

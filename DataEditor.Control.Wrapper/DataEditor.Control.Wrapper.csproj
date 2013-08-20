@@ -66,6 +66,10 @@
       <Name>DataEditor.Contract</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\DataEditor.Control.Container\DataEditor.Control.Container.csproj">
+      <Project>{cb2e0c25-2e95-49f9-acde-f99236c6b34a}</Project>
+      <Name>DataEditor.Control.Container</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataEditor.Control.Prototype\DataEditor.Control.Prototype.csproj">
       <Project>{02449EDB-B4B5-47E6-AD29-7CC1C8B0BF09}</Project>
       <Name>DataEditor.Control.Prototype</Name>

@@ -57,17 +57,10 @@ namespace DataEditor.Control.Window
             Binding = ded;
         }
         protected override System.Windows.Forms.Control.ControlCollection Controls
-        {
-            get
-            {
-                return ded == null ? ded.ChildControls : null;
-            }
-        }
+        { get { return ded != null ? ded.ChildControls : null; } }
         protected override void SetSize (Size size)
-        {
-            if ( ded != null ) ded.ClientSize = new Size(size.Width, size.Height + ded.ExtraHeight);
-        }
-        protected void OnOKClicked (object sender, EventArgs e) { origin &= value; }
+        { if ( ded != null ) ded.ClientSize = new Size(size.Width, size.Height + ded.ExtraHeight); }
+        protected void OnOKClicked (object sender, EventArgs e) { origin &= Value; }
     }
     public class EditorWindowArgs : DataEditor.Control.Container.SimpleBoxArgs
     {
