@@ -11,21 +11,6 @@ namespace DataEditor.Contract
         /// </summary>
         void Putt();
     }
-    public interface TaintableSingleEditor : TaintableEditor
-    {
-        TaintState Tainted { get; set; }
-    }
-    public interface TaintableMultiEditor : TaintableEditor
-    {
-        TaintCollection Tainted { get; }
-    }
-    public interface TaintableTrigger
-    {
-        /// <summary>
-        /// 当控件值被污染时，触发此事件。
-        /// </summary>
-        event EventHandler Taint;
-    }
     public interface TaintCollection
     {
         TaintState this[int index] { get; set; }

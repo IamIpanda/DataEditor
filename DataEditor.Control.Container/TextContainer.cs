@@ -23,6 +23,11 @@ namespace DataEditor.Control.Container
             get { return lbText.Text; }
             set { lbText.Text = value; }
         }
+        public Color FColor
+        {
+            get { return lbText.ForeColor; }
+            set { lbText.ForeColor = value; }
+        }
         public int DeltaHeight { get { return Height - panel1.Height; } }
     }
     public class TextContainer : WrapBaseContainer<TextContainerArgs>
@@ -38,6 +43,11 @@ namespace DataEditor.Control.Container
         {
             int height = size.Height + (Binding as _TextContainer).DeltaHeight;
             base.SetSize(new Size(size.Width, height));
+        }
+        protected override void ShowTaint (Contract.TaintState State)
+        {
+            if ( Binding == null ) return;
+            (Binding as _TextContainer).FColor = Help.TaintOptions.DefaultColors[State];
         }
     }
     public class TextContainerArgs : ContainerArgs

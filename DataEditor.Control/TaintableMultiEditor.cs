@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataEditor.Control
 {
-    public interface TaintableMultiEditor : Contract.TaintableMultiEditor
+    public interface TaintableMultiEditor
     {
         void SearchTaintValue(FuzzyData.FuzzyObject Value);
     }

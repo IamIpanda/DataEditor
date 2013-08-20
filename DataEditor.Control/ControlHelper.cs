@@ -26,7 +26,7 @@ namespace DataEditor.Control
         }
         public static void OnTaint(object sender, EventArgs e)
         {
-            if (sender is System.Windows.Forms.Control) Taint(sender as System.Windows.Forms.Control, Contract.TaintState.Tainted);
+            //if (sender is System.Windows.Forms.Control) Taint(sender as System.Windows.Forms.Control, Contract.TaintState.Tainted);
         }
         public static class TypeCheck<T> where T : FuzzyData.FuzzyObject
         {
@@ -40,6 +40,7 @@ namespace DataEditor.Control
                 else return null;
             }
         }
+        /*
         public static void Taint(System.Windows.Forms.Control Control, Contract.TaintState State,int Index = -1)
         {
             ObjectEditor Editor = Control as ObjectEditor;
@@ -99,6 +100,7 @@ namespace DataEditor.Control
                     TaintParent(Control, Contract.TaintState.ChildTainted, Index);
             }
         }
+         
         private static void TaintParent(System.Windows.Forms.Control Control,Contract.TaintState State,int Index = -1)
         {
             System.Windows.Forms.Control Key = Control.Parent;
@@ -108,5 +110,6 @@ namespace DataEditor.Control
             if (Key.Parent == null) return;
             Taint(Key, State, Index);
         }
+         */
     }
 }

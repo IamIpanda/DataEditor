@@ -34,7 +34,7 @@ namespace DataEditor.Arce.Interpreter
         /// <param name="default_head_x">默认的 x 轴起始位置</param>
         /// <param name="defaule_head_y">默认的 y 轴起始位置</param>
         /// <returns>建造完毕后，得出的所有控件的尺寸</returns>
-        public Size Build(System.Xml.XmlNode TopNode, System.Windows.Forms.Control.ControlCollection Collection, int default_head_x = 0, int defaule_head_y = 0)
+        public Size Build(System.Xml.XmlNode TopNode, System.Windows.Forms.Control.ControlCollection Collection,Control.ObjectEditor Parent = null, int default_head_x = 0, int defaule_head_y = 0)
         {
             // 把所有变量初始化。
             max_x = head_x = now_x = default_head_x;
@@ -64,6 +64,8 @@ namespace DataEditor.Arce.Interpreter
                     // 若此控件是一个容器，则在生成函数参数结构体的同时，应当已经在内部进行了子控件生成。
                     DataEditor.Control.ControlArgs argument = editor.Load_Information(ChildNode);
                     editor.Arguments = argument;
+                    // 标记其父编辑器
+                    editor.Container = Parent;
                     // 转换成控件形式
                     System.Windows.Forms.Control control = editor.Binding;
                     // 若转换失败，依然将节点送往一个空方法

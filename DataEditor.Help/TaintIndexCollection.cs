@@ -5,34 +5,34 @@ using DataEditor.Contract;
 
 namespace DataEditor.Help
 {
-    public class TaintIndexCollection : TaintCollection
+    public class TaintIndexCollection : TaintCollection//, IEnumerator<TaintState>
     {
         List<TaintState> taints;
-        public TaintIndexCollection(int length)
+        public TaintIndexCollection (int length)
         {
             taints = new List<TaintState>(length);
-            for (int i = 0; i < length; i++)
+            for ( int i = 0; i < length; i++ )
                 taints.Add(TaintState.UnTainted);
         }
         public TaintState this[int index]
         {
-            get 
+            get
             {
-                while (index >= taints.Count)
+                while ( index >= taints.Count )
                     taints.Add(TaintState.UnTainted);
-                if (index >= 0 && index < taints.Count)
+                if ( index >= 0 && index < taints.Count )
                     return taints[index];
                 return TaintState.UnTainted;
             }
             set
             {
-                while (index >= taints.Count)
+                while ( index >= taints.Count )
                     taints.Add(TaintState.UnTainted);
-                if (index >= 0)
+                if ( index >= 0 )
                 {
                     TaintState former = taints[index];
                     taints[index] = value;
-                    if (TaintIndexChanged != null)
+                    if ( TaintIndexChanged != null )
                         TaintIndexChanged(this, new TaintIndexChangedEventArgs(index, former, value));
                 }
             }
@@ -41,6 +41,8 @@ namespace DataEditor.Help
         {
             get { return taints.Count; }
         }
+        //IEnumerator<TaintState> IEnumerable<TaintState>.GetEnumerator () { return taints.GetEnumerator(); }
+        //System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator () { return taints.GetEnumerator(); }
         public event EventHandler<TaintIndexChangedEventArgs> TaintIndexChanged;
     }
     public class TaintIndexChangedEventArgs : EventArgs

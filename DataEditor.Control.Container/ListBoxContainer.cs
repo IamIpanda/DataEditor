@@ -11,6 +11,7 @@ namespace DataEditor.Control.Container
         string model;
         Help.LinkTable<int, int> Link = new Help.LinkTable<int, int>();
         List<Help.TextManager> TextManager = new List<Help.TextManager>();
+        Help.TaintIndexCollection Taint = new Help.TaintIndexCollection(1);
 
         public override string Flag { get { return "list"; } }
         public override void Bind ()
@@ -33,7 +34,7 @@ namespace DataEditor.Control.Container
             get
             {
                 Prototype.ProtoFullListBox origin = Binding as Prototype.ProtoFullListBox;
-                if (origin == null) return null;
+                if ( origin == null ) return null;
                 Prototype.ProtoLeftListBox lb = origin.ListBox;
                 FuzzyArray arr = base.Value as FuzzyArray;
                 if ( lb == null || arr == null ) return null;
@@ -64,6 +65,7 @@ namespace DataEditor.Control.Container
                 Link.Add(i, j++);
             }
             base.Pull();
+            Help.TaintRecord.Multi[arr] = Taint;
         }
 
         private void OnSelectedIndexChanged (object sender, EventArgs e)
@@ -74,6 +76,34 @@ namespace DataEditor.Control.Container
         { get { return (Binding as Prototype.ProtoFullListBox).Controls; } }
         protected override int ExtraHeight { get { return 6; } }
         protected override int ExtraWidth { get { return 6; } }
+        protected override void PushTaint () { /* 已弃用 */ }
+        protected override void PullTaint () { ShowTaint(); }
+        protected override void ShowTaint (Contract.TaintState State) { /* 已弃用 */ }
+        protected void PushTaint (int index) { Taint[index] = Contract.TaintState.ChildTainted; }
+        protected void ShowTaint () 
+        {      
+            Prototype.ProtoFullListBox origin = Binding as Prototype.ProtoFullListBox;
+            if (origin == null ) return;
+            Prototype.ProtoLeftListBox lb = origin.ListBox;
+            for ( int i = 0; i < Taint.Count; i++ )
+                lb.ForeColors[i] = Help.TaintOptions.DefaultColors[Taint[i]];
+        }
+        protected void ShowTaint (int i)
+        {
+            Prototype.ProtoFullListBox origin = Binding as Prototype.ProtoFullListBox;
+            if ( origin == null ) return;
+            Prototype.ProtoLeftListBox lb = origin.ListBox;
+            lb.ForeColors[i] = Help.TaintOptions.DefaultColors[Taint[i]];
+        }
+        public override void OnChildTainted (ObjectEditor child)
+        {
+            Prototype.ProtoFullListBox box = Binding as Prototype.ProtoFullListBox;
+            if ( box == null ) return;
+            int index = box.ListBox.SelectedIndex;
+
+            PushTaint(index);
+            ShowTaint(index);
+        }
     }
     public class ListBoxArgs : ContainerArgs
     {

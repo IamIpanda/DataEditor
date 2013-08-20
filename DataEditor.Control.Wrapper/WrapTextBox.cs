@@ -7,23 +7,28 @@ namespace DataEditor.Control.Wrapper
 {
     public class WrapTextBox : DataEditor.Control.WrapBaseEditor<FuzzyData.FuzzyString, TextBoxArgs>
     {
+        TextBox tb;
         public override string Flag
         {
             get { return "text"; }
         }
         public override void Pull ()
         {
-                TextBox tb = Binding as TextBox;
                 if ( tb != null && value != null ) tb.Text = value.Text;   
         }
         public override void Push ()
         {
-            TextBox tb = Binding as TextBox;
             if ( tb != null ) value.Text = tb.Text;
         }
         public override void Bind ()
         {
-            Binding = new Prototype.ProtoAutoSizeTextBox();
+            tb = new Prototype.ProtoAutoSizeTextBox();
+            Binding = tb;
+        }
+        protected override bool CheckValue ()
+        {
+            if ( tb == null || value == null ) return false;
+            return !(value.Text == tb.Text);
         }
     }
     

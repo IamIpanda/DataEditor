@@ -9,8 +9,7 @@ namespace DataEditor.Control
     /// 适应于 DataEditor.Arce 的 ObjectEditor 契约
     /// </summary>
     public interface ObjectEditor : DataEditor.Contract.ObjectEditor,
-        DataEditor.Contract.Iconic//,
-        //DataEditor.Contract.TaintableEditor
+        DataEditor.Contract.Iconic
     {
         /// <summary>
         /// 载入 Node 上的信息，并返回一个适用于此对象的 ControlArg
@@ -41,5 +40,13 @@ namespace DataEditor.Control
         /// 绑定的实体控件
         /// </summary>
         System.Windows.Forms.Control Binding { get; set; }
+        /// <summary>
+        /// 该编辑器的父编辑器
+        /// </summary>
+        ObjectEditor Container { get; set; }
+    }
+    public interface TaintableContainer
+    {
+        void OnChildTainted (ObjectEditor sender);
     }
 }

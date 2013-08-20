@@ -48,7 +48,7 @@ namespace DataEditor.Control.Wrapper
                 ShowText();
             }
         }
-        public override Adapter.AdvanceArray ConvertToValue (FuzzyData.FuzzyObject origin)
+        protected override Adapter.AdvanceArray ConvertToValue (FuzzyData.FuzzyObject origin)
         {
             FuzzyData.FuzzyArray arr = origin as FuzzyData.FuzzyArray;
             if ( arr == null ) return null;

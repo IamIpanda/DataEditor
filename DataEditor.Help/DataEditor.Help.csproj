@@ -52,6 +52,7 @@
     <Compile Include="RTPManager.cs" />
     <Compile Include="SerializationManager.cs" />
     <Compile Include="SimpleCollection.cs" />
+    <Compile Include="TaintHashCollection.cs" />
     <Compile Include="TaintHelper.cs" />
     <Compile Include="TaintIndexCollection.cs" />
     <Compile Include="TextManager.cs" />

@@ -5,11 +5,11 @@ using DataEditor.Arce.Interpreter;
 
 namespace DataEditor.Control.Container
 {
-    public abstract class WrapBaseContainer<TArg> : Control.WrapBaseEditor<FuzzyData.FuzzyObject, TArg>, Control.ObjectContainer
-        where TArg : ContainerArgs,new()
+    public abstract class WrapBaseContainer<TArg> : Control.WrapBaseEditor<FuzzyData.FuzzyObject, TArg>, Control.ObjectContainer, TaintableContainer
+        where TArg : ContainerArgs, new()
     {
         protected ContainerHelper Helper = new ContainerHelper();
-        
+
         public override FuzzyData.FuzzyObject Value
         {
             get { return Helper.ChildValue; }
@@ -24,7 +24,7 @@ namespace DataEditor.Control.Container
             if ( Binding != null )
             {
                 Builder builder = new Builder();
-                System.Drawing.Size size = builder.Build(Node, Controls, ExtraWidth, ExtraHeight);
+                System.Drawing.Size size = builder.Build(Node, Controls, this, ExtraWidth, ExtraHeight);
                 SetSize(size);
             }
             TArg gba = new TArg();
@@ -33,13 +33,13 @@ namespace DataEditor.Control.Container
         }
         public override void Pull ()
         {
+            PullTaint();
             if ( Binding != null )
                 foreach ( System.Windows.Forms.Control control in Controls )
-                    if ( control.Tag != null && control.Tag is ObjectEditor)
-                            (control.Tag as ObjectEditor).Parent = Value;
+                    if ( control.Tag != null && control.Tag is ObjectEditor )
+                        (control.Tag as ObjectEditor).Parent = Value;
         }
         public override void Push () { /* 已弃用 */ }
-        
         public override void Reset ()
         {
             base.Reset();
@@ -54,7 +54,17 @@ namespace DataEditor.Control.Container
         protected virtual int ExtraWidth { get { return 2; } }
         protected virtual int ExtraHeight { get { return 2; } }
         protected virtual void SetSize (System.Drawing.Size size) { Binding.ClientSize = size; }
-        protected virtual System.Windows.Forms.Control.ControlCollection Controls
-        { get { return Binding != null ? Binding.Controls : null; } }
+        protected virtual System.Windows.Forms.Control.ControlCollection Controls { get { return Binding != null ? Binding.Controls : null; } }
+        protected override void PushTaint () { if ( Value == null ) return; Help.TaintRecord.Single[Value] = Contract.TaintState.ChildTainted; }
+        protected override void OnValueChanged () { }
+        public virtual void OnChildTainted (ObjectEditor child)
+        {
+            Help.Log.log(this.GetType().ToString() + "收到了一个来自 " + child.GetType().ToString() + " 的 Taint 指令");
+            PushTaint();
+            ShowTaint(Contract.TaintState.ChildTainted);
+            TaintableContainer container = Container as TaintableContainer;
+            if ( container != null && container != this )
+            { container.OnChildTainted(this); }
+        }
     }
 }

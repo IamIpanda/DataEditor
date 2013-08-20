@@ -43,6 +43,10 @@ namespace DataEditor.Control.Wrapper
             if (value != null && actual != null)
                 actual.SelectedIndex = Link.Verse[(int)value.Value];
         }
+        protected override bool CheckValue ()
+        {
+            return true;
+        }
     }
     public class ChooseBoxArgs : ControlArgs
     {

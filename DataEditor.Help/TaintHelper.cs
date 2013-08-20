@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataEditor.Help
 {
-    public class TaintHelper
+    public static class TaintHelper
     {
         static public void OnPutt(System.Windows.Forms.Label Label, Contract.TaintState State)
         {
