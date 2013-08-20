@@ -100,7 +100,6 @@ namespace DataEditor.Control.Container
             Prototype.ProtoFullListBox box = Binding as Prototype.ProtoFullListBox;
             if ( box == null ) return;
             int index = box.ListBox.SelectedIndex;
-
             PushTaint(index);
             ShowTaint(index);
         }

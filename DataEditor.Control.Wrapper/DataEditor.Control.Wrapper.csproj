@@ -43,18 +43,6 @@
     <Compile Include="WrapNumInput.cs" />
     <Compile Include="WrapListView.cs" />
     <Compile Include="WrapChooseBox.cs" />
-    <None Include="[A]WrapChooseBox.cs">
-      <SubType>Component</SubType>
-    </None>
-    <None Include="[A]WrapListView.cs">
-      <SubType>Component</SubType>
-    </None>
-    <None Include="[A]WrapNumInput.cs">
-      <SubType>Component</SubType>
-    </None>
-    <None Include="[A]WrapTextBox.cs">
-      <SubType>Component</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataEditor.Adapter\DataEditor.Adapter.csproj">

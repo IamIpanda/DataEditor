@@ -73,12 +73,12 @@ namespace DataEditor.Control
         }
 
         protected virtual bool CheckValue () { return false; }
-        protected virtual void PullTaint () { ShowTaint(Help.TaintRecord.Single[Value]); }
+        protected virtual void PullTaint () { if ( Value != null ) ShowTaint(Help.TaintRecord.Single[Value]); }
         protected virtual void PushTaint () { if ( Value != null )Help.TaintRecord.Single[Value] = Contract.TaintState.Tainted; }
         protected virtual void ShowTaint (Contract.TaintState State) { if ( Label != null ) Label.ForeColor = Help.TaintOptions.DefaultColors[State]; }
         protected virtual void OnValueChanged ()
         {
-            Help.Log.log(this.GetType().ToString() + " " + (Label == null ? "" : Label.Text) + "发出了一个 Taint ");
+            Help.Log.log(this.GetType().ToString() + "『" + (Label == null ? "" : Label.Text) + "』发出了一个 Taint ");
             PushTaint();
             ShowTaint(Contract.TaintState.Tainted);
             TaintableContainer container = Container as TaintableContainer;

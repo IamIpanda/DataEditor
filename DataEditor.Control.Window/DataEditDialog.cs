@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace DataEditor.Control.Window
 {
-    public partial class DataEditDialog : Form
+    public partial class _DataEditorDialog_Row : Form
     {
-        public DataEditDialog ()
+        public _DataEditorDialog_Row ()
         {
             InitializeComponent();
         }
@@ -37,7 +37,8 @@ namespace DataEditor.Control.Window
 
     public class DataEditorDialog : Container.WrapBaseContainer<EditorWindowArgs>
     {
-        protected DataEditDialog ded;
+        protected _DataEditorDialog_Row dedr;
+        protected _DataEditorDialog_Column dedc;
         public override string Flag { get { return "e-window"; } }
         protected FuzzyData.FuzzyObject origin;
 
@@ -52,15 +53,30 @@ namespace DataEditor.Control.Window
         }
         public override void Bind ()
         {
-            ded = new DataEditDialog();
-            ded.OnOKClicked += this.OnOKClicked;
-            Binding = ded;
+            dedr = new _DataEditorDialog_Row();
+            dedc = new _DataEditorDialog_Column();
+            dedr.OnOKClicked += this.OnOKClicked;
+            dedc.OnOKClicked += this.OnOKClicked;
+            Binding = dedc;
         }
         protected override System.Windows.Forms.Control.ControlCollection Controls
-        { get { return ded != null ? ded.ChildControls : null; } }
+        {
+            get 
+            {
+                if ( Binding == dedr && dedr != null ) return dedr.ChildControls;
+                else if ( Binding == dedc && dedc != null ) return dedc.ChildControls;
+                return null;
+            }
+        }
         protected override void SetSize (Size size)
-        { if ( ded != null ) ded.ClientSize = new Size(size.Width, size.Height + ded.ExtraHeight); }
+        {
+            if ( Binding == dedr && dedr != null )
+                dedr.ClientSize = new Size(size.Width, size.Height + dedr.ExtraHeight);
+            else if ( Binding == dedc && dedc != null )
+                dedc.ClientSize = new Size(size.Width + dedc.ExtraWidth, size.Height + 8);
+        }
         protected void OnOKClicked (object sender, EventArgs e) { origin &= Value; }
+        public void Switch () { if ( Binding == dedc ) Binding = dedr; else Binding = dedc; }
     }
     public class EditorWindowArgs : DataEditor.Control.Container.SimpleBoxArgs
     {

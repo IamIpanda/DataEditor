@@ -55,27 +55,6 @@
     <Compile Include="TabPagesContainer.cs" />
     <Compile Include="WrapBaseComlexContainer.cs" />
     <Compile Include="WrapBaseContainer.cs" />
-    <None Include="[A]GroupBoxContainer.cs">
-      <SubType>Component</SubType>
-    </None>
-    <None Include="[A]ListBoxContainer.cs">
-      <SubType>UserControl</SubType>
-    </None>
-    <None Include="[A]RadioComplexContainer.cs">
-      <SubType>UserControl</SubType>
-    </None>
-    <None Include="[A]SimpleBoxContainer.cs">
-      <SubType>Component</SubType>
-    </None>
-    <None Include="[A]SimpleBoxContainerEx.cs">
-      <SubType>UserControl</SubType>
-    </None>
-    <None Include="[A]SimpleBoxContainerEx.Designer.cs">
-      <DependentUpon>[A]SimpleBoxContainerEx.cs</DependentUpon>
-    </None>
-    <None Include="[A]TabPagesContainer.cs">
-      <SubType>Component</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj">
@@ -107,15 +86,6 @@
     <EmbeddedResource Include="TextContainer.resx">
       <DependentUpon>TextContainer.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="[A]ListBoxContainer.resx">
-      <DependentUpon>[A]ListBoxContainer.cs</DependentUpon>
-    </None>
-    <None Include="[A]SimpleBoxContainerEx.resx">
-      <DependentUpon>[A]SimpleBoxContainerEx.cs</DependentUpon>
-    </None>
-    <None Include="[A]TabPagesContainer.resx">
-      <DependentUpon>[A]TabPagesContainer.cs</DependentUpon>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

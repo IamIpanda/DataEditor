@@ -46,7 +46,12 @@ namespace DataEditor.Arce
                 if ( control is TabControl)
                 {
                     TabControl tc = control as TabControl;
-                    (tc.TabPages[0].Tag as DataEditor.Control.ObjectEditor).Parent = fa;
+                    try
+                    {
+                        (tc.TabPages[0].Tag as DataEditor.Control.ObjectEditor).Parent = fa;
+                    }
+                    catch(Exception ex) { 
+                    }
                     (tc.TabPages[1].Tag as DataEditor.Control.ObjectEditor).Parent = fb;
                 }
             }
