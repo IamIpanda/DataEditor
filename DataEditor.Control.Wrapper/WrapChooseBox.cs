@@ -45,7 +45,8 @@ namespace DataEditor.Control.Wrapper
         }
         protected override bool CheckValue ()
         {
-            return true;
+            if ( actual == null || value == null ) return false;
+            return !(value.Value == Link.Reverse[actual.SelectedIndex]);
         }
     }
     public class ChooseBoxArgs : ControlArgs

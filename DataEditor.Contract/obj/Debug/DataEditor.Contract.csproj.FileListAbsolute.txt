@@ -25,7 +25,6 @@ Y:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditorBase.pdb
 Y:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.csprojResolveAssemblyReference.cache
 Y:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.dll
 Y:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditorBase.pdb
-E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.csprojResolveAssemblyReference.cache
 E:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditor.Contract.dll
 E:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditor.Contract.pdb
 E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.dll

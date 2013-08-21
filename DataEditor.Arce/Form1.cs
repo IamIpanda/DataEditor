@@ -23,6 +23,7 @@ namespace DataEditor.Arce
 
         private void Form1_Load (object sender, EventArgs e)
         {
+            new Control.Window.RTPEditor().ShowDialog();
             Interpreter.Collector.AddAssembly(System.Reflection.Assembly.GetAssembly(typeof(DataEditor.Control.Container.ContainerArgs)));
             Interpreter.Collector.AddAssembly(System.Reflection.Assembly.GetAssembly(typeof(DataEditor.Control.Wrapper.WrapNumInput)));
             Interpreter.Builder builder = new Interpreter.Builder();

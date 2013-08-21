@@ -38,7 +38,11 @@ namespace DataEditor.Control.Wrapper
             nud.Minimum = argument.MinValue;
             nud.Maximum = argument.MaxValue;
         }
-
+        protected override bool CheckValue ()
+        {
+            if ( nud == null || value == null ) return base.CheckValue();
+            return !(nud.Value == value.Value);
+        }
     }
     public class NumInputArgs : ControlArgs
     {
