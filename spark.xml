@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data type = "property" actual = "skills">
-	<choice value = '1'></choice>
-	<dialog>
-		<data types = "tabs">
-			<data types = "tab">
-				<data types = "radio"></radio>
+<data type = "property" actual = "effects">
+	<window>
+		<data type = "tabpages">
+			<data type = "tabpage" text = "恢复">
+				<data type = "radio" text = "恢复体力值" group = "item_effect_property" actual = "code" value = "11">
+					<data type = "int" label = "0"  actual = "value1" />
+					<text>%</text><next /><text>+</text>
+					<data type = "int" label = "0" actual = "value2" />
+				</data>
+				<data type = "radio" text = "恢复魔力值" group = "item_effect_property" actual = "code" value = "12">
+					<data type = "int" label = "0"  actual = "value1" />
+					<text>%</text><next /><text>+</text>
+					<data type = "int" label = "0" actual = "value2" />
+				</data>
+				<data type = "radio" text = "增加特技值" group = "item_effect_property" actual = "code" value = "13">
+					<data type = "int" label = "0" actual = "value1" />
+				</data>
+			</data>
+			<data type = "tabpage" text = "状态">
+				<data type = "radio" text = "附加状态" group = "item_effect_property" actual = "code" value = "21">
+					<data type = "choose" label = "0" actual = "data_id">
+            					<choice id = "|id" text = "#{0:d3}#:#{0}#,,|id,|name" file = "state" />
+					</data>
+					<next />
+					<data type = "int" label = "0" actual = "value1" />
+					<text>%</text>
+				</data>
+				<data type = "radio" text = "解除状态" group = "item_effect_property" actual = "code" value = "22">
+					<data type = "choose" label = "0" actual = "data_id">
+            					<choice id = "|id" text = "#{0:d3}#:#{0}#,,|id,|name" file = "state" />
+					</data>
+					<next />
+					<data type = "int" label = "0" actual = "value1" />
+					<text>%</text>
+				</data>
+			</data>
+			<data type = "tabpage" text = "能力" >
+				<data type = "radio" text = "强化能力" group = "item_effect_property" actual = "code" value = "31">
+				
+				</data>
 			</data>
 		</data>
-	</dialog>
-		
+	</window>
 </data>

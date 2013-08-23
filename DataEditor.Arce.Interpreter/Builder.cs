@@ -31,15 +31,20 @@ namespace DataEditor.Arce.Interpreter
         /// </remarks>
         /// <param name="TopNode">含有标记内容的 Xml 节点</param>
         /// <param name="Collection">控件包</param>
+        /// <param name="Parent">这些控件的父控件</param>
         /// <param name="default_head_x">默认的 x 轴起始位置</param>
         /// <param name="defaule_head_y">默认的 y 轴起始位置</param>
         /// <returns>建造完毕后，得出的所有控件的尺寸</returns>
         public Size Build(System.Xml.XmlNode TopNode, System.Windows.Forms.Control.ControlCollection Collection,Control.ObjectEditor Parent = null, int default_head_x = 0, int defaule_head_y = 0)
         {
+            // 如果控件包是空的，那生成个蛋
+            if ( Collection == null ) return new Size(0, 0);
             // 把所有变量初始化。
             max_x = head_x = now_x = default_head_x;
             max_y = head_y = now_y = defaule_head_y;
+            Shorts.Clear();
             string NodeName, ControlName;
+            // 依次扫描各个子节点
             foreach (XmlNode ChildNode in TopNode.ChildNodes)
             {
                 NodeName = ChildNode.Name;
@@ -95,7 +100,7 @@ namespace DataEditor.Arce.Interpreter
                     // 若以上结算全部成功，计算它的坐标值
                     CalcCoodinate(control, control.Width + extra_w, control.Height + extra_h);
                     // 设置标签
-                    if (label_mode != 0)
+                    if (label_mode > 0)
                     {
                         editor.Label = label;
                         AddLabel(label, Collection);
@@ -103,9 +108,16 @@ namespace DataEditor.Arce.Interpreter
                     // 上传到父控件中
                     AddControl(control, Collection);
                 }
+                else if ( ChildNode.Name.ToUpper() == "LABEL" )
+                {
+                    Label lb = GetLabel(now_x, now_y, ChildNode.InnerText);
+                    AddLabel(lb, Collection);
+                    CalcCoodinate(lb, lb.Width, lb.Height);
+                }
                 // 此后，剩余的节点被送往一个空方法。
                 else NotDefinedNodes(ChildNode);
             }
+            TopNode.OwnerDocument.Save("X.xml");
             return new Size(max_x, max_y);
         }
         /// <summary>
@@ -125,15 +137,9 @@ namespace DataEditor.Arce.Interpreter
         /// <param name="Label"></param>
         /// <param name="Collection"></param>
         /// <returns></returns>
-        protected virtual int AddLabel(Label Label, System.Windows.Forms.Control.ControlCollection Collection)
+        protected virtual int AddLabel (Label Label, System.Windows.Forms.Control.ControlCollection Collection)
         {
-            try
-            {
-                Collection.Add(Label);
-            }
-            catch (Exception ex)
-            {
-            }
+            Collection.Add(Label);
             return 1;
         }
         /// <summary>
@@ -185,20 +191,25 @@ namespace DataEditor.Arce.Interpreter
         /// <returns></returns>
         protected virtual bool CheckControlNode(XmlNode Node)
         {
-            if (Node.Name.ToUpper() == "ORDER")
-            { RunOrder(Node.InnerText); return true; }
-            else if (Node.Name.ToUpper() == "SPACE")
-            { RunSpace(Node.InnerText); return true; }
-            else if (Node.Name.ToUpper() == "NEXT")
-            { RunSpace(Node.InnerText); return true; }
-            else if (Node.Name.ToUpper() == "FILE")
-            { RunFile(Node.InnerText); return true; }
-                
-            else if ( Node.Name.ToUpper() == "CONVERTS" )
-            { RunConvert(Node); return true; }
-            else if ( Node.Name.ToUpper() == "CONVERTF" )
-            { RunConvertFromFile(Node.InnerText); return true; }
-            return false;
+            string NodeName = Node.Name.Trim().ToUpper();
+            // 只需用到内部文字的指令
+            if ( NodeName == "ORDER" )
+                RunOrder(Node.InnerText);
+            else if ( NodeName == "SPACE" )
+                RunSpace(Node.InnerText);
+            else if ( NodeName == "NEXT" )
+                RunNext(Node.InnerText);
+            else if ( NodeName == "CONVERTF" )
+                RunConvertFromFile(Node.InnerText);
+            // 需要用到节点的指令
+            else if ( NodeName == "FILE" )
+                RunFile(Node);
+            else if ( NodeName == "CONVERTS" )
+                RunConvert(Node);
+            else if ( NodeName == "SHORT" )
+                RunShort(Node);
+            else return false;
+            return true;
         }
         protected virtual void RunOrder(string InnerText)
         {
@@ -235,11 +246,16 @@ namespace DataEditor.Arce.Interpreter
                 now_h = 0;
             }
         }
-        // TODO：Finish this
-        protected virtual void RunFile(string InnerText)
+        protected virtual void RunConvertFromFile (string InnerText)
         {
+            Help.NounConverter.Load(InnerText);
+        }
+        
+        protected virtual void RunFile (XmlNode Node)
+        {
+            string InnerText = Node.InnerText;
             string str = Help.PathHelper.CheckName(InnerText);
-            if (str == "" || str == null) Help.Log.log("无法找到此文件：" + InnerText);
+            if ( str == "" || str == null ) Help.Log.log("无法找到此文件：" + InnerText);
             XmlDocument document = new XmlDocument();
             try
             {
@@ -251,15 +267,39 @@ namespace DataEditor.Arce.Interpreter
                 return;
             }
             XmlNode MainNode = document.FirstChild.NextSibling;
-            // TODO Get enough Information.
+            Node.ParentNode.InsertAfter(MainNode, Node);
+        }
+        protected virtual void RunShort (XmlNode Node)
+        {
+            bool run = !(Node.ChildNodes.Count > 1);
+            if ( run )
+            {
+                XmlNode ThatParent = null,ThisParent = Node.ParentNode;
+                Shorts.TryGetValue(Node.InnerText, out ThatParent);
+                if ( ThatParent == null ) { Help.Log.log("未被记录的Xml缩写：" + Node.InnerText); return; }
+                XmlNode Now = Node;
+                foreach ( XmlNode child in ThatParent.ChildNodes )
+                    if ( child.NodeType == XmlNodeType.Element )
+                    {
+                        XmlNode n = child.Clone() as XmlNode;
+                        ThisParent.InsertAfter(n, Now);
+                        Now = n; 
+                    }
+            }
+            else
+            {
+                string text = "";
+                foreach (XmlNode child in Node.ChildNodes)
+                    if ( child.NodeType == XmlNodeType.Text ) { text = child.Value.Trim(); break; }
+                if ( Shorts.ContainsKey(text) ) Shorts[text] = Node;
+                else Shorts.Add(text, Node);
+            }
         }
         protected virtual void RunConvert (XmlNode Node)
         {
-            Help.NounConverter.Load(Node);   
+            Help.NounConverter.Load(Node);
         }
-        protected virtual void RunConvertFromFile (string InnerText)
-        {
-            Help.NounConverter.Load(InnerText);
-        }
+
+        Dictionary<string, XmlNode> Shorts = new Dictionary<string, XmlNode>();
     }
 }

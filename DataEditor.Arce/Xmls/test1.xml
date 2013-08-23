@@ -60,5 +60,23 @@
         </data>
       </data>
     </data>
+    <data type ="tab" text ="纯测">
+      <label>图标</label>
+      <data type = "image" label = "0" actual = "character_name" index = "character_index">
+        <split>
+          <split type = "PIECE" x = "4" y = "2" />
+          <split type = "PIECE" x = "1" y = "1" flag = "!" />
+        </split>
+        <index type  = "PIECE" X = "3" Y = "4">
+          <index x = "1" y = "0" />
+          <index x = "0" y ="0" flag = "$" />
+        </index>
+      </data>
+      <data type = "property" code = "code" >
+        <column text = "种类">
+          <text code = "11">恢复值</text>
+        </column>
+      </data>
+    </data>
   </data>
 </window>

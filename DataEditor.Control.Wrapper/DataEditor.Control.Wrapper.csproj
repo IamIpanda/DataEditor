@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WrapCheckBox.cs" />
+    <Compile Include="WrapProperty.cs" />
     <Compile Include="WrapTextBox.cs" />
     <Compile Include="WrapNumInput.cs" />
     <Compile Include="WrapListView.cs" />

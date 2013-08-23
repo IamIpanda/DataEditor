@@ -105,7 +105,7 @@ namespace DataEditor.Control.Wrapper
         /// <summary>
         /// 描述列标的信息
         /// </summary>
-        public List<ListViewColumnArgs> Columns { get { return columns; } set { columns = value; } }
+        public virtual List<ListViewColumnArgs> Columns { get { return columns; } set { columns = value; } }
         List<ListViewColumnArgs> columns = new List<ListViewColumnArgs>();
         /// <summary>
         /// 描述当新建的时候，创建的一个新的结构体。
@@ -122,9 +122,7 @@ namespace DataEditor.Control.Wrapper
             New = FuzzyData.FuzzyNil.Instance;
             Dialog = null;
         }
-        public ListViewArgs (XmlNode Node) : base(Node)
-        {
-        }
+        public ListViewArgs (XmlNode Node) : this() { Load(Node); }
         public override void Load (System.Xml.XmlNode Node)
         {
             base.Load(Node);
@@ -135,25 +133,27 @@ namespace DataEditor.Control.Wrapper
                 if ( Name == "COLUMN" )
                     Columns.Add(new ListViewColumnArgs(child));
                 else if ( Name == "NEW" )
-                {
-                    Contract.Serialization xml = Help.SerializationManager.TryGetSerialization("[x]");
-                    if ( xml == null ) continue;
-                    try
-                    {
-                        Type type = xml.GetType();
-                        System.Reflection.MethodInfo method = type.GetMethod("Load", new Type[] { typeof(XmlNode) });
-                        object ob = method.Invoke(xml, new object[] { child.FirstChild });
-                        New = ob as FuzzyData.FuzzyObject;
-                    }
-                    catch ( Exception ex )
-                    { Help.Log.log("ListView：载入 New 节点失败：" + ex.Message); }
-                }
+                    New = LoadXmlData(child);
                 else if ( Name == "DIALOG" )
                     Dialog = child;
                 else
                     OnScan(Name, child.InnerText);
             }
-
+        }
+        protected FuzzyData.FuzzyObject LoadXmlData (System.Xml.XmlNode Node)
+        {
+            Contract.Serialization xml = Help.SerializationManager.TryGetSerialization("[x]");
+            if ( xml == null ) return null;
+            try
+            {
+                Type type = xml.GetType();
+                System.Reflection.MethodInfo method = type.GetMethod("Load", new Type[] { typeof(XmlNode) });
+                object ob = method.Invoke(xml, new object[] { Node.FirstChild });
+                return ob as FuzzyData.FuzzyObject;
+            }
+            catch ( Exception ex )
+            { Help.Log.log("ListView：载入 New 节点失败：" + ex.Message); }
+            return null;
         }
         /// <summary>
         /// 节点的名称为 Row

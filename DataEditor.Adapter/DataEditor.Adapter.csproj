@@ -32,9 +32,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvanceImage.cs" />
     <Compile Include="[A]AdvanceArray.cs" />
     <Compile Include="AdvanceCommand.cs" />
     <Compile Include="AdvancePicture.cs" />
