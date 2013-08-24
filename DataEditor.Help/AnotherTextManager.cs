@@ -36,6 +36,7 @@ namespace DataEditor.Help
                 else
                     factors.Add(new StringFactor(partial[i]));
             }
+            if ( parts.Length == 1 ) factors.Add(new StringFactor(parts[0]));
             return true;
         }
         protected string MatchEvaluator(Match match)
@@ -82,10 +83,19 @@ namespace DataEditor.Help
                 int max = para.Length, now = 0;
                 // 计算根值 TODO
                 object root;
-                if ( keys[0] == "" )
+                Regex reg = new Regex("\\[.+?\\]");
+                Match m;
+                if ( keys[0] == "" || keys[0] == "#" )
                     root = para[0];
-                else if ( keys[0] == "#" )
-                    root = para[now++];
+                else if ( (m = reg.Match(keys[0])).Success )
+                {
+                    string all = m.Value;
+                    all = all.Remove(0, 1);
+                    all = all.Remove(all.Length - 1, 1);
+                    string[] parts = all.Split('/');
+                    FuzzyData.FuzzyArray fa = new FuzzyData.FuzzyArray(parts);
+                    root = fa;
+                }
                 else
                     root = FileManager.Create(keys[0]).Data;
                 keys[0] = null;
@@ -93,12 +103,8 @@ namespace DataEditor.Help
                 List<object> list = new List<object>();
                 foreach (string key in keys)
                     if (key == null) continue;
-                    else if (key == "#")
-                    {
+                    else if ( key == "#")
                         list.Add(para[now]);
-                        if (para[now] is FuzzyData.FuzzyObject)
-                        { }// Listen To It
-                    }
                     else if ( key == "##" )
                     {
                         if ( ++now >= max ) throw new ArgumentException("字符串匹配中超界");

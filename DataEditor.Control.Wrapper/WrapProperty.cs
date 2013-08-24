@@ -10,7 +10,7 @@ namespace DataEditor.Control.Wrapper
         public override void Push () { }
         public override void Pull () { }
         public override void Bind () { Binding = actual = new Prototype.ProtoListView(); }
-        public override string Flag { get { return "property" } }
+        public override string Flag { get { return "property"; } }
     }
    public class PropertyArgs : ListViewArgs
    {

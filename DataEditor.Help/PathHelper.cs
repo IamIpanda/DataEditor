@@ -108,7 +108,7 @@ namespace DataEditor.Help
                 if ( temp == null ) return null;
                 if ( temp is FuzzyData.FuzzyArray )
                     if ( key is int )
-                        temp = LoadArray(temp as FuzzyData.FuzzyArray, Convert.ToInt32(temp));
+                        temp = LoadArray(temp as FuzzyData.FuzzyArray, Convert.ToInt32(key));
                     else if ( key is FuzzyData.FuzzyFixnum )
                         temp = LoadArray(temp as FuzzyData.FuzzyArray, key as FuzzyData.FuzzyFixnum);
                     else if ( key is string )
