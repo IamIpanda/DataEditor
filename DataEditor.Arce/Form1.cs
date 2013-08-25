@@ -23,8 +23,8 @@ namespace DataEditor.Arce
 
         private void Form1_Load (object sender, EventArgs e)
         {
-            //new Control.Window.RTPEditor().ShowDialog();
-            /*Interpreter.Collector.AddAssembly(System.Reflection.Assembly.GetAssembly(typeof(DataEditor.Control.Container.ContainerArgs)));
+           new Control.Window.RTPEditor().ShowDialog();
+            Interpreter.Collector.AddAssembly(System.Reflection.Assembly.GetAssembly(typeof(DataEditor.Control.Container.ContainerArgs)));
             Interpreter.Collector.AddAssembly(System.Reflection.Assembly.GetAssembly(typeof(DataEditor.Control.Wrapper.WrapNumInput)));
             Interpreter.Builder builder = new Interpreter.Builder();
             System.Xml.XmlDocument document = new XmlDocument();
@@ -49,22 +49,12 @@ namespace DataEditor.Arce
                     TabControl tc = control as TabControl;
                     try
                     {
-                        (tc.TabPages[0].Tag as DataEditor.ControlObjectEditor).Parent = fa;
+                        (tc.TabPages[0].Tag as DataEditor.Control.ObjectEditor).Parent = fa;
                     }
                     catch(Exception ex) { 
                     }
                     (tc.TabPages[1].Tag as DataEditor.Control.ObjectEditor).Parent = fb;
                 }
-            }
-             */
-            try
-            {
-                Help.AnotherTextManager atm = new AnotherTextManager();
-                atm.Initialize("#{0}#,[傻逼///////大傻逼]|#", 3);
-                atm.Initialize("你个傻逼");
-            }
-            catch ( Exception ex )
-            { 
             }
         }
     }

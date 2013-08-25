@@ -24,10 +24,13 @@ namespace DataEditor.Control
             foreach (XmlAttribute attr in Node.Attributes)
                 OnScan(attr.Name.ToUpper(), attr.InnerText);
             foreach (XmlNode node in Node.ChildNodes)
-                if (node.NodeType == XmlNodeType.Text)
+                if ( node.NodeType == XmlNodeType.Text )
                     OnScan("INNERTEXT", node.Value);
                 else
+                {
                     OnScan(node.Name.ToUpper(), GetValue(node));
+                    OnCheck(node.Name.ToUpper(), node);
+                }
         }
         public int Width { get; set; }
         public int Height { get; set; }
@@ -35,23 +38,20 @@ namespace DataEditor.Control
         public string Text { get; set; }
         public FuzzyData.FuzzySymbol Actual { get; set; }
 
-        protected virtual void OnScan(string Name, string InnerText)
+        protected virtual void OnScan (string Name, string InnerText)
         {
-            if (Name == "WIDTH")
+            if ( Name == "WIDTH" )
                 this.Width = GetInt(InnerText);
-            else if (Name == "HEIGHT")
+            else if ( Name == "HEIGHT" )
                 this.Height = GetInt(InnerText);
-            else if (Name == "LABEL")
+            else if ( Name == "LABEL" )
                 this.Label = GetInt(InnerText);
-            else if (Name == "TEXT")
+            else if ( Name == "TEXT" )
                 this.Text = InnerText;
-            else if (Name == "ACTUAL")
-            {
-                string name = InnerText;
-                if (!name.StartsWith("@")) name = "@" + name;
-                this.Actual = FuzzyData.FuzzySymbol.GetSymbol(name);
-            }
+            else if ( Name == "ACTUAL" )
+                this.Actual = GetSymbol(InnerText);
         }
+        protected virtual void OnCheck (String Name, XmlNode Node) { }
         protected int GetInt(string str)
         {
             int i;
@@ -83,6 +83,11 @@ namespace DataEditor.Control
             foreach (XmlNode child in node.ChildNodes)
                 children.Add(child);
             return children;
+        }
+        protected FuzzyData.FuzzySymbol GetSymbol (string s)
+        {
+            if ( s.StartsWith("@") ) s = "@" + s;
+            return FuzzyData.FuzzySymbol.GetSymbol(s);
         }
     }
 }
