@@ -7,29 +7,32 @@ using System.Drawing;
 
 namespace DataEditor.Control.Wrapper
 {
+    // TODO : Rebuild it
     public class WrapImageDisplayer : ProtoImageBackgroundDisplayer
     {
         ProtoImageControlHelp.ProtoImageSplit split = null;
-        Pen pen;
+        Pen WhitePen, BlackPen;
+        // ============= Banish ===========
         public int Index { get; set; }
         public string ImageName { get; set; }
+        // ==============================
+        public Adapter.AdvanceImage.AdvanceImageRect Rect { get; set; }
+        public Adapter.AdvanceImage Value { get; set; }
+       
         public WrapImageDisplayer()
         {
-            this.pen = new Pen(Color.White, 2F);
+            this.WhitePen = new Pen(Color.White, 2F);
+            this.BlackPen = new Pen(Color.Black, 0.2F);
             this.ImageName = " ";
             InitializeComponent();
-            
-        }
-        public void Set(string split)
-        {
-            this.split = new ProtoImageControlHelp.ProtoImageSplit(split);
         }
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            if (this.split == null) return;
-            Rectangle rect = split[base.bitmap, ImageName, this.Index];
-            e.Graphics.DrawRectangle(pen, rect);
+            if ( bitmap == null || Rect == null ) return;
+            Rectangle r = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
+            Rectangle ans = Rect.Split(r);
+            if ( Blocks > 1 ) e.Graphics.DrawRectangle(WhitePen, ans.X + 1, ans.Y + 1, ans.Width - 2.5F, ans.Height - 2.5F);
         }
 
         private void InitializeComponent()
@@ -47,14 +50,9 @@ namespace DataEditor.Control.Wrapper
         private void WrapImageDisplayer_MouseClick(object sender, MouseEventArgs e)
         {
             if (base.bitmap == null) return;
-            if (split == null) return;
-            Size size = split[base.bitmap, ImageName];
-            int maxx = base.bitmap.Width / size.Width;
-            int maxy = base.bitmap.Height / size.Height;
-            int x = e.X / size.Width;
-            int y = e.Y / size.Height;
-            if (x >= maxx || y >= maxy) return;
-            this.Index = y * maxx + x;
+            if ( Rect == null ) return;
+            Rect.SetIndex(e.X, e.Y);
+            this.Index = Rect[Rect.X, Rect.Y];
             Invalidate();
         }
 
@@ -63,11 +61,8 @@ namespace DataEditor.Control.Wrapper
             get 
             {
                 if (base.bitmap == null) return 0;
-                if (split == null) return 0; 
-                Size size = split[base.bitmap, ImageName];
-                int maxx = base.bitmap.Width / size.Width;
-                int maxy = base.bitmap.Height / size.Height;
-                return maxx * maxy;
+                if ( Rect == null ) return 0;
+                return Rect.Blocks;
             }
         }
     }

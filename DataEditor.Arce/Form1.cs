@@ -38,10 +38,14 @@ namespace DataEditor.Arce
             }
             System.IO.FileStream file = new System.IO.FileStream("Tests/Data/Items.rvdata", System.IO.FileMode.Open);
             System.IO.FileStream filx = new System.IO.FileStream("Tests/Data/Classes.rvdata", System.IO.FileMode.Open);
+            System.IO.FileStream fily = new System.IO.FileStream("Tests/Data/Actors.rvdata", System.IO.FileMode.Open);
+
             FuzzyObject ob = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(file) as FuzzyObject;
             FuzzyObject op = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(filx) as FuzzyObject;
+            FuzzyObject od = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(fily) as FuzzyObject;
             FuzzyArray fa = ob as FuzzyArray;
             FuzzyArray fb = op as FuzzyArray;
+            FuzzyArray fc = od as FuzzyArray;
             foreach ( System.Windows.Forms.Control control in this.Controls )
             {
                 if ( control is TabControl)
@@ -50,10 +54,12 @@ namespace DataEditor.Arce
                     try
                     {
                         (tc.TabPages[0].Tag as DataEditor.Control.ObjectEditor).Parent = fa;
+                        (tc.TabPages[1].Tag as DataEditor.Control.ObjectEditor).Parent = fb;
+                        (tc.TabPages[2].Tag as DataEditor.Control.ObjectEditor).Parent = fc;
                     }
-                    catch(Exception ex) { 
+                    catch ( Exception ex )
+                    {
                     }
-                    (tc.TabPages[1].Tag as DataEditor.Control.ObjectEditor).Parent = fb;
                 }
             }
         }

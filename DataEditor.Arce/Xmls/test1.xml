@@ -4,6 +4,7 @@
     <skill>Tests/Data/skills.rvdata</skill>
     <system>Tests/Data/system.rvdata</system>
     <animation>Tests/Data/animations.rvdata</animation>
+    <actor>Tests/Data/actors.rvdata</actor>
   </converts>
   <data type = "tabs">
     <data type = "tab" text = "欸哟">
@@ -29,6 +30,13 @@
           <data type = "choose" text = "动画1号" actual= "animation_id">
             <choice id = "|id" text = "#{0:d3}#:#{0}#,,|id,|name" file = "animation"></choice>
           </data>
+        </data>
+        <data type = "image" text = "我是存在的">
+          <path>Graphics/System/Iconset</path>
+          <index>icon_index</index>
+          <split>
+            <split type = "SIZE" x = "24" y = "24" />
+          </split>
         </data>
       </data>
     </data>
@@ -60,26 +68,23 @@
         </data>
       </data>
     </data>
-    <data type ="tab" text ="纯测">
-      <label>图标</label>
-      <data type = "image" label = "0">
-        <path>Graphics/Characters</path>
-        <actual>character_name</actual>
-        <index>character_index</index>
-        <tune>character_tune</tune>
-        <split>
-          <split type = "PIECE" x = "4" y = "2" />
-          <split type = "PIECE" x = "1" y = "1" flag = "!" />
-        </split>
-        <index type  = "PIECE" x = "3" y = "4">
-          <index x = "1" y = "0"  />
-          <index x = "0" y ="0" flag = "$" />
-        </index>
-      </data>
-      <data type = "property" code = "code" >
-        <column text = "种类">
-          <text code = "11">恢复值</text>
-        </column>
+    <data type ="tab" text ="角色">
+      <data type = "list" text = "角色" show = "#{0:d3}#:#{0}#,,|id,|name">
+        <data type = "image"  text = "行走图" path = "Graphics/characters" actual = "character_name" index = "character_index">
+          <split>
+            <split type = "PIECE" x = "4" y = "2" />
+            <split type = "PIECE" x = "1" y = "1" flag = "$"/>
+          </split>
+          <resplit type = "PIECE" x = "3" y = "4">
+            <resplit  x = "1" y ="0" />
+            <resplit x = "0" y = "0" flag = "!"/>
+          </resplit>
+        </data>
+        <data type = "property" code = "code" >
+          <column text = "种类">
+            <text code = "11">恢复值</text>
+          </column>
+        </data>
       </data>
     </data>
   </data>

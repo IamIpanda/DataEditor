@@ -86,7 +86,7 @@ namespace DataEditor.Control
         }
         protected FuzzyData.FuzzySymbol GetSymbol (string s)
         {
-            if ( s.StartsWith("@") ) s = "@" + s;
+            if ( !s.StartsWith("@") ) s = "@" + s;
             return FuzzyData.FuzzySymbol.GetSymbol(s);
         }
     }

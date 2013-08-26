@@ -116,6 +116,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataEditor.Adapter\DataEditor.Adapter.csproj">
+      <Project>{4fcc66f3-f2d8-4c5c-96d4-e07fc412d3e8}</Project>
+      <Name>DataEditor.Adapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataEditor.Contract\DataEditor.Contract.csproj">
       <Project>{D7DFC2B5-BB85-4037-B052-C4F1E3C1BDE0}</Project>
       <Name>DataEditor.Contract</Name>

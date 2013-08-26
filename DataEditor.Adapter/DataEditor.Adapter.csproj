@@ -39,7 +39,6 @@
     <Compile Include="AdvanceImage.cs" />
     <Compile Include="[A]AdvanceArray.cs" />
     <Compile Include="AdvanceCommand.cs" />
-    <Compile Include="AdvancePicture.cs" />
     <Compile Include="AdvanceArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

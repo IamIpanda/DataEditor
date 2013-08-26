@@ -68,10 +68,12 @@
             // RtpImageDisplayer
             // 
             this.RtpImageDisplayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
+            this.RtpImageDisplayer.BackColors = ((System.Collections.Generic.List<System.Drawing.Color>)(resources.GetObject("RtpImageDisplayer.BackColors")));
             this.RtpImageDisplayer.Bitmap = null;
             this.RtpImageDisplayer.BlockHeight = 12;
             this.RtpImageDisplayer.BlockWidth = 12;
             resources.ApplyResources(this.RtpImageDisplayer, "RtpImageDisplayer");
+            this.RtpImageDisplayer.FullBackgroundDraw = false;
             this.RtpImageDisplayer.ImageAlignCenter = true;
             this.RtpImageDisplayer.Name = "RtpImageDisplayer";
             this.RtpImageDisplayer.Scale = false;
@@ -213,9 +215,12 @@
             // 
             // RTPEditor
             // 
+            this.AcceptButton = this.btOK;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btCancel;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

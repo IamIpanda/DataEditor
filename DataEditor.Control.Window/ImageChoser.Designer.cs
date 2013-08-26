@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageChoser));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.TitleBox = new DataEditor.Control.Prototype.ProtoTitleBox();
+            this.RTPChoser = new DataEditor.Control.Prototype.ProtoComboBox();
+            this.fileList = new DataEditor.Control.Prototype.ProtoRtpViewList();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btOK = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.btIndex = new System.Windows.Forms.TextBox();
-            this.TitleBox = new DataEditor.Control.Prototype.ProtoTitleBox();
-            this.RTPChoser = new DataEditor.Control.Prototype.ProtoComboBox();
-            this.fileList = new DataEditor.Control.Prototype.ProtoRtpViewList();
             this.wrapImageDisplayer1 = new DataEditor.Control.Wrapper.WrapImageDisplayer();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -77,6 +78,41 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.Size = new System.Drawing.Size(172, 511);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // TitleBox
+            // 
+            this.TitleBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TitleBox.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TitleBox.ForeColor = System.Drawing.Color.White;
+            this.TitleBox.Location = new System.Drawing.Point(7, 7);
+            this.TitleBox.Margin = new System.Windows.Forms.Padding(7);
+            this.TitleBox.Name = "TitleBox";
+            this.TitleBox.Size = new System.Drawing.Size(158, 50);
+            this.TitleBox.TabIndex = 0;
+            // 
+            // RTPChoser
+            // 
+            this.RTPChoser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RTPChoser.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RTPChoser.FormattingEnabled = true;
+            this.RTPChoser.ItemHeight = 12;
+            this.RTPChoser.Location = new System.Drawing.Point(3, 67);
+            this.RTPChoser.Name = "RTPChoser";
+            this.RTPChoser.Size = new System.Drawing.Size(166, 18);
+            this.RTPChoser.TabIndex = 2;
+            this.RTPChoser.SelectedIndexChanged += new System.EventHandler(this.RTPChoser_SelectedIndexChanged);
+            // 
+            // fileList
+            // 
+            this.fileList.DisappearRectLosingFocus = false;
+            this.fileList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fileList.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.fileList.FormattingEnabled = true;
+            this.fileList.Location = new System.Drawing.Point(3, 91);
+            this.fileList.Name = "fileList";
+            this.fileList.Size = new System.Drawing.Size(166, 417);
+            this.fileList.TabIndex = 3;
+            this.fileList.SelectedIndexChanged += new System.EventHandler(this.fileList_SelectedIndexChanged);
             // 
             // tableLayoutPanel3
             // 
@@ -145,47 +181,14 @@
             this.btIndex.TabIndex = 2;
             this.btIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TitleBox
-            // 
-            this.TitleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TitleBox.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TitleBox.ForeColor = System.Drawing.Color.White;
-            this.TitleBox.Location = new System.Drawing.Point(7, 7);
-            this.TitleBox.Margin = new System.Windows.Forms.Padding(7);
-            this.TitleBox.Name = "TitleBox";
-            this.TitleBox.Size = new System.Drawing.Size(158, 50);
-            this.TitleBox.TabIndex = 0;
-            // 
-            // RTPChoser
-            // 
-            this.RTPChoser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RTPChoser.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.RTPChoser.FormattingEnabled = true;
-            this.RTPChoser.ItemHeight = 12;
-            this.RTPChoser.Location = new System.Drawing.Point(3, 67);
-            this.RTPChoser.Name = "RTPChoser";
-            this.RTPChoser.Size = new System.Drawing.Size(166, 18);
-            this.RTPChoser.TabIndex = 2;
-            this.RTPChoser.SelectedIndexChanged += new System.EventHandler(this.RTPChoser_SelectedIndexChanged);
-            // 
-            // fileList
-            // 
-            this.fileList.DisappearRectLosingFocus = false;
-            this.fileList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fileList.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.fileList.FormattingEnabled = true;
-            this.fileList.Location = new System.Drawing.Point(3, 91);
-            this.fileList.Name = "fileList";
-            this.fileList.Size = new System.Drawing.Size(166, 417);
-            this.fileList.TabIndex = 3;
-            this.fileList.SelectedIndexChanged += new System.EventHandler(this.fileList_SelectedIndexChanged);
-            // 
             // wrapImageDisplayer1
             // 
-            this.wrapImageDisplayer1.Bitmap = null;
+            this.wrapImageDisplayer1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.wrapImageDisplayer1.BackColors = ((System.Collections.Generic.List<System.Drawing.Color>)(resources.GetObject("wrapImageDisplayer1.BackColors")));
             this.wrapImageDisplayer1.BlockHeight = 12;
             this.wrapImageDisplayer1.BlockWidth = 12;
             this.wrapImageDisplayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wrapImageDisplayer1.FullBackgroundDraw = false;
             this.wrapImageDisplayer1.ImageAlignCenter = false;
             this.wrapImageDisplayer1.ImageName = " ";
             this.wrapImageDisplayer1.Index = 0;

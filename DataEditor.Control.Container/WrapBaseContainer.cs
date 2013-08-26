@@ -17,7 +17,8 @@ namespace DataEditor.Control.Container
         }
         public override FuzzyData.FuzzyObject Parent
         {
-            set { Helper.ParentValue = value; Pull(); }
+            set { Helper.ParentValue = value; 
+                Pull(); }
         }
         public override ControlArgs Load_Information (System.Xml.XmlNode Node)
         {

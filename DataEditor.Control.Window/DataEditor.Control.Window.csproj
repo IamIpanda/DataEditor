@@ -77,6 +77,12 @@
     <Compile Include="DataEditDialog_Column.Designer.cs">
       <DependentUpon>DataEditDialog_Column.cs</DependentUpon>
     </Compile>
+    <Compile Include="SingleImageChoser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleImageChoser.Designer.cs">
+      <DependentUpon>SingleImageChoser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -101,6 +107,9 @@
     <EmbeddedResource Include="DataEditDialog_Column.resx">
       <DependentUpon>DataEditDialog_Column.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SingleImageChoser.resx">
+      <DependentUpon>SingleImageChoser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,6 +121,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataEditor.Adapter\DataEditor.Adapter.csproj">
+      <Project>{4fcc66f3-f2d8-4c5c-96d4-e07fc412d3e8}</Project>
+      <Name>DataEditor.Adapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj">
       <Project>{470035a8-2b65-4cbe-bee0-3faafe9fc787}</Project>
       <Name>DataEditor.Arce.Interpreter</Name>

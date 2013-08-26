@@ -11,38 +11,20 @@ namespace DataEditor.Control.Window
 {
     public partial class ImageChoser : Form
     {
-        static string[] miss = new string[] { "!" };
-        protected string path = "", filename = "";
+        protected string path = "";
+        protected Adapter.AdvanceImage value;
+        public List<Adapter.AdvanceImage.AdvanceImageRect> Splits { get; set; }
+        public List<Adapter.AdvanceImage.AdvanceImageRect> ReSplits { get; set; }
+
+        public Adapter.AdvanceImage Value
+        {
+            get { return value; }
+            set { this.value = value; }
+        }
         public string Path 
         {
             get { return path; }
             set { path = value; }
-        }
-        public string FileName
-        {
-            get
-            {
-                if (fileList.Items.Count == 0) return "";
-                System.IO.FileInfo file = fileList.ChosenFile;
-                if (file == null) return "";
-                return System.IO.Path.GetFileNameWithoutExtension(file.FullName);
-            }
-            set
-            {
-                if (fileList.Items.Count == 0) return;
-                foreach (object ob in fileList.Items)
-                    if (ob.ToString() == value)
-                        fileList.SelectedItem = ob;
-            }
-        }
-        public int Index 
-        {
-            get { return wrapImageDisplayer1.Index; }
-            set { wrapImageDisplayer1.Index = value; }
-        }
-        public string Split
-        {
-            set { wrapImageDisplayer1.Set(value); }
         }
         public ImageChoser()
         {
@@ -51,7 +33,25 @@ namespace DataEditor.Control.Window
         public new string Text
         {
             get { return TitleBox.Text; }
-            set { TitleBox.Text = value; }
+            set { TitleBox.Text = value; base.Text = value; }
+        }
+
+        public string FileName
+        {
+            get
+            {
+                if ( fileList.Items.Count == 0 ) return "";
+                System.IO.FileInfo file = fileList.ChosenFile;
+                if ( file == null ) return "";
+                return System.IO.Path.GetFileNameWithoutExtension(file.FullName);
+            }
+            set
+            {
+                if ( fileList.Items.Count == 0 ) return;
+                foreach ( object ob in fileList.Items )
+                    if ( ob.ToString() == value )
+                    { fileList.SelectedItem = ob; break; }
+            }
         }
 
         protected void InitializeRTP()
@@ -65,6 +65,11 @@ namespace DataEditor.Control.Window
 
         private void btOK_Click(object sender, EventArgs e)
         {
+            if ( value != null )
+            {
+                if ( value.ImageName != null ) value.ImageName.Text = FileName;
+                if ( value.ImageIndex != null ) value.ImageIndex.Value = wrapImageDisplayer1.Index;
+            }
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
         }
@@ -78,6 +83,13 @@ namespace DataEditor.Control.Window
         private void ImageChoser_Shown(object sender, EventArgs e)
         {
             InitializeRTP();
+            if ( value != null )
+            {
+                if ( value.ImageName != null )
+                    this.FileName = value.ImageName.Text;
+                if ( value.ImageIndex != null )
+                    wrapImageDisplayer1.Index = (int)value.ImageIndex.Value;
+            }
         }
 
         private void RTPChoser_SelectedIndexChanged(object sender, EventArgs e)
@@ -87,21 +99,25 @@ namespace DataEditor.Control.Window
 
         private void fileList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (fileList.SelectedIndex == 0)
+            if ( fileList.SelectedIndex == 0 )
             {
                 wrapImageDisplayer1.Bitmap = null;
                 return;
             }
             System.IO.FileInfo file = fileList.ChosenFile;
-            if (file == null) return;
-            if (!file.Exists) return;
+            if ( file == null ) return;
+            if ( !file.Exists ) return;
             Bitmap bitmap = new Bitmap(file.FullName);
             string name = file.Name;
-            foreach (string pass in miss)
-                if (name.StartsWith(pass))
-                    name = name.Remove(0, pass.Length);
-            wrapImageDisplayer1.ImageName = name;
-            SetBitmap(bitmap);
+            var r = Splits[0];
+            if (ReSplits != null)
+                foreach ( var rect in ReSplits )
+                    if ( rect.Flag != "" && name.StartsWith(rect.Flag) ) { name = name.Remove(0, rect.Flag.Length); break; }
+            foreach ( var rect in Splits )
+                if ( rect.Flag != "" && name.StartsWith(rect.Flag) )
+                    r = rect;
+            wrapImageDisplayer1.Rect = r;
+            wrapImageDisplayer1.Bitmap = bitmap;
             SetText();
         }
 
@@ -112,6 +128,7 @@ namespace DataEditor.Control.Window
 
         private void wrapImageDisplayer1_MouseUp(object sender, MouseEventArgs e)
         {
+            
             SetText();
         }
         protected void SearchFile(Rtp rtp, string path)
@@ -142,7 +159,11 @@ namespace DataEditor.Control.Window
 
         protected void SetText()
         {
-            btIndex.Text = FileName + " ( " + Index + " / " + wrapImageDisplayer1.Blocks + " ) ";
+            int bs = wrapImageDisplayer1.Blocks;
+            if ( bs == 1 )
+                btIndex.Text = FileName;
+            else
+                btIndex.Text = FileName + " ( " + wrapImageDisplayer1.Index + " / " + bs + " ) ";
         }
     }
 }
