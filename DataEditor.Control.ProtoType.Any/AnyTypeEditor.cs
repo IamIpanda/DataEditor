@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DataEditor.FuzzyData;
 
-namespace DataEditor.Control.ProtoType.Any
+namespace DataEditor.Control.Prototype.Any
 {
     public partial class AnyTypeEditor : UserControl
     {

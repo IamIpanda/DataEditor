@@ -1,4 +1,4 @@
-﻿namespace DataEditor.Control.ProtoType.Any
+﻿namespace DataEditor.Control.Prototype.Any
 {
     partial class AnyTypeEditor
     {
@@ -30,8 +30,8 @@
         {
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("");
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.treeViewForAny1 = new DataEditor.Control.ProtoType.Any.TreeViewForAny();
-            this.listViewForAny1 = new DataEditor.Control.ProtoType.Any.ListViewForAny();
+            this.treeViewForAny1 = new DataEditor.Control.Prototype.Any.TreeViewForAny();
+            this.listViewForAny1 = new DataEditor.Control.Prototype.Any.ListViewForAny();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));

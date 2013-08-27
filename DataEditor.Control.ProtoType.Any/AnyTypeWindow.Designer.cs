@@ -1,4 +1,4 @@
-﻿namespace DataEditor.Control.ProtoType.Any
+﻿namespace DataEditor.Control.Prototype.Any
 {
     partial class AnyTypeWindow
     {

@@ -226,6 +226,9 @@
   <data name="btDel.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="btDel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btDel.Location" type="System.Drawing.Point, System.Drawing">
     <value>155, 1</value>
   </data>
@@ -255,6 +258,9 @@
   </data>
   <data name="btDown.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="btDown.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>78, 1</value>
@@ -288,6 +294,9 @@
   </data>
   <data name="btUp.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="btUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btUp.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 1</value>
@@ -355,6 +364,9 @@
   <data name="lbColor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="lbColor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbColor.Location" type="System.Drawing.Point, System.Drawing">
     <value>178, 3</value>
   </data>
@@ -381,6 +393,9 @@
   </data>
   <data name="btAdd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="btAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btAdd.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 3</value>
@@ -529,6 +544,9 @@
   <data name="btCancel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="btCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>577, 3</value>
   </data>
@@ -555,6 +573,9 @@
   </data>
   <data name="btOK.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="btOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btOK.Location" type="System.Drawing.Point, System.Drawing">
     <value>457, 3</value>

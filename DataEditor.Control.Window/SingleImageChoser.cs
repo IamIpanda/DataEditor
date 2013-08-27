@@ -22,7 +22,8 @@ namespace DataEditor.Control.Window
 
         private void btOK_Click (object sender, EventArgs e)
         {
-            var r = wrapImageDisplayer1.Rect;
+            if ( numericUpDown1.Focused ) return;
+            var r = protoImageDisplayer1.Rect;
             Value.ImageIndex.Value = r[r.X, r.Y];
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
@@ -36,8 +37,8 @@ namespace DataEditor.Control.Window
 
         private void numericUpDown1_ValueChanged (object sender, EventArgs e)
         {
-            wrapImageDisplayer1.Rect.SetIndex((int)numericUpDown1.Value);
-            wrapImageDisplayer1.Invalidate();
+            protoImageDisplayer1.Rect.SetIndex((int)numericUpDown1.Value);
+            protoImageDisplayer1.Invalidate();
         }
 
         private void SingleImageChoser_Shown (object sender, EventArgs e)
@@ -53,24 +54,49 @@ namespace DataEditor.Control.Window
                 if ( rect.Flag != "" && name.StartsWith(rect.Flag) )
                     r = rect;
             r.SetIndex((int)Value.ImageIndex.Value);
-            wrapImageDisplayer1.Rect = r;
-            wrapImageDisplayer1.ClientSize = bitmap.Size;
-            wrapImageDisplayer1.Bitmap = bitmap;
-            wrapImageDisplayer1.Invalidate();
-            label1.Text = "/ " + r.Blocks;
+            protoImageDisplayer1.Rect = r;
+            protoImageDisplayer1.ClientSize = bitmap.Size;
+            protoImageDisplayer1.Bitmap = bitmap;
+            protoImageDisplayer1.Invalidate();
+            label1.Text = "Index : " + protoImageDisplayer1.Index;
             numericUpDown1.Maximum = r.Blocks - 1;
             numericUpDown1.Value = (int)Value.ImageIndex.Value;
         }
 
-        private void wrapImageDisplayer1_MouseUp (object sender, MouseEventArgs e)
+        private void protoImageDisplayer1_MouseDoubleClick (object sender, MouseEventArgs e)
         {
-            var r = wrapImageDisplayer1.Rect;
+            btOK_Click(btOK, e);
+        }
+
+        private void protoImageDisplayer1_SelectedIndexChanged (object sender, EventArgs e)
+        {
+            label1.Text = "Index : " + protoImageDisplayer1.Index;
+            var r = protoImageDisplayer1.Rect;
             numericUpDown1.Value = r[r.X, r.Y];
         }
 
-        private void wrapImageDisplayer1_MouseDoubleClick (object sender, MouseEventArgs e)
+        private void label1_Click (object sender, EventArgs e)
         {
-            btOK_Click(btOK, e);
+            if ( label1.Width > 100 )
+            {
+                label1.Width = 94;
+                label1.Text = "/ " + protoImageDisplayer1.Rect.Blocks;
+                numericUpDown1.Visible = true;
+                numericUpDown1.Focus();
+            }
+            else { protoImageDisplayer1.Focus(); }
+        }
+
+        private void numericUpDown1_Leave (object sender, EventArgs e)
+        {
+            label1.Width = 191;
+            label1.Text = "Index : " + protoImageDisplayer1.Index;
+            numericUpDown1.Visible = false;
+        }
+
+        private void numericUpDown1_KeyUp (object sender, KeyEventArgs e)
+        {
+            if ( e.KeyCode == Keys.Enter ) protoImageDisplayer1.Focus();
         }
     }
 }

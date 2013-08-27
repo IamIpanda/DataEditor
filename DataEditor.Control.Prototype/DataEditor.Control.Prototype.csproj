@@ -111,7 +111,7 @@
     <Compile Include="ProtoRadioContainer.Designer.cs">
       <DependentUpon>ProtoRadioContainer.cs</DependentUpon>
     </Compile>
-    <Compile Include="WrapImageDisplayer.cs">
+    <Compile Include="ProtoImageIndexDisplayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
@@ -168,8 +168,8 @@
     <EmbeddedResource Include="ProtoRadioContainer.resx">
       <DependentUpon>ProtoRadioContainer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WrapImageDisplayer.resx">
-      <DependentUpon>WrapImageDisplayer.cs</DependentUpon>
+    <EmbeddedResource Include="ProtoImageIndexDisplayer.resx">
+      <DependentUpon>ProtoImageIndexDisplayer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

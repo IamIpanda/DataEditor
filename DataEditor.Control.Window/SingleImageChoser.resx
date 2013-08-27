@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="wrapImageDisplayer1.BackColors" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="protoImageDisplayer1.BackColors" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAKABU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249Mi4wLjAuMCwgQ3Vs
         dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhXV0sIG1zY29ybGliLCBW
@@ -129,7 +129,7 @@
         RHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIw
         M2Y1ZjdmMTFkNTBhM2EHBAAAAAABAAAABAAAAAQUU3lzdGVtLkRyYXdpbmcuQ29sb3IFAAAABfr///8U
         U3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcF
-        AAAACgAAAAAAAAAAewABAAH5////+v///wpEAAD/AAAAAAAAAgAB+P////r///8KAAAAAAAAAAAAAAAA
+        AAAACgAAAAAAAAAAewABAAH5////+v///wpBAAD/AAAAAAAAAgAB+P////r///8KAAAAAAAAAAAAAAAA
         Aff////6////CgAAAAAAAAAAAAAAAAs=
 </value>
   </data>

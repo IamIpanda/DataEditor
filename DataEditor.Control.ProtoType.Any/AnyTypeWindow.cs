@@ -6,7 +6,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace DataEditor.Control.ProtoType.Any
+namespace DataEditor.Control.Prototype.Any
 {
     public partial class AnyTypeWindow : Form
     {

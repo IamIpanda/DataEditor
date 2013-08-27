@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using DataEditor.FuzzyData;
 
-namespace DataEditor.Control.ProtoType.Any
+namespace DataEditor.Control.Prototype.Any
 {
     /*
      *  Bool

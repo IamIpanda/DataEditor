@@ -39,7 +39,7 @@
             this.btOK = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.btIndex = new System.Windows.Forms.TextBox();
-            this.wrapImageDisplayer1 = new DataEditor.Control.Wrapper.WrapImageDisplayer();
+            this.wrapImageDisplayer1 = new DataEditor.Control.Prototype.ProtoImageIndexDisplayer();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -185,22 +185,24 @@
             // 
             this.wrapImageDisplayer1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.wrapImageDisplayer1.BackColors = ((System.Collections.Generic.List<System.Drawing.Color>)(resources.GetObject("wrapImageDisplayer1.BackColors")));
+            this.wrapImageDisplayer1.Bitmap = null;
             this.wrapImageDisplayer1.BlockHeight = 12;
             this.wrapImageDisplayer1.BlockWidth = 12;
             this.wrapImageDisplayer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wrapImageDisplayer1.FullBackgroundDraw = false;
             this.wrapImageDisplayer1.ImageAlignCenter = false;
-            this.wrapImageDisplayer1.ImageName = " ";
             this.wrapImageDisplayer1.Index = 0;
             this.wrapImageDisplayer1.Location = new System.Drawing.Point(3, 3);
             this.wrapImageDisplayer1.Name = "wrapImageDisplayer1";
+            this.wrapImageDisplayer1.Rect = null;
             this.wrapImageDisplayer1.Scale = false;
             this.wrapImageDisplayer1.Size = new System.Drawing.Size(753, 473);
             this.wrapImageDisplayer1.SrcRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.wrapImageDisplayer1.TabIndex = 1;
             this.wrapImageDisplayer1.UseRectangleFocus = false;
+            this.wrapImageDisplayer1.Value = null;
+            this.wrapImageDisplayer1.SelectedIndexChanged += new System.EventHandler<System.EventArgs>(this.wrapImageDisplayer1_SelectedIndexChanged);
             this.wrapImageDisplayer1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.wrapImageDisplayer1_MouseDoubleClick);
-            this.wrapImageDisplayer1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.wrapImageDisplayer1_MouseUp);
             // 
             // ImageChoser
             // 
@@ -236,7 +238,7 @@
         private System.Windows.Forms.Button btOK;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.TextBox btIndex;
-        private Wrapper.WrapImageDisplayer wrapImageDisplayer1;
+        private Prototype.ProtoImageIndexDisplayer wrapImageDisplayer1;
         private Prototype.ProtoRtpViewList fileList;
     }
 }

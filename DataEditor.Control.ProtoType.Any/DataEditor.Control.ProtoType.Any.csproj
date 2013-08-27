@@ -7,7 +7,7 @@
     <ProjectGuid>{0F504FC2-5F6E-41F2-B31D-BC533BD0C5D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataEditor.Control.ProtoType.Any</RootNamespace>
+    <RootNamespace>DataEditor.Control.Prototype.Any</RootNamespace>
     <AssemblyName>DataEditor.Control.ProtoType.Any</AssemblyName>
     <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -126,11 +126,6 @@ namespace DataEditor.Control.Window
             btOK_Click(sender, e);
         }
 
-        private void wrapImageDisplayer1_MouseUp(object sender, MouseEventArgs e)
-        {
-            
-            SetText();
-        }
         protected void SearchFile(Rtp rtp, string path)
         {
             string full = System.IO.Path.Combine(rtp.Path, path);
@@ -164,6 +159,11 @@ namespace DataEditor.Control.Window
                 btIndex.Text = FileName;
             else
                 btIndex.Text = FileName + " ( " + wrapImageDisplayer1.Index + " / " + bs + " ) ";
+        }
+
+        private void wrapImageDisplayer1_SelectedIndexChanged (object sender, EventArgs e)
+        {
+            SetText();
         }
     }
 }

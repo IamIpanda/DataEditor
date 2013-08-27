@@ -4,7 +4,7 @@ using System.Text;
 using DataEditor.FuzzyData;
 using System.Drawing;
 
-namespace DataEditor.Control.ProtoType.Any
+namespace DataEditor.Control.Prototype.Any
 {
     /*
      *  Bool
