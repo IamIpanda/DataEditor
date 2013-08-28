@@ -140,6 +140,7 @@ namespace DataEditor.Control.Wrapper
                     OnScan(Name, child.InnerText);
             }
         }
+        protected void OriginLoad (System.Xml.XmlNode Node) { base.Load(Node); }
         protected FuzzyData.FuzzyObject LoadXmlData (System.Xml.XmlNode Node)
         {
             Contract.Serialization xml = Help.SerializationManager.TryGetSerialization("[x]");
@@ -164,7 +165,7 @@ namespace DataEditor.Control.Wrapper
         /// </summary>
         public class ListViewColumnArgs : ControlArgs
         {
-            public string Format { get; set; }
+            public virtual string Format { get; set; }
             public ListViewColumnArgs () : base() { Format = ""; }
             public ListViewColumnArgs (XmlNode Node) : this() { Load(Node); }
             protected override void OnScan (string Name, string InnerText)
