@@ -7,14 +7,66 @@ namespace DataEditor.Control.Wrapper
     public class WrapProperty : WrapBaseEditor<Adapter.AdvanceArray ,PropertyArgs>
     {
         Prototype.ProtoListView actual;
-        public override void Push () { }
-        public override void Pull () { 
-        }
-        public override void Bind () 
-        {
-            Binding = actual = new Prototype.ProtoListView(); 
-        }
+        System.Xml.XmlNode dialog;
+        FuzzyData.FuzzyObject New;
+        List<PropertyArgs.PropertyColumnArgs> columnArgs;
+        List<FuzzyData.FuzzySymbol> parameters;
         public override string Flag { get { return "property"; } }
+        public override void Push () { }
+        public override void Pull () { }
+        public override void Bind ()
+        {
+            Binding = actual = new Prototype.ProtoListView();
+            actual.DoubleClick += actual_DoubleClick;
+        }
+
+        void actual_DoubleClick (object sender, EventArgs e)
+        {
+        }
+        public override void Reset ()
+        {
+            if ( argument == null ) return;
+            dialog = argument.Dialog;
+            New = argument.New;
+            columnArgs = argument.Columns;
+            parameters = argument.Parameters;
+            base.Reset();
+        }
+
+        protected override Adapter.AdvanceArray ConvertToValue (FuzzyData.FuzzyObject origin)
+        {
+            FuzzyData.FuzzyArray arr = origin as FuzzyData.FuzzyArray;
+            if ( arr == null ) return null;
+            Adapter.AdvanceArray array = new Adapter.AdvanceArray(arr);
+            return array.Exists ? array : null;
+        }
+
+        protected object[] GetParameters (FuzzyData.FuzzyObject parent = null)
+        {
+            if ( parent == null ) parent = SelectedValue;
+            if ( parent == null ) return null;
+            List<object> paras = new List<object>();
+            foreach ( FuzzyData.FuzzySymbol sym in parameters )
+                paras.Add(GetParameter(parent, sym));
+            return paras.ToArray();
+        }
+        protected object GetParameter (FuzzyData.FuzzyObject Parent, FuzzyData.FuzzySymbol Sym)
+        {
+            if ( Parent == null || Sym == null ) return null;
+            object value = null;
+            Parent.InstanceVariables.TryGetValue(Sym, out value);
+            return value;
+        }
+        public FuzzyData.FuzzyObject SelectedValue
+        {
+            get 
+            {
+                if ( actual == null ) return null;
+                if ( actual.SelectedItems.Count == 0 ) return null;
+                if ( value == null ) return FuzzyData.FuzzyNil.Instance;
+                return value.Data[actual.SelectedIndices[0]];
+            }
+        }
     }
    public class PropertyArgs : ListViewArgs
    {
@@ -44,6 +96,8 @@ namespace DataEditor.Control.Wrapper
        protected override void OnCheck (string Name, System.Xml.XmlNode Node)
        {
            if ( Name == "COLUMN" ) Columns.Add(new PropertyColumnArgs(Node));
+           else if ( Name == "NEW" ) New = LoadXmlData(Node.FirstChild);
+           else if ( Name == "DIALOG" ) Dialog = Node;
            base.OnCheck(Name, Node);
        }
        public class PropertyColumnArgs : PropertyArgs.ListViewColumnArgs

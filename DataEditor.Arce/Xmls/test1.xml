@@ -4,7 +4,7 @@
     <skill>Tests/Data/skills.rvdata</skill>
     <system>Tests/Data/system.rvdata</system>
     <animation>Tests/Data/animations.rvdata</animation>
-    <actor>Tests/Data/actors.rvdata</actor>
+    <actor>Tests/Data/actors.rvdata2</actor>
   </converts>
   <data type = "tabs">
     <data type = "tab" text = "欸哟">
@@ -80,11 +80,10 @@
             <resplit x = "0" y = "0" flag = "!"/>
           </resplit>
         </data>
-        <data type = "property" code = "code" >
+        <data type = "property" code = "code" actual = "features" >
           <code>code</code>
           <parameter>data_id</parameter>
-          <parameter>value1</parameter>
-          <parameter>value2</parameter>
+          <parameter>value</parameter>
           <column text = "类型" string = "">
             <text code = "11">属性抗性</text>
             <text code = "12">弱化抗性</text>

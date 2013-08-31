@@ -30,8 +30,6 @@ namespace DataEditor.Control.Wrapper
         {
             base.Reset();
             if ( argument == null ) return;
-            DataEditor.Control.ControlHelper.Reset(this, argument);
-            this.key = argument.Actual;
             ColumnArgs = argument.Columns;
             foreach ( var row in argument.Columns )
             {
@@ -43,10 +41,7 @@ namespace DataEditor.Control.Wrapper
         }
         public override void Pull ()
         {
-            if ( value != null )
-            {
-                ShowText();
-            }
+            if ( value != null ) ShowText();
         }
         protected override Adapter.AdvanceArray ConvertToValue (FuzzyData.FuzzyObject origin)
         {
@@ -66,7 +61,7 @@ namespace DataEditor.Control.Wrapper
             dialog.Parent = editing;
             if ( (dialog.Binding as System.Windows.Forms.Form).ShowDialog() == DialogResult.OK )
             {
-
+                // TODO : Refresh Text.
             }
         }
         public void ShowText ()
