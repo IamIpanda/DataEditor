@@ -57,3 +57,6 @@ E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Contro
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Arce.Interpreter.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Control.Container.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Arce.Interpreter.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\FastColoredTextBox.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\FastColoredTextBox.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\FastColoredTextBox.xml

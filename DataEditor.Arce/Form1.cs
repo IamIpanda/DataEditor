@@ -39,10 +39,12 @@ namespace DataEditor.Arce
             System.IO.FileStream file = new System.IO.FileStream("Tests/Data/Items.rvdata", System.IO.FileMode.Open);
             System.IO.FileStream filx = new System.IO.FileStream("Tests/Data/Classes.rvdata", System.IO.FileMode.Open);
             System.IO.FileStream fily = new System.IO.FileStream("Tests/Data/Actors.rvdata2", System.IO.FileMode.Open);
+            System.IO.FileStream filz = new System.IO.FileStream("Tests/Data/System.rvdata2", System.IO.FileMode.Open);
 
             FuzzyObject ob = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(file) as FuzzyObject;
             FuzzyObject op = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(filx) as FuzzyObject;
             FuzzyObject od = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(fily) as FuzzyObject;
+//            FuzzyObject oq = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(filz) as FuzzyObject;
             FuzzyArray fa = ob as FuzzyArray;
             FuzzyArray fb = op as FuzzyArray;
             FuzzyArray fc = od as FuzzyArray;

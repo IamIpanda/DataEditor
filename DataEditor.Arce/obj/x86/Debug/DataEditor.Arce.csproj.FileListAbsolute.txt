@@ -279,3 +279,6 @@ Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Contract.pdb
 Y:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Help.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Adapter.dll
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\DataEditor.Adapter.pdb
+E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\FastColoredTextBox.dll
+E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\FastColoredTextBox.pdb
+E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\FastColoredTextBox.xml

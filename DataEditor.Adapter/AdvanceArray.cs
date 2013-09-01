@@ -9,7 +9,7 @@ namespace DataEditor.Adapter
     /// 或者是 FuzzyNil
     /// 否则，生成失败。
     /// </summary>
-    public class AdvanceArray : FuzzyData.FuzzyArray
+    public class AdvanceArray : FuzzyData.FuzzyArray,AdvanceData
     {
         /// <summary>
         /// 本 Advance Array 是否可用的标记

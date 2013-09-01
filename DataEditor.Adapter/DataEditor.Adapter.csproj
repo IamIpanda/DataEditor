@@ -36,7 +36,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvanceData.cs" />
     <Compile Include="AdvanceImage.cs" />
+    <Compile Include="AdvanceStringList.cs" />
     <Compile Include="[A]AdvanceArray.cs" />
     <Compile Include="AdvanceCommand.cs" />
     <Compile Include="AdvanceArray.cs" />
