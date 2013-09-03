@@ -25,12 +25,18 @@ namespace DataEditor.Control.Wrapper
         }
         public override void Reset ()
         {
+            base.Reset();
             if ( argument == null ) return;
             dialog = argument.Dialog;
             New = argument.New;
             columnArgs = argument.Columns;
             parameters = argument.Parameters;
-            base.Reset();
+            if ( actual == null ) return;
+            foreach ( var row in argument.Columns )
+            {
+                int w = row.Width == -1 ? 200 : row.Width;
+                actual.Columns.Add(row.Text, w);
+            }
         }
 
         protected override Adapter.AdvanceArray ConvertToValue (FuzzyData.FuzzyObject origin)
@@ -113,14 +119,18 @@ namespace DataEditor.Control.Wrapper
            }
            protected override void OnCheck (string Name, System.Xml.XmlNode Node)
            {
-               if ( Name == "TEXT" )
+               if ( Name == "TEXTS" )
                {
-                   int index = -1;
-                   foreach ( System.Xml.XmlAttribute attr in Node.Attributes )
-                       if ( attr.Name.ToUpper() == "CODE" )
-                           index = GetInt(attr.InnerText);
-                   if ( index > 0 )
-                       Format.Add(index, Node.InnerText);
+                   foreach ( System.Xml.XmlNode child in Node.ChildNodes )
+                       if ( child.Name.ToUpper() == "TEXT" )
+                       {
+                           int index = -1;
+                           foreach ( System.Xml.XmlAttribute attr in child.Attributes )
+                               if ( attr.Name.ToUpper() == "CODE" )
+                                   index = GetInt(attr.InnerText);
+                           if ( index > 0 )
+                               Format.Add(index, child.InnerText);
+                       }
                }
                base.OnCheck(Name, Node);
            }

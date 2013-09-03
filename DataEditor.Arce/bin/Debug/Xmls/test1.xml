@@ -68,6 +68,9 @@
         </data>
       </data>
     </data>
+    <data type = "tab" text = "系统">
+      <data type = "stringlist" text = "属性" actual = "elements" />
+    </data>
     <data type ="tab" text ="角色">
       <data type = "list" text = "角色" show = "#{0:d3}#:#{0}#,,|id,|name">
         <data type = "image"  text = "行走图" path = "Graphics/characters" actual = "character_name" index = "character_index">
@@ -81,60 +84,66 @@
           </resplit>
         </data>
         <data type = "property" code = "code" actual = "features" >
+          <width>600</width>
+          <height>400</height>
           <code>code</code>
           <parameter>data_id</parameter>
           <parameter>value</parameter>
           <column text = "类型" string = "">
-            <text code = "11">属性抗性</text>
-            <text code = "12">弱化抗性</text>
-            <text code = "13">状态抗性</text>
-            <text code = "14">状态免疫</text>
-            <text code = "21">普通能力</text>
-            <text code = "22">添加能力</text>
-            <text code = "23">特殊能力</text>
-            <text code = "31">攻击附加属性</text>
-            <text code = "32">攻击附加状态</text>
-            <text code = "33">修正攻击速度</text>
-            <text code = "34">增加攻击次数</text>
-            <text code = "41">添加技能类型</text>
-            <text code = "42">禁用技能类型</text>
-            <text code = "43">添加技能</text>
-            <text code = "44">禁用技能</text>
-            <text code = "51">装备武器类型</text>
-            <text code = "52">装备护甲类型</text>
-            <text code = "53">固定装备</text>
-            <text code = "54">禁用装备</text>
-            <text code = "55">装备风格</text> 
-            <text code = "61">增加行动次数</text> 
-            <text code = "62">特殊标志</text> 
-            <text code = "63">消失效果</text> 
-            <text code = "64">队伍能力</text>
+            <texts>
+              <text code = "11">属性抗性</text>
+              <text code = "12">弱化抗性</text>
+              <text code = "13">状态抗性</text>
+              <text code = "14">状态免疫</text>
+              <text code = "21">普通能力</text>
+              <text code = "22">添加能力</text>
+              <text code = "23">特殊能力</text>
+              <text code = "31">攻击附加属性</text>
+              <text code = "32">攻击附加状态</text>
+              <text code = "33">修正攻击速度</text>
+              <text code = "34">增加攻击次数</text>
+              <text code = "41">添加技能类型</text>
+              <text code = "42">禁用技能类型</text>
+              <text code = "43">添加技能</text>
+              <text code = "44">禁用技能</text>
+              <text code = "51">装备武器类型</text>
+              <text code = "52">装备护甲类型</text>
+              <text code = "53">固定装备</text>
+              <text code = "54">禁用装备</text>
+              <text code = "55">装备风格</text>
+              <text code = "61">增加行动次数</text>
+              <text code = "62">特殊标志</text>
+              <text code = "63">消失效果</text>
+              <text code = "64">队伍能力</text>
+            </texts>
           </column>
           <column text = "内容">
-            <text code = "11">『#{0}#』 * #{0}# %,system|elements|#,##,#</text>
-            <text code = "12">『#{0}#』 * #{0}# %,[体力上限,魔力上限,物理攻击,物理防御,魔法攻击,魔法防御,敏捷值,幸运值]|#,##,#</text>
-            <text code = "13">『#{0}#』 * #{0}# %,state|#|name,##,#</text>
-            <text code = "14">『#{0}#』,state|#|name</text>
-            <text code = "21"></text>
-            <text code = "22"></text>
-            <text code = "23"></text>
-            <text code = "31">攻击附加属性</text>
-            <text code = "32">攻击附加状态</text>
-            <text code = "33">修正攻击速度</text>
-            <text code = "34">增加攻击次数</text>
-            <text code = "41">添加技能类型</text>
-            <text code = "42">禁用技能类型</text>
-            <text code = "43">添加技能</text>
-            <text code = "44">禁用技能</text>
-            <text code = "51">装备武器类型</text>
-            <text code = "52">装备护甲类型</text>
-            <text code = "53">固定装备</text>
-            <text code = "54">禁用装备</text>
-            <text code = "55">装备风格</text> 
-            <text code = "61">增加行动次数</text> 
-            <text code = "62">特殊标志</text> 
-            <text code = "63">消失效果</text> 
-            <text code = "64">队伍能力</text>
+            <texts>
+              <text code = "11">『#{0}#』 * #{0}# %,system|elements|#,##,#</text>
+              <text code = "12">『#{0}#』 * #{0}# %,[体力上限,魔力上限,物理攻击,物理防御,魔法攻击,魔法防御,敏捷值,幸运值]|#,##,#</text>
+              <text code = "13">『#{0}#』 * #{0}# %,state|#|name,##,#</text>
+              <text code = "14">『#{0}#』,state|#|name</text>
+              <text code = "21"></text>
+              <text code = "22"></text>
+              <text code = "23"></text>
+              <text code = "31">攻击附加属性</text>
+              <text code = "32">攻击附加状态</text>
+              <text code = "33">修正攻击速度</text>
+              <text code = "34">增加攻击次数</text>
+              <text code = "41">添加技能类型</text>
+              <text code = "42">禁用技能类型</text>
+              <text code = "43">添加技能</text>
+              <text code = "44">禁用技能</text>
+              <text code = "51">装备武器类型</text>
+              <text code = "52">装备护甲类型</text>
+              <text code = "53">固定装备</text>
+              <text code = "54">禁用装备</text>
+              <text code = "55">装备风格</text>
+              <text code = "61">增加行动次数</text>
+              <text code = "62">特殊标志</text>
+              <text code = "63">消失效果</text>
+              <text code = "64">队伍能力</text>
+            </texts>
           </column>
         </data>
       </data>

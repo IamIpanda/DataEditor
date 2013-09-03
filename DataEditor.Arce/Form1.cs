@@ -44,7 +44,7 @@ namespace DataEditor.Arce
             FuzzyObject ob = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(file) as FuzzyObject;
             FuzzyObject op = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(filx) as FuzzyObject;
             FuzzyObject od = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(fily) as FuzzyObject;
-//            FuzzyObject oq = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(filz) as FuzzyObject;
+            FuzzyObject oq = DataEditor.FuzzyData.Serialization.RubyMarshal.RubyMarshal.Load(filz) as FuzzyObject;
             FuzzyArray fa = ob as FuzzyArray;
             FuzzyArray fb = op as FuzzyArray;
             FuzzyArray fc = od as FuzzyArray;
@@ -57,7 +57,8 @@ namespace DataEditor.Arce
                     {
                         (tc.TabPages[0].Tag as DataEditor.Control.ObjectEditor).Parent = fa;
                         (tc.TabPages[1].Tag as DataEditor.Control.ObjectEditor).Parent = fb;
-                        (tc.TabPages[2].Tag as DataEditor.Control.ObjectEditor).Parent = fc;
+                        (tc.TabPages[2].Tag as DataEditor.Control.ObjectEditor).Parent = oq;
+                        (tc.TabPages[3].Tag as DataEditor.Control.ObjectEditor).Parent = fc;
                     }
                     catch ( Exception ex )
                     {

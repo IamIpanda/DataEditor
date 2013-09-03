@@ -118,12 +118,12 @@ namespace DataEditor.Control.Prototype.Any
                 Value = FuzzySymbol.GetSymbol(value); }
         }
     }
-    public class ToneTypeManager : AnyTypeManagerHelp<FuzzyTone, ColorTypeConverter>
+    public class ToneTypeManager : AnyTypeManagerHelp<FuzzyTone, ToneTypeConverter>
     {
         public override string Text
         {
-            get { return tc.GetString(Value.Value); }
-            set { Value.Value = tc[value]; }
+            get { return tc.GetString(Value); }
+            set { Value = tc[value]; }
         }
     }
     public class TypeManager

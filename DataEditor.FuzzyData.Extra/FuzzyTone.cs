@@ -7,22 +7,69 @@ using DataEditor.FuzzyData.Serialization;
 
 namespace DataEditor.FuzzyData
 {
-    public class FuzzyTone : FuzzyColor
+    public class FuzzyTone
     {
-        public FuzzyTone(int r, int g, int b, int gray) : base(r, g, b, gray) { }
-        public FuzzyTone(System.Drawing.Color c) : base(c) { }
-        public int Gray
+        public int red { get; set; }
+        public int green { get; set; }
+        public int blue { get; set; }
+        public int gray { get; set; }
+        public FuzzyTone (int r = 0, int g = 0, int b = 0, int gray = 0)
         {
-            get { return base.alpha; }
-            set { base.alpha = value; }
+            red = r;
+            green = g;
+            blue = b;
+            this.gray = gray;
         }
-        protected new XmlNode ToDocument(XmlDocument document)
+
+
+        protected void ToBytes (Stream stream)
+        {
+            StreamWriter w = new StreamWriter(stream);
+            w.Write((Byte)37);
+            w.Write((double)red);
+            w.Write((double)green);
+            w.Write((double)blue);
+            w.Write((double)gray);
+        }
+        protected static FuzzyTone GetBytes (Stream stream)
+        {
+            BinaryReader r = new BinaryReader(stream);
+            int R, G, B, A;
+            r.ReadByte();
+            R = Convert.ToInt32(r.ReadDouble());
+            G = Convert.ToInt32(r.ReadDouble());
+            B = Convert.ToInt32(r.ReadDouble());
+            A = Convert.ToInt32(r.ReadDouble());
+            return new FuzzyTone(R, G, B, A);
+        }
+        protected static FuzzyTone GetDocument (XmlNode node)
+        {
+            int r = 0, g = 0, b = 0, a = 0;
+            foreach ( XmlNode n in node.ChildNodes )
+                if ( n.Name == "R" )
+                    r = GetInt(n.InnerText);
+                else if ( n.Name == "G" )
+                    g = GetInt(n.InnerText);
+                else if ( n.Name == "B" )
+                    b = GetInt(n.InnerText);
+                else if ( n.Name == "A" )
+                    a = GetInt(n.InnerText);
+            return new FuzzyTone(r, g, b, a);
+        }
+        protected static int GetInt (string str)
+        {
+            int i;
+            if ( int.TryParse(str, out i) )
+                return i;
+            return 0;
+        }
+        protected XmlNode ToDocument(XmlDocument document)
         {
             XmlNode Parent = document.CreateNode(XmlNodeType.Element, "Tone", "");
-            XmlNode R = document.CreateNode(XmlNodeType.Element, "R", ""); R.InnerText = base.red.ToString();
-            XmlNode G = document.CreateNode(XmlNodeType.Element, "G", ""); G.InnerText = base.green.ToString();
-            XmlNode B = document.CreateNode(XmlNodeType.Element, "B", ""); B.InnerText = base.blue.ToString();
-            XmlNode A = document.CreateNode(XmlNodeType.Element, "A", ""); A.InnerText = base.alpha.ToString();
+            XmlNode R = document.CreateNode(XmlNodeType.Element, "R", ""); R.InnerText = red.ToString();
+            XmlNode G = document.CreateNode(XmlNodeType.Element, "G", ""); G.InnerText = green.ToString();
+            XmlNode B = document.CreateNode(XmlNodeType.Element, "B", ""); B.InnerText = blue.ToString();
+            XmlNode A = document.CreateNode(XmlNodeType.Element, "A", ""); A.InnerText = gray.ToString();
             Parent.AppendChild(R);
             Parent.AppendChild(G);
             Parent.AppendChild(B);

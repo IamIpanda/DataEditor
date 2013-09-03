@@ -152,4 +152,16 @@ namespace DataEditor.Control.Prototype.Any
             return sb.ToString();
         }
     }
+    public class ToneTypeConverter : AnyTypeConverter<FuzzyTone>
+    {
+        public FuzzyTone this[string s]
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        public string GetString (FuzzyTone obj)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

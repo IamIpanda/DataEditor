@@ -50,7 +50,7 @@ namespace DataEditor.FuzzyData
                     r = GetInt(n.InnerText);
                 else if (n.Name == "G")
                     g = GetInt(n.InnerText);
-                else if (n.Name == "V")
+                else if (n.Name == "B")
                     b = GetInt(n.InnerText);
                 else if (n.Name == "A")
                     a = GetInt(n.InnerText);
