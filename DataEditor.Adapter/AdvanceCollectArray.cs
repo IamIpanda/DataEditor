@@ -24,7 +24,7 @@ namespace DataEditor.Adapter
         protected virtual AdvanceCollectResult DefaultCollect (object item)
         {
             FuzzyData.FuzzyObject obj = item as FuzzyData.FuzzyObject;
-            if ( item == null ) return AdvanceCollectResult.Denied;
+            if ( obj == null ) return AdvanceCollectResult.Denied;
             if ( obj is FuzzyData.FuzzyNil ) return AdvanceCollectResult.Wrong;
             return AdvanceCollectResult.Accepted;
         }
@@ -34,12 +34,26 @@ namespace DataEditor.Adapter
     // TODO ; Build it.
     public class AdvanceCollectTypeArray<T> : AdvanceCollectArray where T : FuzzyData.FuzzyObject
     {
-        public List<T> Value { get { return null; } }
+        public List<T> Value { get { return data; } }
+        public Help.LinkTable<int, int> Link { get { return link; } }
+
+        protected List<T> data = new List<T>();
+        protected Help.LinkTable<int, int> link = new Help.LinkTable<int, int>();
+
+        private int i, j;
+
         protected override void SetAcceptedItem (object item)
         {
         }
         protected override void SetWrongItem (object item)
         {
+        }
+        protected override AdvanceCollectResult DefaultCollect (object item)
+        {
+            if ( item is FuzzyData.FuzzyNil ) return AdvanceCollectResult.Wrong;
+            T obj = item as T;
+            if ( obj == null ) return AdvanceCollectResult.Denied;
+            return AdvanceCollectResult.Accepted;
         }
     }
 }
