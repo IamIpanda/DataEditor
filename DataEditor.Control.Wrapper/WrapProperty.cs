@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataEditor.Control.Wrapper
 {
-    public class WrapProperty : WrapBaseEditor<Adapter.AdvanceArray ,PropertyArgs>
+    public class WrapProperty : WrapBaseEditor<Adapter.AdvanceCollectNameArray ,PropertyArgs>
     {
         Prototype.ProtoListView actual;
         System.Xml.XmlNode dialog;
@@ -39,11 +39,11 @@ namespace DataEditor.Control.Wrapper
             }
         }
 
-        protected override Adapter.AdvanceArray ConvertToValue (FuzzyData.FuzzyObject origin)
+        protected override Adapter.AdvanceCollectNameArray ConvertToValue (FuzzyData.FuzzyObject origin)
         {
             FuzzyData.FuzzyArray arr = origin as FuzzyData.FuzzyArray;
             if ( arr == null ) return null;
-            Adapter.AdvanceArray array = new Adapter.AdvanceArray(arr);
+            Adapter.AdvanceCollectNameArray array = new Adapter.AdvanceCollectNameArray(arr);
             return array.Exists ? array : null;
         }
 

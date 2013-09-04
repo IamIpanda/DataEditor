@@ -185,5 +185,18 @@ namespace DataEditor.FuzzyData
                         Add(ob);
             }
         }
+        /// <summary>
+        /// 核心超频连线！
+        /// 注意！这个操作符变更了它的原本含义。
+        /// 将左操作数变成右操作数的别称。
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static FuzzyArray operator | (FuzzyArray self, FuzzyArray source)
+        {
+            self.list = source.list;
+            return self;
+        }
     }
 }
