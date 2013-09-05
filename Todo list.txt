@@ -1,0 +1,3 @@
+[9] 修正图像显示ID为0时不能正常显示的Bug
+[9] 完成 WrapProperty 类
+[6] 完善 WrapListView 类

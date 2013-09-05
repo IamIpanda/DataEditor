@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace DataEditor.Control.Wrapper
 {
@@ -9,11 +10,16 @@ namespace DataEditor.Control.Wrapper
         Prototype.ProtoListView actual;
         System.Xml.XmlNode dialog;
         FuzzyData.FuzzyObject New;
+        FuzzyData.FuzzySymbol code;
         List<PropertyArgs.PropertyColumnArgs> columnArgs;
         List<FuzzyData.FuzzySymbol> parameters;
+        List<Help.AnotherTextManager[]> texts = new List<Help.AnotherTextManager[]>();
         public override string Flag { get { return "property"; } }
         public override void Push () { }
-        public override void Pull () { }
+        public override void Pull ()
+        {
+            if ( value != null ) ShowText();
+        }
         public override void Bind ()
         {
             Binding = actual = new Prototype.ProtoListView();
@@ -31,6 +37,7 @@ namespace DataEditor.Control.Wrapper
             New = argument.New;
             columnArgs = argument.Columns;
             parameters = argument.Parameters;
+            code = argument.Code;
             if ( actual == null ) return;
             foreach ( var row in argument.Columns )
             {
@@ -71,6 +78,48 @@ namespace DataEditor.Control.Wrapper
                 if ( actual.SelectedItems.Count == 0 ) return null;
                 if ( value == null ) return FuzzyData.FuzzyNil.Instance;
                 return value.Data[actual.SelectedIndices[0]];
+            }
+        }
+        public void ShowText ()
+        {
+            texts.Clear();
+            int count = columnArgs.Count;
+            foreach ( FuzzyData.FuzzyObject ob in value.Data )
+            {
+                // 列表生成
+                Help.AnotherTextManager[] ts = new Help.AnotherTextManager[count];
+                // 抓取CODE
+                FuzzyData.FuzzyFixnum fixnum_code = GetParameter(ob, code) as FuzzyData.FuzzyFixnum;
+                // 若获取 CODE 失败
+                if ( fixnum_code == null )
+                {
+                    ts[0] = new Help.AnotherTextManager();
+                    ts[0].Initialize("!NO CODE");
+                    for ( int i = 1; i < count; i++ ) ts[i] = new Help.AnotherTextManager();
+                }
+                // 若获取 CODE 成功
+                else
+                {
+                    int CODE = Convert.ToInt32(fixnum_code.Value);
+                    for ( int i = 0; i < count; i++ )
+                    {
+                        ts[i] = new Help.AnotherTextManager();
+                        ts[i].Initialize(columnArgs[i][CODE], GetParameters(ob));
+                    }
+                }
+                texts.Add(ts);
+            }
+            PushText();
+        }
+        public void PushText()
+        {
+            actual.Items.Clear();
+            foreach ( Help.AnotherTextManager[] managers in texts )
+            {
+                string[] ss = new string[managers.Length];
+                for ( int i = 0; i < managers.Length; i++ )
+                    ss[i] = managers[i].ToString();
+                actual.Items.Add(new ListViewItem(ss));
             }
         }
     }
@@ -133,6 +182,15 @@ namespace DataEditor.Control.Wrapper
                        }
                }
                base.OnCheck(Name, Node);
+           }
+           public string this[int i]
+           {
+               get 
+               {
+                   string s = "No this Code" + i.ToString();
+                   Format.TryGetValue(i, out s);
+                   return s;
+               }
            }
        }
    }

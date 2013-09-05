@@ -114,5 +114,10 @@ namespace DataEditor.Help
                 return new ContentFactor(root, list.ToArray(), format);
             }
         }
+
+        public void Initialize (Dictionary<int, string> dictionary, object[] p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
