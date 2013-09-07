@@ -1,3 +1,7 @@
-[9] 修正图像显示ID为0时不能正常显示的Bug
-[9] 完成 WrapProperty 类
+[9] 修正图像显示ID为0时不能正常显示的Bug  Fin
+[9] 完成 WrapProperty 类   Half Fin
+
+[9] 构思右键菜单
+[8] 构思弹出按钮模式（外挂Link）
 [6] 完善 WrapListView 类
+[5] 构思整体模式

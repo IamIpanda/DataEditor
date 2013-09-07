@@ -59,6 +59,11 @@ namespace DataEditor.Control
                 return i;
             return -1;
         }
+        protected double GetDouble (string str)
+        {
+            double d;
+            return double.TryParse(str, out d) ? d : -1;
+        }
         protected System.Drawing.Color GetColor(string s)
         {
             int i = GetInt(s);

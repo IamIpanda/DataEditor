@@ -5,6 +5,7 @@
     <system>Tests/Data/system.rvdata</system>
     <animation>Tests/Data/animations.rvdata</animation>
     <actor>Tests/Data/actors.rvdata2</actor>
+    <state>Tests/Data/states.rvdata2</state>
   </converts>
   <data type = "tabs">
     <data type = "tab" text = "欸哟">
@@ -119,9 +120,9 @@
           </column>
           <column text = "内容">
             <texts>
-              <text code = "11">『#{0}#』 * #{0}# %,system|elements|#,##,#</text>
-              <text code = "12">『#{0}#』 * #{0}# %,[体力上限,魔力上限,物理攻击,物理防御,魔法攻击,魔法防御,敏捷值,幸运值]|#,##,#</text>
-              <text code = "13">『#{0}#』 * #{0}# %,state|#|name,##,#</text>
+              <text code = "11">『#{0}#』 * #{0:P0}#,system|elements|#,##|#</text>
+              <text code = "12">『#{0}#』 * #{0:P0}#,[体力上限/魔力上限/物理攻击/物理防御/魔法攻击/魔法防御/敏捷值/幸运值]|#,##</text>
+              <text code = "13">『#{0}#』 * #{0:P0}#,state|#|name,##|#</text>
               <text code = "14">『#{0}#』,state|#|name</text>
               <text code = "21"></text>
               <text code = "22"></text>

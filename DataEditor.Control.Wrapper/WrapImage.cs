@@ -47,9 +47,7 @@ namespace DataEditor.Control.Wrapper
         }
         protected FuzzyData.FuzzySymbol key_index = null, key_hue = null;
         protected string ImagePath;
-        public override void Push ()
-        {
-        }
+        public override void Push () { }
 
         public override void Pull ()
         {

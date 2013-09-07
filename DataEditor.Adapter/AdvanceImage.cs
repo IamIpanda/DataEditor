@@ -89,7 +89,7 @@ namespace DataEditor.Adapter
                     y_height = YValue;
                 }
                 // 然后，计算图像的位置。
-                if ( index > 0 ) SetIndex(index);
+                if ( index >= 0 ) SetIndex(index);
                 return new System.Drawing.Rectangle(rect.X + X * x_width, rect.Y + Y * y_height, x_width, y_height);
             }
             public int this[int x, int y] { get { return y * x_count + x; } }

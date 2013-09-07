@@ -14,6 +14,7 @@ namespace DataEditor.Help
         {   }
         List<string> FormatTemp = new List<string>();
         protected char KeyChar = '\0';
+        protected string KeyFlag = ((char)1).ToString();
         public bool Initialize(string format, params object[] data)
         {
             string[] parts = format.Split(',');
@@ -26,9 +27,9 @@ namespace DataEditor.Help
             string[] partial = Temp.Split(KeyChar);
             // 从第二个起，依次配置
             factors = new List<Factor>();
-            for (int i = 0, j = 0; i < partial.Length && j < parts.Length - 1; i++)
+            for (int i = 0, j = 0; i < partial.Length /*&& j < parts.Length - 1*/; i++)
             {
-                if (partial[i] == "")
+                if (partial[i] == KeyFlag && j < partial.Length - 1)
                 {
                     factors.Add(ContentFactor.Allocate(FormatTemp[j], parts[j + 1], data));
                     j++;
@@ -36,14 +37,13 @@ namespace DataEditor.Help
                 else
                     factors.Add(new StringFactor(partial[i]));
             }
-            if ( parts.Length == 1 ) factors.Add(new StringFactor(parts[0]));
             return true;
         }
         protected string MatchEvaluator(Match match)
         {
             CaptureCollection collection = match.Groups[2].Captures;
             FormatTemp.Add(collection.Count == 0 ? "" : "{" + collection[0].Value + "}");
-            return KeyChar.ToString();
+            return KeyChar.ToString() + KeyFlag + KeyChar.ToString();
         }
         public override string ToString()
         {
@@ -73,7 +73,8 @@ namespace DataEditor.Help
             {
                 object ob = PathHelper.LoadByArray(Root, List);
                 if (ob is FuzzyData.FuzzyFixnum) ob = (ob as FuzzyData.FuzzyFixnum).Value;
-                else if (ob is FuzzyData.FuzzyString) ob = (ob as FuzzyData.FuzzyString).Text;
+                if ( ob is FuzzyData.FuzzyFloat ) ob = (ob as FuzzyData.FuzzyFloat).Value;
+                else if ( ob is FuzzyData.FuzzyString ) ob = (ob as FuzzyData.FuzzyString).Text;
                 return string.Format(Format, ob);
             }
             static public ContentFactor Allocate(string format, string path, params object[] para)
@@ -87,6 +88,13 @@ namespace DataEditor.Help
                 Match m;
                 if ( keys[0] == "" || keys[0] == "#" )
                     root = para[0];
+                else if ( keys[0] == "##" )
+                {
+                    int i = 0;
+                    while ( i < max && i < keys.Length &&  keys[i] == "##" ) keys[i++] = null;
+                    if (i < keys.Length && keys[i] == "#" ) keys[i] = null;
+                    root = para[i];
+                }
                 else if ( (m = reg.Match(keys[0])).Success )
                 {
                     string all = m.Value;
@@ -113,11 +121,6 @@ namespace DataEditor.Help
                         list.Add(key);
                 return new ContentFactor(root, list.ToArray(), format);
             }
-        }
-
-        public void Initialize (Dictionary<int, string> dictionary, object[] p)
-        {
-            throw new NotImplementedException();
         }
     }
 }

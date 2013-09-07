@@ -100,12 +100,13 @@ namespace DataEditor.Control.Wrapper
                 // 若获取 CODE 成功
                 else
                 {
-                    int CODE = Convert.ToInt32(fixnum_code.Value);
-                    for ( int i = 0; i < count; i++ )
-                    {
-                        ts[i] = new Help.AnotherTextManager();
-                        ts[i].Initialize(columnArgs[i][CODE], GetParameters(ob));
-                    }
+                        int CODE = Convert.ToInt32(fixnum_code.Value);
+                        for ( int i = 0; i < count; i++ )
+                        {
+                            ts[i] = new Help.AnotherTextManager();
+                            ts[i].Initialize(columnArgs[i][CODE], GetParameters(ob));
+                        }
+                    
                 }
                 texts.Add(ts);
             }
