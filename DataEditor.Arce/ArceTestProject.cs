@@ -14,16 +14,15 @@ using DataEditor.Control.Prototype;
 
 namespace DataEditor.Arce
 {
-    public partial class Form1 : Form
+    public partial class ArceTestProject : Form
     {
-        public Form1()
+        public ArceTestProject()
         {
             InitializeComponent();
         }
 
         private void Form1_Load (object sender, EventArgs e)
         {
-           new Control.Window.RTPEditor().ShowDialog();
             Interpreter.Collector.AddAssembly(System.Reflection.Assembly.GetAssembly(typeof(DataEditor.Control.Container.ContainerArgs)));
             Interpreter.Collector.AddAssembly(System.Reflection.Assembly.GetAssembly(typeof(DataEditor.Control.Wrapper.WrapNumInput)));
             Interpreter.Builder builder = new Interpreter.Builder();
@@ -48,6 +47,16 @@ namespace DataEditor.Arce
             FuzzyArray fa = ob as FuzzyArray;
             FuzzyArray fb = op as FuzzyArray;
             FuzzyArray fc = od as FuzzyArray;
+
+            try
+            {
+                DataEditor.Control.Window.ArrayChangeDialog dlg = new Control.Window.ArrayChangeDialog();
+                dlg.Value = new Adapter.AdvanceCollectNameArray(fa);
+                dlg.Show();
+            }
+            catch ( Exception ex )
+            { 
+            }
             foreach ( System.Windows.Forms.Control control in this.Controls )
             {
                 if ( control is TabControl)

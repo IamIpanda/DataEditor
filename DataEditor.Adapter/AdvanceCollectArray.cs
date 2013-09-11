@@ -81,7 +81,7 @@ namespace DataEditor.Adapter
 
     public class AdvanceCollectNameArray : AdvanceCollectTypeArray<FuzzyData.FuzzyObject>
     {
-        public FuzzyData.FuzzySymbol ClassName { get; set; }
+        public FuzzyData.FuzzySymbol ArrayClassName { get; set; }
         public AdvanceCollectNameArray (FuzzyData.FuzzyArray origin, AdvanceCollect collect = null)
             : base(origin, collect)
         {
@@ -93,8 +93,9 @@ namespace DataEditor.Adapter
             if ( item is FuzzyData.FuzzyNil ) return AdvanceCollectResult.Wrong;
             FuzzyData.FuzzyObject  obj = item as FuzzyData.FuzzyObject;
             if ( obj == null ) return AdvanceCollectResult.Denied;
-            if ( ClassName == null ) ClassName = obj.ClassName;
-            else if ( ClassName != obj.ClassName ) return AdvanceCollectResult.Denied;
+            if ( ArrayClassName == null ) ArrayClassName = obj.ClassName;
+            else if ( ArrayClassName != obj.ClassName)
+                return AdvanceCollectResult.Denied;
             return AdvanceCollectResult.Accepted;
         }
     }

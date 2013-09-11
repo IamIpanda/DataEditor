@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayChangeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayChangeDialog.Designer.cs">
+      <DependentUpon>ArrayChangeDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="RTPEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="SingleImageChoser.Designer.cs">
       <DependentUpon>SingleImageChoser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ArrayChangeDialog.resx">
+      <DependentUpon>ArrayChangeDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -148,6 +157,10 @@
     <ProjectReference Include="..\DataEditor.Help\DataEditor.Help.csproj">
       <Project>{847c638e-8d84-4348-a26e-82e1ab523ac9}</Project>
       <Name>DataEditor.Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj">
+      <Project>{6DD14A85-CCFC-4774-BD26-0F5772512319}</Project>
+      <Name>FastColoredTextBox</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

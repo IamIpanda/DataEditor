@@ -14,7 +14,7 @@ namespace DataEditor.Arce
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ArceTestProject());
             try
             {
                 DataEditor.Help.Log.Flush();

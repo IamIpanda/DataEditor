@@ -43,16 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ArceTestProject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ArceTestProject.Designer.cs">
+      <DependentUpon>ArceTestProject.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ArceTestProject.resx">
+      <DependentUpon>ArceTestProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +75,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataEditor.Adapter\DataEditor.Adapter.csproj">
+      <Project>{4fcc66f3-f2d8-4c5c-96d4-e07fc412d3e8}</Project>
+      <Name>DataEditor.Adapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataEditor.Contract\DataEditor.Contract.csproj">
       <Project>{D7DFC2B5-BB85-4037-B052-C4F1E3C1BDE0}</Project>
       <Name>DataEditor.Contract</Name>

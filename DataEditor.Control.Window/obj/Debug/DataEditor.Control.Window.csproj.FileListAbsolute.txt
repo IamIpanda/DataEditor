@@ -136,3 +136,7 @@ E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\DataEditor.Adapter
 E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window._DataEditorDialog_Row.resources
 E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window._DataEditorDialog_Column.resources
 E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.SingleImageChoser.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Window\obj\Debug\DataEditor.Control.Window.ArrayChangeDialog.resources
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\FastColoredTextBox.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\FastColoredTextBox.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Window\bin\Debug\FastColoredTextBox.xml
