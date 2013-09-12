@@ -42,6 +42,12 @@
     <Compile Include="ProtoAutoSizeTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ProtoDropItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProtoDropItem.Designer.cs">
+      <DependentUpon>ProtoDropItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProtoFullListBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     <Compile Include="ProtoRtpViewList.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ProtoSelectable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProtoSelectable.Designer.cs">
+      <DependentUpon>ProtoSelectable.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProtoTitleBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +150,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ProtoDropItem.resx">
+      <DependentUpon>ProtoDropItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProtoFullListBox.resx">
       <DependentUpon>ProtoFullListBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProtoLeftListBox.resx">
       <DependentUpon>ProtoLeftListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProtoSelectable.resx">
+      <DependentUpon>ProtoSelectable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProtoTitleBox.resx">
       <DependentUpon>ProtoTitleBox.cs</DependentUpon>

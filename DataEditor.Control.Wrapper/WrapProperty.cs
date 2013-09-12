@@ -11,7 +11,7 @@ namespace DataEditor.Control.Wrapper
         System.Xml.XmlNode dialog;
         FuzzyData.FuzzyObject New;
         FuzzyData.FuzzySymbol code;
-        List<PropertyArgs.PropertyColumnArgs> columnArgs;
+        List<PropertyArgs.PropertyTextArgs> columnArgs;
         List<FuzzyData.FuzzySymbol> parameters;
         List<Help.AnotherTextManager[]> texts = new List<Help.AnotherTextManager[]>();
         public override string Flag { get { return "property"; } }
@@ -128,13 +128,13 @@ namespace DataEditor.Control.Wrapper
    {
        public FuzzyData.FuzzySymbol Code { get; set; }
        public List<FuzzyData.FuzzySymbol> Parameters { get; set; }
-       public new List<PropertyColumnArgs> Columns { get; set; }
+       public new List<PropertyTextArgs> Columns { get; set; }
 
        public PropertyArgs ()
        {
            Code = null;
            Parameters = new List<FuzzyData.FuzzySymbol>();
-           Columns = new List<PropertyColumnArgs>();
+           Columns = new List<PropertyTextArgs>();
        }
        public PropertyArgs (System.Xml.XmlNode Node) : this() { Load(Node); }
        public override void Load (System.Xml.XmlNode Node)
@@ -151,17 +151,17 @@ namespace DataEditor.Control.Wrapper
 
        protected override void OnCheck (string Name, System.Xml.XmlNode Node)
        {
-           if ( Name == "COLUMN" ) Columns.Add(new PropertyColumnArgs(Node));
+           if ( Name == "COLUMN" ) Columns.Add(new PropertyTextArgs(Node));
            else if ( Name == "NEW" ) New = LoadXmlData(Node.FirstChild);
            else if ( Name == "DIALOG" ) Dialog = Node;
            base.OnCheck(Name, Node);
        }
-       public class PropertyColumnArgs : PropertyArgs.ListViewColumnArgs
+       public class PropertyTextArgs : PropertyArgs.ListViewColumnArgs
        {
            public  new  Dictionary<int, string> Format { get; set; }
            public bool AllString { get; set; }
-           public PropertyColumnArgs () { Format = new Dictionary<int, string>(); AllString = false; }
-           public PropertyColumnArgs (System.Xml.XmlNode Node) : this() { Load(Node); }
+           public PropertyTextArgs () { Format = new Dictionary<int, string>(); AllString = false; }
+           public PropertyTextArgs (System.Xml.XmlNode Node) : this() { Load(Node); }
            protected override void OnScan (string Name, string InnerText)
            {
                if ( Name == "STRING" ) AllString = !AllString;
@@ -186,12 +186,28 @@ namespace DataEditor.Control.Wrapper
            }
            public string this[int i]
            {
-               get 
+               get
                {
-                   string s = "No this Code" + i.ToString();
+                   string s = "# NO SUCH CODE : " + i.ToString() + " #";
                    Format.TryGetValue(i, out s);
                    return s;
                }
+           }
+           public FuzzyData.FuzzySymbol Code { get; set; }
+           public string this[FuzzyData.FuzzyObject ob,FuzzyData.FuzzySymbol sym]
+           {
+               get 
+               {
+                   FuzzyData.FuzzyFixnum code = 
+                       ControlHelper.TypeCheck<FuzzyData.FuzzyFixnum>.Get(ob, sym);
+                   if ( code == null ) return "# DISABLE CODE #";
+                   int num = Convert.ToInt32(code.Value);
+                   return this[num];
+               }
+           }
+           public string this[FuzzyData.FuzzyObject ob]
+           {
+               get { return this[ob, Code]; }
            }
        }
    }

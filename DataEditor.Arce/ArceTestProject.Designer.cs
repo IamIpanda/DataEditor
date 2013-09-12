@@ -28,14 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.protoDropItem1 = new DataEditor.Control.Prototype.ProtoDropItem();
             this.SuspendLayout();
             // 
-            // Form1
+            // protoDropItem1
+            // 
+            this.protoDropItem1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.protoDropItem1.Location = new System.Drawing.Point(207, 90);
+            this.protoDropItem1.MaximumSize = new System.Drawing.Size(99999, 22);
+            this.protoDropItem1.MinimumSize = new System.Drawing.Size(2, 22);
+            this.protoDropItem1.Name = "protoDropItem1";
+            this.protoDropItem1.Size = new System.Drawing.Size(451, 22);
+            this.protoDropItem1.TabIndex = 0;
+            // 
+            // ArceTestProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 499);
-            this.Name = "Form1";
+            this.Controls.Add(this.protoDropItem1);
+            this.Name = "ArceTestProject";
             this.Text = "DataEditor";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -43,6 +55,8 @@
         }
 
         #endregion
+
+        private Control.Prototype.ProtoDropItem protoDropItem1;
 
 
 
