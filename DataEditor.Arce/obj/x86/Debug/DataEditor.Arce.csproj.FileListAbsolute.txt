@@ -282,3 +282,4 @@ E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\FastColoredTextBox.dll
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\FastColoredTextBox.pdb
 E:\VS Projects\DataEditor\DataEditor.Arce\bin\Debug\FastColoredTextBox.xml
 E:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.ArceTestProject.resources
+E:\VS Projects\DataEditor\DataEditor.Arce\obj\x86\Debug\DataEditor.Arce.MainAction.resources

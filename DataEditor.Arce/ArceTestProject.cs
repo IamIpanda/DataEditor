@@ -30,7 +30,7 @@ namespace DataEditor.Arce
             document.Load("Xmls/test1.xml");
             try
             {   
-                builder.Build(document.FirstChild.NextSibling, this.Controls);
+                builder.Build(document.FirstChild.NextSibling, panel1.Controls);
             }
             catch ( Exception exc )
             {
@@ -48,16 +48,7 @@ namespace DataEditor.Arce
             FuzzyArray fb = op as FuzzyArray;
             FuzzyArray fc = od as FuzzyArray;
 
-            try
-            {
-                DataEditor.Control.Window.ArrayChangeDialog dlg = new Control.Window.ArrayChangeDialog();
-                dlg.Value = new Adapter.AdvanceCollectNameArray(fa);
-                dlg.Show();
-            }
-            catch ( Exception ex )
-            { 
-            }
-            foreach ( System.Windows.Forms.Control control in this.Controls )
+            foreach ( System.Windows.Forms.Control control in panel1.Controls )
             {
                 if ( control is TabControl)
                 {

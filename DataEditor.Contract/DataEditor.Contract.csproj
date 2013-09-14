@@ -35,11 +35,13 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Addin.cs" />
     <Compile Include="FocusDependent.cs" />
+    <Compile Include="MenuCommand.cs" />
     <Compile Include="ObjectEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Serlization.cs" />
