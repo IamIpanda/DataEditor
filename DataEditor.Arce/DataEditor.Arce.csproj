@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionCore.cs" />
     <Compile Include="ArceTestProject.cs">
       <SubType>Form</SubType>
     </Compile>

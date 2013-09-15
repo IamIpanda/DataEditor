@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(196, 300);
+            this.ClientSize = new System.Drawing.Size(196, 212);
             this.Name = "MainAction";
             this.Text = "动作";
             this.ResumeLayout(false);

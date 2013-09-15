@@ -47,5 +47,10 @@ namespace DataEditor.Control.Window
             protoListBox1.SelectedIndex = Index;
             return base.ShowDialog();
         }
+
+        private void protoListBox1_DoubleClick (object sender, EventArgs e)
+        {
+            if ( protoListBox1.SelectedIndex > 0 ) btOK_Click(sender, e);
+        }
     }
 }

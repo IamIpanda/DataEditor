@@ -30,9 +30,9 @@ namespace DataEditor.Help
             Group = group;
             commands.Add(this);
         }
-
-        public static List<MenuCommand<T>> commands = new List<MenuCommand<T>>();
+        protected static List<MenuCommand<T>> commands = new List<MenuCommand<T>>();
         public static List<MenuCommand<T>> Commands { get { return commands; } }
+        public static void Sort () { commands.Sort((x, y) => x.Group - y.Group); }
     }
 
     public class MainMenuCommand : MenuCommand<RunMainMenuCommand> 

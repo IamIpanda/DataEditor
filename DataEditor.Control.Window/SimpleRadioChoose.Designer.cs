@@ -67,7 +67,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(189, 23);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
@@ -116,6 +116,7 @@
             this.protoListBox1.Name = "protoListBox1";
             this.protoListBox1.Size = new System.Drawing.Size(189, 195);
             this.protoListBox1.TabIndex = 2;
+            this.protoListBox1.DoubleClick += new System.EventHandler(this.protoListBox1_DoubleClick);
             // 
             // SimpleRadioChoose
             // 
@@ -124,6 +125,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(195, 257);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SimpleRadioChoose";
@@ -135,11 +137,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button btOK;
-        private System.Windows.Forms.Button btCancel;
-        private System.Windows.Forms.Label lbDescription;
-        private Prototype.ProtoListBox protoListBox1;
+        protected System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        protected System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        protected System.Windows.Forms.Button btOK;
+        protected System.Windows.Forms.Button btCancel;
+        protected System.Windows.Forms.Label lbDescription;
+        protected Prototype.ProtoListBox protoListBox1;
+
     }
 }
