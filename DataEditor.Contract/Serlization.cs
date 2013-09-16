@@ -10,8 +10,4 @@ namespace DataEditor.Contract
         void Dump(Stream stream, object ob);
         object Load(Stream stream);
     }
-    public interface Iconic
-    {
-        string Flag { get; }
-    }
 }

@@ -42,13 +42,14 @@
   <ItemGroup>
     <Compile Include="AnotherTextManager.cs" />
     <Compile Include="FileManager.cs" />
+    <Compile Include="IconicClassManager.cs" />
     <Compile Include="InitalEditor.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="MenuCommand.cs" />
     <Compile Include="NounConverter.cs" />
     <Compile Include="PathHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReflectManager.cs" />
+    <Compile Include="ReflectLoader.cs" />
     <Compile Include="Resource.cs" />
     <Compile Include="RTPManager.cs" />
     <Compile Include="SerializationManager.cs" />

@@ -39,8 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addin.cs" />
-    <Compile Include="FocusDependent.cs" />
+    <Compile Include="Iconic.cs" />
     <Compile Include="MenuCommand.cs" />
     <Compile Include="ObjectEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
