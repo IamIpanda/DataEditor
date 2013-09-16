@@ -11,7 +11,7 @@ namespace DataEditor.Arce
         {
             new Help.MainMenuCommand(New, Keys.Control | Keys.N, "新建", 0);
             new Help.MainMenuCommand(OpenXml, Keys.Control | Keys.Shift | Keys.O, "打开描述文件", 1);
-            new Help.MainMenuCommand(OpenFile, Keys.Control | Keys.O, "打开文件", 1);
+            new Help.MainMenuCommand(OpenFile, Keys.Control | Keys.O, "打开数据文件", 1);
             new Help.MainMenuCommand(SaveAs, Keys.Control | Keys.Shift | Keys.N, "另存为", 2); 
             new Help.MainMenuCommand(Save, Keys.Control | Keys.S, "保存", 2);
             new Help.MainMenuCommand(Exit, Keys.Control | Keys.W, "退出", 3);
