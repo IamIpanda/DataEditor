@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data type = "window" text = "数据库 - RPG Maker XP">
+	<file>converts - xp.xml</file>
+	<data type = "tabs" path = "data">
+		<file>actor - xp.xml</file>
+		<file>class - xp.xml</file>
+		<file>item - xp.xml</file>
+		<file>weapon - xp.xml</file>
+		<file>armor - xp.xml</file>
+		<file>enemy - xp.xml</file>
+		<file>troop - xp.xml</file>
+		<file>state - xp.xml</file>
+		<file>system - xp.xml</file>
+	</data>
+</data>

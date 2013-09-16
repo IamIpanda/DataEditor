@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<start />
+<converts>
+	<actor>Actors.rxdata</actor>
+	<class>Classes.rxdata</class>
+	<item>Items.rxdata</item>
+	<weapon>Weapons.rxdata</weapon>
+	<armor>Armors.rxdata</armor>
+	<enemy>Enemies.rxdata</enemy>
+	<troop>Troops.rxdata</troop>
+	<state>States.rxdata</state>
+	<animation>Animations.rxdata</animation>
+	<tileset>Tilesets.rxdata</tileset>
+	<commonevent>CommonEvents.rxdata</commonevent>
+	<system>System.rxdata</system>
+</converts>
+<!--    
+	$data_actors        = load_data("Data/Actors.rxdata")
+    $data_classes       = load_data("Data/Classes.rxdata")
+    $data_skills        = load_data("Data/Skills.rxdata")
+    $data_items         = load_data("Data/Items.rxdata")
+    $data_weapons       = load_data("Data/Weapons.rxdata")
+    $data_armors        = load_data("Data/Armors.rxdata")
+    $data_enemies       = load_data("Data/Enemies.rxdata")
+    $data_troops        = load_data("Data/Troops.rxdata")
+    $data_states        = load_data("Data/States.rxdata")
+    $data_animations    = load_data("Data/Animations.rxdata")
+    $data_tilesets      = load_data("Data/Tilesets.rxdata")
+    $data_common_events = load_data("Data/CommonEvents.rxdata")
+    $data_system        = load_data("Data/System.rxdata")
+--!>
