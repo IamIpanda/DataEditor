@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
-using DataEditor.Arce.Interpreter;
+using DataEditor.Interpreter;
 
 namespace DataEditor.Control.Container
 {

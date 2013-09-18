@@ -6,21 +6,23 @@ using System.IO;
 
 namespace DataEditor.Help
 {
-    public abstract class IconicClassManager<T> where T : Contract.Iconic where T : class 
+    public abstract class IconicClassManager<T> where T : class,Contract.Iconic
     {
-        abstract static string Path { get; }
-        abstract static string GetLog (T obj);
-        abstract static Dictionary<string, Type> Types { get; }
+        abstract protected string Path { get; }
+        abstract protected string GetLog (T obj);
+        abstract protected Dictionary<string, Type> Types { get; }
+        public static IconicClassManager<T> Instance { get; set; }
+        protected IconicClassManager () { }
 
-        static IconicClassManager ()
+        static public void Initialize()
         {
-            DirectoryInfo directory = new DirectoryInfo(Path);
+            DirectoryInfo directory = new DirectoryInfo(Instance.Path);
             List<Assembly> assemblies = ReflectLoader.GetDirectory(directory);
 
             foreach ( Assembly ass in assemblies )
-                AddAssembly(ass);
+                Instance.AddAssembly(ass);
         }
-        static void AddAssembly (Assembly ass)
+        void AddAssembly (Assembly ass)
         {
             Log.log("正在导入库：" + ass.FullName);
             Type BaseType = typeof(T);
@@ -45,13 +47,34 @@ namespace DataEditor.Help
         }
 
         public enum SearchMode { Full, Start, Conclude };
-        public static Type Get (string key, SearchMode Mode = SearchMode.Full)
+        public Type Get (string key, SearchMode Mode = SearchMode.Full)
         {
+            if ( Mode == SearchMode.Full )
+            {
+                Type ans = typeof(object);
+                Types.TryGetValue(key, out ans);
+                return ans;
+            }
+            else if ( Mode == SearchMode.Start )
+            {
+                foreach ( string prefix in Types.Keys )
+                    if ( key.StartsWith(prefix) ) return Types[key];
+                return typeof(object);
+            }
+            else if ( Mode == SearchMode.Conclude )
+            {
+                foreach ( string prefix in Types.Keys )
+                    if ( key.Contains(prefix) ) return Types[key];
+                return typeof(object);
+            }
             return typeof(int);
         }
-        public static T GetInstance (string key, SearchMode Mode = SearchMode.Full)
+        public T GetInstance (string key, SearchMode Mode = SearchMode.Full)
         {
-            return null;
+            Type type = Get(key, Mode);
+            if ( type == typeof(object) ) return null;
+            try { return Assembly.GetAssembly(type).CreateInstance(type.FullName) as T; }
+            catch { return null; }
         }
     }
 }

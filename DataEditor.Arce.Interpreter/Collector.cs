@@ -5,8 +5,21 @@ using DataEditor.Help;
 using System.IO;
 using System.Reflection;
 
-namespace DataEditor.Arce.Interpreter
+namespace DataEditor.Interpreter
 {
+    public class Collector : Help.IconicClassManager<Control.ObjectEditor>
+    {
+        Dictionary<string, Type> types = new Dictionary<string, Type>();
+        static Collector ()
+        {
+            Instance = new Collector();
+            Initialize();
+        }
+        protected override string Path { get { return "Program/Control/Wrapper"; } }
+        protected override string GetLog (Control.ObjectEditor obj) { return "导入了类型[" + obj.Flag + "] : " + obj.GetType().ToString(); }
+        protected override Dictionary<string, Type> Types { get { return types; } }
+    }
+    /*
     public class Collector
     {
         static Dictionary<string, Type> Types = new Dictionary<string, Type>();
@@ -36,7 +49,10 @@ namespace DataEditor.Arce.Interpreter
                                 object o = ass.CreateInstance(t.FullName);
                                 string key = (o as DataEditor.Control.ObjectEditor).Flag;
                                 if ( !Types.ContainsKey(key) )
-                                { Types.Add(key, t); Log.log("导入了类型：[" + key + "]" + t.ToString()); }
+                                {
+                                        Types.Add(key, t);
+                                    Log.log("导入了类型：[" + key + "]" + t.ToString());
+                                }
                             }
                 }
             }
@@ -57,6 +73,5 @@ namespace DataEditor.Arce.Interpreter
                    return null;
             }
         }
-
-    }
+    } */
 }

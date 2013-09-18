@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Iconic.cs" />
+    <Compile Include="Interpreter.cs" />
     <Compile Include="MenuCommand.cs" />
     <Compile Include="ObjectEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

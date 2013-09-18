@@ -143,9 +143,9 @@
       <Name>DataEditor.Help</Name>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj">
+    <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Interpreter.csproj">
       <Project>{470035A8-2B65-4CBE-BEE0-3FAAFE9FC787}</Project>
-      <Name>DataEditor.Arce.Interpreter</Name>
+      <Name>DataEditor.Interpreter</Name>
     </ProjectReference>
     <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj">
       <Project>{6DD14A85-CCFC-4774-BD26-0F5772512319}</Project>

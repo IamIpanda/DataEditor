@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEditor.FuzzyData", "Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEditor.Arce", "DataEditor.Arce\DataEditor.Arce.csproj", "{09686059-3B81-4BDC-A502-1B7E4C2574D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEditor.Arce.Interpreter", "DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj", "{470035A8-2B65-4CBE-BEE0-3FAAFE9FC787}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEditor.Interpreter", "DataEditor.Arce.Interpreter\DataEditor.Interpreter.csproj", "{470035A8-2B65-4CBE-BEE0-3FAAFE9FC787}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEditor.FuzzyData.Extra", "DataEditor.FuzzyData.Extra\DataEditor.FuzzyData.Extra.csproj", "{3332A025-6E2B-4D9F-8A46-9F2350B39750}"
 EndProject

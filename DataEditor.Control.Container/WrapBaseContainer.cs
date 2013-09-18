@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DataEditor.Arce.Interpreter;
+using DataEditor.Interpreter;
 
 namespace DataEditor.Control.Container
 {
@@ -24,7 +24,7 @@ namespace DataEditor.Control.Container
         {
             if ( Binding != null )
             {
-                Builder builder = new Builder();
+                var builder = new DataEditor.Interpreter.Xml.Builder();
                 System.Drawing.Size size = builder.Build(Node, Controls, this, ExtraWidth, ExtraHeight);
                 SetSize(size);
             }

@@ -8,7 +8,7 @@
     <ProjectGuid>{470035A8-2B65-4CBE-BEE0-3FAAFE9FC787}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataEditor.Arce.Interpreter</RootNamespace>
+    <RootNamespace>DataEditor.Interpreter.Xml</RootNamespace>
     <AssemblyName>DataEditor.Arce.Interpreter</AssemblyName>
     <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -38,9 +38,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builder.cs" />
+    <Compile Include="Xml\Builder.cs" />
     <Compile Include="Collector.cs" />
-    <Compile Include="Interpreter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

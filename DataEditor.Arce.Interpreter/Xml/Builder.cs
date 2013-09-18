@@ -5,9 +5,9 @@ using System.Xml;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace DataEditor.Arce.Interpreter
+namespace DataEditor.Interpreter.Xml
 {
-    public class Builder : Interpreter
+    public class Builder : Contract.Interpreter
     {
         /// <summary>
         /// 关于控件走向的顺序。
@@ -60,8 +60,7 @@ namespace DataEditor.Arce.Interpreter
                         if (attr.Name.ToUpper() == "TYPE")
                             ControlName = attr.InnerText;
                     // 生成此控件
-                    DataEditor.Control.ObjectEditor editor =
-                        Collector.Instance[ControlName] as DataEditor.Control.ObjectEditor;
+                    DataEditor.Control.ObjectEditor editor = Collector.Instance.GetInstance(ControlName);
                     // 若生成失败，此节点被送往一个空方法
                     if (editor == null)
                     { FailedBuildingNodes(ChildNode); continue; }

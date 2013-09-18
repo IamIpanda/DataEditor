@@ -134,9 +134,9 @@
       <Project>{4fcc66f3-f2d8-4c5c-96d4-e07fc412d3e8}</Project>
       <Name>DataEditor.Adapter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Arce.Interpreter.csproj">
+    <ProjectReference Include="..\DataEditor.Arce.Interpreter\DataEditor.Interpreter.csproj">
       <Project>{470035a8-2b65-4cbe-bee0-3faafe9fc787}</Project>
-      <Name>DataEditor.Arce.Interpreter</Name>
+      <Name>DataEditor.Interpreter</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataEditor.Contract\DataEditor.Contract.csproj">
       <Project>{d7dfc2b5-bb85-4037-b052-c4f1e3c1bde0}</Project>

@@ -60,3 +60,7 @@ E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.Arce.I
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\FastColoredTextBox.dll
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\FastColoredTextBox.pdb
 E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\FastColoredTextBox.xml
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.FuzzyData.Extra.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+E:\VS Projects\DataEditor\DataEditor.Control.Wrapper\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
