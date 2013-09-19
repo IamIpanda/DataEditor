@@ -13,7 +13,7 @@ namespace DataEditor.Help
         abstract protected Dictionary<string, Type> Types { get; }
         public static IconicClassManager<T> Instance { get; set; }
         protected IconicClassManager () { }
-
+        
         static public void Initialize()
         {
             DirectoryInfo directory = new DirectoryInfo(Instance.Path);
@@ -22,7 +22,7 @@ namespace DataEditor.Help
             foreach ( Assembly ass in assemblies )
                 Instance.AddAssembly(ass);
         }
-        void AddAssembly (Assembly ass)
+        public void AddAssembly (Assembly ass)
         {
             Log.log("正在导入库：" + ass.FullName);
             Type BaseType = typeof(T);
@@ -44,6 +44,10 @@ namespace DataEditor.Help
                 catch ( Exception ex )
                 { Log.log("导入类型" + type.FullName + "时发生了错误：" + ex.ToString()); }
             }
+        }
+        public void AddAssembly (Type type)
+        {
+            AddAssembly(Assembly.GetAssembly(type));
         }
 
         public enum SearchMode { Full, Start, Conclude };

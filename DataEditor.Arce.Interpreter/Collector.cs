@@ -13,8 +13,8 @@ namespace DataEditor.Interpreter
         static Collector ()
         {
             Instance = new Collector();
-            Initialize();
         }
+        static public void Run () { }
         protected override string Path { get { return "Program/Control/Wrapper"; } }
         protected override string GetLog (Control.ObjectEditor obj) { return "导入了类型[" + obj.Flag + "] : " + obj.GetType().ToString(); }
         protected override Dictionary<string, Type> Types { get { return types; } }

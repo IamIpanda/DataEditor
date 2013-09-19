@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interpreters.cs" />
     <Compile Include="Xml\Builder.cs" />
     <Compile Include="Collector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
