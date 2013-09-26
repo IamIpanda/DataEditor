@@ -38,7 +38,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WrapActor.cs" />
     <Compile Include="WrapStringList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WrapCheckBox.cs" />

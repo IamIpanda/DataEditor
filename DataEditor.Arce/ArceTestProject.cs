@@ -67,5 +67,20 @@ namespace DataEditor.Arce
                 }
             }
         }
+
+        private void ArceTestProject_KeyDown (object sender, KeyEventArgs e)
+        {
+            if ( e.Alt )
+            {
+                menuStrip1.Visible = true;
+                menuStrip1.Focus();
+                menuStrip1.Items[0].Select();
+            }
+        }
+
+        private void menuStrip1_Leave (object sender, EventArgs e)
+        {
+            menuStrip1.Visible = false;
+        }
     }
 }

@@ -6,7 +6,74 @@
 		<data type = "tab" file = "item" text = "物品">
 			<data type = "list" text = "物品" format = "#{0:d3}#:#{0}#,|id,|name" id = "id">
 				<data type = "group">
-					
+					<data type = "text" text = "名称" actual = "name" />
+					<data type = "icon" text = "图表" actual = "icon_name" />
+					<next />
+					<data type = "text" text = "说明" actual = "description" />
+					<next />
+					<data type = "choose" text = "效果范围" actual = "scope">
+						<choice id = "0">（无）</choice>
+						<choice id = "1">敌方单体</choice>
+						<choice id = "2">敌方全体</choice>
+						<choice id = "3">己方单体</choice>
+						<choice id = "4">己方全体</choice>
+						<choice id = "5">己方单体（HP 0）</choice>
+						<choice id = "6">己方全体（HP 0）</choice>
+						<choice id = "7">使用者</choice>
+					</data>
+					<data type = "choose" text = "可能使用时" actual = "occasion">
+						<choice id = "0">平时</choice>
+						<choice id = "1">战斗中</choice>
+						<choice id = "2">菜单中</choice>
+						<choice id = "3">不能使用</choice>
+					</data>
+					<next />
+					<data type = "choose" text = "使用方的动画" actual = "anmation1_id">
+						<choice id = "0">（无）</choice>
+						<choice id = "|id" format = "#{0:d3}#:#{0}#,|id,|name" file = "animation" />
+					</data>
+					<data type = "choose" text = "对象方的动画" actual = "anmation2_id">
+						<choice id = "0">（无）</choice>
+						<choice id = "|id" format = "#{0:d3}#:#{0}#,|id,|name" file = "animation" />
+					</data>
+					<next />
+					<data type = "Audio" limit = "SE" text = "菜单画面时使用的SE" actual = "menu_se" />
+					<data type = "choose" text = "公共事件" actual = "common_event_id">
+						<choice id = "0">（无）</choice>
+						<choice id = "|id" format = "#{0:d3}#:#{0}#,|id,|name" file = "commonevent" />
+					</data>
+					<next />
+					<data type = "int" text = "价格" actual = "price" />
+					<data type = "boolchoose" text = "消耗" actual = "consumable" true = "消耗" false = "不消耗" />
+					<data type = "choose" text = "能力值" actual = "parameter_type">
+						<choice id = "0">无</choice>
+						<choice id = "1">MaxHP</choice>
+						<choice id = "2">MaxSP</choice>
+						<choice id = "3">力量</choice>
+						<choice id = "4">灵巧</choice>
+						<choice id = "5">速度</choice>
+						<choice id = "6">魔力</choice>
+					</data>
+					<data type = "int" text = "上升值" actual = "parameter_points" />
+					<next />
+					<data type = "int" text = "HP 回复率" actual = "recover_hp_rate" />
+					<data type = "int" text = "HP 回复量" actual = "recover_hp" />
+					<data type = "int" text = "SP 回复率" actual = "recover_sp_rate" />
+					<data type = "int" text = "SP 回复量" actual = "recover_sp" />
+					<next />
+					<data type = "int" text = "命中率" actual = "hit" />
+					<data type = "int" text = "物理防御F" actual = "pdef_f" />
+					<data type = "int" text = "魔法防御F" actual = "mdef_f" />
+					<data type = "int" text = "分散度" actual = "variance" />
+					<order />
+					<next />
+					<data type = "checklist" text = "属性" actual = "element_set" />
+					<data type = "textlist" text = "状态变化" >
+						<file format = "">system|properties</file>
+						<choice text = "+" actual = "plus_state_set" />
+						<choice text = "-" actual = "minus_state_set" />
+						<choice text = "" default = "" />
+					</data>
 				</data>
 			</data>
 		</data>

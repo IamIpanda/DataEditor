@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data type = "window" text = "编辑物品 - RPG Maker XP">
+	<file>converts - xp.xml</file>
+	<data type = "tabs" path = "data">
+		<start />
+		<data type = "tab" file = "actor" text = "物品">
+			<data type = "list" text = "物品" format = "#{0:d3}#:#{0}#,|id,|name" id = "id">
+				<data type = "group">
+					<order />
+					<data type = "text" text = "名称" actual = "name" />
+					<data type = "choose" text = "职业" actual = "class_id">
+						<choice file = "class" id = "|id" format = "#{0:d3}#:#{0}#,|id,|name" />
+					</data>
+					<next />
+					<order />
+					<data type = "int" text = "初期等级" actual = "initial_level" />
+					<data type = "int" text = "最终等级" actual = "final_level" />
+					<next />
+					<order />
+					<data type = "exp" text = "exp 曲线" actual = "exp_basis" extra = "exp_inflation" />
+					<!--尚未完成-->
+					<data type = "image" text = "角色脸谱" actual = "character_name" hue = "character_hue" />
+					<data type = "image" text = " 战斗图" actual = "battler_name" hue = "battler_hue" />
+					<order />
+					<next />
+					<order />
+					<data type = "actorparameter" text = "能力值" actual = "parameter">
+						<parameter>MaxHP</parameter>
+						<parameter>MaxSP</parameter>
+						<next />
+						<parameter>力量</parameter>
+						<parameter>灵巧</parameter>
+						<next />
+						<parameter>速度</parameter>
+						<parameter>魔力</parameter>
+					</data>
+					<!--写到这里我真的身心憔悴了你信么-->
+					<data type = "group" text = "初期装备">
+						<data type = "choose" label = "1" actual = "weapon_id">
+							<watch>class_id</watch>
+							<choice id = "0">（无）</choice>
+							<!--特化成这样我已经完全不觉得有什么其他利用价值了。F***！-->
+							<choice file = "class "id = "|id" filter = "class|class_id|weapon_set" format = "#{0:d3}#:#{0}#,|id,|name" /> 
+						</data>
+						<data type = "check" actual = "weapon_fix" />
+						<next />
+						<data type = "choose" label = "1" actual = "armor1_id">
+							<watch>class_id</watch>
+							<choice id = "0">（无）</choice>
+							<choice file = "class" id = "|id" filter = "class|" />
+						</data>
+					</data>
+				</data>
+			</data>
+		</data>
+	</data>
+</data>
