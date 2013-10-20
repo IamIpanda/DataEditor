@@ -1,0 +1,513 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"TYPE",
+				"TYPE_UNION"
+			],
+			[
+				"sta",
+				"stra"
+			],
+			[
+				"ATTR",
+				"ATTRIBUTE_DESCRIPTION"
+			],
+			[
+				"RACE_DE",
+				"RACE_DESCRIPTION"
+			],
+			[
+				"TYPE_",
+				"TYPE_NORMAL"
+			],
+			[
+				"TYPE_E",
+				"TYPE_EFFECT"
+			],
+			[
+				"result",
+				"results"
+			],
+			[
+				"TYPe_",
+				"TYPE_XYZ"
+			],
+			[
+				"val",
+				"value1"
+			],
+			[
+				"k",
+				"key"
+			],
+			[
+				"Co",
+				"Collection"
+			],
+			[
+				"check_",
+				"check_js"
+			],
+			[
+				"【】",
+				"【SC】"
+			],
+			[
+				"b",
+				"begin	begin … rescue … end"
+			],
+			[
+				"hash",
+				"hash_js"
+			],
+			[
+				"mar",
+				"marks"
+			],
+			[
+				"mark",
+				"mark"
+			],
+			[
+				"id2",
+				"id2name"
+			],
+			[
+				"File",
+				"Fields"
+			],
+			[
+				"co",
+				"collection"
+			],
+			[
+				"以下在",
+				"以下在数据库中的卡片未被索引到（合计"
+			],
+			[
+				"id2p",
+				"id2pic"
+			],
+			[
+				"Fil",
+				"Fields"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"load_",
+				"load_sql"
+			],
+			[
+				"load",
+				"load_sql"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Actor - xp.rb",
+			"settings":
+			{
+				"buffer_size": 1438,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "untitled.txt",
+			"settings":
+			{
+				"buffer_size": 968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "File - xp.rb",
+			"settings":
+			{
+				"buffer_size": 1372,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Help.rb",
+			"settings":
+			{
+				"buffer_size": 1298,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"c#",
+				"Set Syntax: C#"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"packa ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 290.0,
+		"history":
+		[
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'",
+			"import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/VS Projects/DataEditor/空想科学/main.xml",
+		"/E/VS Projects/DataEditor/空想科学/weapon - xp",
+		"/E/VS Projects/DataEditor/空想科学/item - xp.xml",
+		"/E/VS Projects/DataEditor/空想科学/converts - xp.xml",
+		"/E/VS Projects/DataEditor/空想科学/actor - xp.xml",
+		"/E/main.rb",
+		"/E/constant.lua",
+		"/C/Users/Public/Documents/RPGXPPatch.rb",
+		"/E/Ruby/Neko/main.rb",
+		"/E/Ruby/spider/main.rb",
+		"/C/Users/Public/Documents/p1193.cpp",
+		"/E/VS Projects/DataEditor/DataEditor.Arce/Xmls/test1.xml",
+		"/E/VS Projects/DataEditor/spark.xml",
+		"/C/Users/焦糖/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/焦糖/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/焦糖/Downloads/0x1320-20130724-nopics/script/utility.lua",
+		"/C/Users/Public/Documents/ktxp.rb",
+		"/E/Ruby/spider/split.rb",
+		"/E/Ruby/spider/wiki.json",
+		"/E/VS Projects/DataEditor/DataEditor.Arce/bin/Debug/Program/Options/NounConverter.xml",
+		"/E/Ruby/spider/images_wikia.json",
+		"/E/Ruby/spider/orenoturn.json",
+		"/E/Ruby/spider/result.json",
+		"/E/Ruby/spider-zh/main.rb",
+		"/E/Ruby/spider/kanabell.json",
+		"/E/Ruby/spider/js.txt",
+		"/E/Ruby/spider/lib.json",
+		"/D/Mycard/mycard-1.1.4/lib/update.rb",
+		"/E/Ruby/spider/lib/main.rb",
+		"/E/xxxx/orenoturn.json",
+		"/E/xxxx/lib/main.rb",
+		"/D/Mycard/mycard-1.1.4/lib/card.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"alpha",
+			"Color",
+			"=0x",
+			"--",
+			"WATER",
+			"cdb",
+			"(",
+			"行号",
+			"Kanon",
+			"2921",
+			"292169",
+			"14512",
+			"29216",
+			"29216967",
+			"puts",
+			"29216967",
+			"HR",
+			"魔法の筒",
+			"contain",
+			"index",
+			"スケープ・ゴート",
+			"js",
+			"sql",
+			"json",
+			"character",
+			"split",
+			"ans",
+			"nils",
+			"replace",
+			"D·D",
+			"決戦",
+			"決戦の",
+			"決戦の火蓋",
+			"THE ",
+			"THE MAGICIAN",
+			"魔人",
+			"\"光の",
+			"“光の",
+			"光の",
+			"の角",
+			"地",
+			"記憶",
+			"no.",
+			"炎舞－",
+			"require",
+			"json"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"tone",
+			"Tone",
+			"=> ''",
+			"",
+			"@ans",
+			"libs"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Actor - xp.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1438,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "untitled.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "File - xp.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Help.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								451,
+								451
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "actor - xp.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data type = "window" text = "编辑武器 - RPG Maker XP">
+	<file>converts - xp.xml</file>
+	<data type = "tabs" path = "data">
+		<start />
+		<data type = "tab" file = "weapon" text = "武器">
+			<data type = "list" text = "武器" format = "#{0:d3}#:#{0}#,|id,|name" id = "id">
+				<data type = "group">
+
+				</data>
+			</data>
+		</data>
+	</data>
+</data>
