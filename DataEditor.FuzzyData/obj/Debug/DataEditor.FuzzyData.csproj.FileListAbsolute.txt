@@ -28,3 +28,8 @@ E:\VS Projects\DataEditor\DataEditor.FuzzyData\bin\Debug\DataEditor.FuzzyData.pd
 E:\VS Projects\DataEditor\DataEditor.FuzzyData\obj\Debug\DataEditor.FuzzyData.dll
 E:\VS Projects\DataEditor\DataEditor.FuzzyData\obj\Debug\DataEditor.FuzzyData.pdb
 E:\VS Projects\DataEditor\DataEditor.FuzzyData\obj\Debug\DataEditor.FuzzyData.csprojResolveAssemblyReference.cache
+X:\VS Projects\DataEditor\DataEditor.FuzzyData\bin\Debug\DataEditor.FuzzyData.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData\bin\Debug\DataEditor.FuzzyData.pdb
+X:\VS Projects\DataEditor\DataEditor.FuzzyData\obj\Debug\DataEditor.FuzzyData.csprojResolveAssemblyReference.cache
+X:\VS Projects\DataEditor\DataEditor.FuzzyData\obj\Debug\DataEditor.FuzzyData.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData\obj\Debug\DataEditor.FuzzyData.pdb

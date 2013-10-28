@@ -26,3 +26,16 @@ E:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.dll
 E:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.pdb
 E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Contract.dll
 E:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Contract.pdb
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.dll
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Adapter.pdb
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Contract.dll
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.dll
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Extra.dll
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.Contract.pdb
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.pdb
+X:\VS Projects\DataEditor\DataEditor.Adapter\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+X:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.csprojResolveAssemblyReference.cache
+X:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.dll
+X:\VS Projects\DataEditor\DataEditor.Adapter\obj\Debug\DataEditor.Adapter.pdb

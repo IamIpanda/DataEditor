@@ -30,3 +30,8 @@ E:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditor.Contract.pdb
 E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.dll
 E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.pdb
 E:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.csprojResolveAssemblyReference.cache
+X:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditor.Contract.dll
+X:\VS Projects\DataEditor\DataEditor.Contract\bin\Debug\DataEditor.Contract.pdb
+X:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.csprojResolveAssemblyReference.cache
+X:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.dll
+X:\VS Projects\DataEditor\DataEditor.Contract\obj\Debug\DataEditor.Contract.pdb

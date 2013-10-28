@@ -77,3 +77,16 @@ E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Deb
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.pdb
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.Contract.dll
 E:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.Contract.pdb
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.pdb
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.Contract.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.Extra.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.Serialization.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.Contract.pdb
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.Extra.pdb
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.Serialization.pdb
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\bin\Debug\DataEditor.FuzzyData.pdb
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.csprojResolveAssemblyReference.cache
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.dll
+X:\VS Projects\DataEditor\DataEditor.FuzzyData.Serialization.RubyMarshal\obj\Debug\DataEditor.FuzzyData.Serialization.RubyMarshal.pdb
