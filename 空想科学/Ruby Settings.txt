@@ -1,16 +1,12 @@
+在 C# 中，为 FuzzyObject 额外添加一个从 RubySymbol 或者 RubyString 检索的选项。
 在 Ruby 执行脚本中，提供下述的对象：
 
 Builder
-	DataEditor Add(Name , [[[[[Actual] , Name] , Label] , Width] , Height]) { Block }
+	New(ControlCollection)
+		新建一个Builder，并描绘给定的ControlCollection。
+	DataEditor Add(Name , Parameters) { Block }
 		搜索拥有 Name 短名的控件，新创建一个此控件并返回之。
-		Actual 是一个字符串，用来检索数据。
-		Name 是一个字符串，用来设置显示数据名称的文字
-		Label 是一个数字，用来标识 Name 所述的文本的位置。
-			0 ： 不显示 
-			1 ： 显示在上方
-			2 ： 显示在左侧
-		Width 是一个数字，用来设置控件的宽度。
-		Height 是一个数字，用来设置控件的高度。
+		Parameters 是一个具有描述性的哈希表。
 		在执行完 Block 之后，将此控件加入 Controls 中。
 	DataEditor In(DataContainer) 
 		此后加入控件时，将在 DataContianer 中执行加入。
@@ -30,6 +26,7 @@ Builder
 	void Text (Text)
 		建立一个Label，并将Label设置为Text，并加入当前焦点。
 
+	Builder 将 Parameter 还原成对应的参数，并建立对应的参数结构。
 
 Data
 	[](Name)
@@ -55,11 +52,27 @@ Taint
 		查询Value的污染状态。
 
 Window 
-	Create
-		创建一个窗口。
-	Title
-		获取或设置当前窗口的标题
-	Exist
-		获取当前窗口是否存在的信息
-	OpenFile
+	[](Name)
+		搜索名为 Name 的窗口并返回。
+		如果此窗口不存在，则新建并返回之。
+	Exist(Name)
+		获取名为 Name 的窗口是否存在的信息
+
+Menu
+	New
+		创建一个 Menu 的包装对象。
+	Bound(Name)
+		将 Menu 绑定到具有 Name 的目标窗口。
+	[](id)
+		检索id为给定值的菜单项。
+		若id为-1，	则新建一个菜单项在最下方，并返回之。
+	Push(text,proc)
+		新建一个菜单项在最下方，并将其文字设置为text，执行代码设置为proc。
+
+
+Dialog
+	File
+	Path
+	Choose
+	Message
 
